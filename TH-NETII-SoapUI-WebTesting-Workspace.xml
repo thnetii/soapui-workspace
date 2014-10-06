@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-workspace name="TH-NETII Web Testing" projectRoot="${workspaceDir}" soapui-version="5.0.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>TH-NETII Software Solutions Web Testing Workspace</con:description>
+  <con:settings/>
+  <con:project name="ASEAG">ASEAG-soapui-project.xml</con:project>
+  <con:project name="DUS International">DUS-International-soapui-project.xml</con:project>
+  <con:project name="Avinor Flydata">Avinor-Flydata-soapui-project.xml</con:project>
+  <con:project name="SAS Mobile">SAS-Mobile-soapui-project.xml</con:project>
+  <con:project name="Pathfinder-Xml">Pathfinder-Xml-soapui-project.xml</con:project>
+  <con:project name="Fronter RSS">Fronter-RSS-soapui-project.xml</con:project>
+</con:soapui-workspace>
