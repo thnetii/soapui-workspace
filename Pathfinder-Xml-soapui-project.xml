@@ -12322,7 +12322,7 @@
       <con:testStep type="transfer" name="GetAllForecastZones Transfer" id="f1919ec1-4841-4435-bdea-2a2e3f262020">
         <con:settings/>
         <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" useXQuery="false" entitize="false" transferChildNodes="false">
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" useXQuery="false" entitize="false" transferChildNodes="false" disabled="true">
             <con:name>State to GetForecast</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAllForecastZones</con:sourceStep>
