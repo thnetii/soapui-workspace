@@ -9,4 +9,5 @@
   <con:project name="SAS Mobile">SAS-Mobile-soapui-project.xml</con:project>
   <con:project name="TheTVDB">TheTVDB-soapui-project.xml</con:project>
   <con:project name="TravelMagic">TravelMagic-soapui-project.xml</con:project>
+  <con:project name="Norwegian">Norwegian-soapui-project.xml</con:project>
 </con:soapui-workspace>
