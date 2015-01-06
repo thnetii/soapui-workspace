@@ -478,12 +478,12 @@ nextStep.setPropertyValue("sig", sig);</script></con:config></con:testStep><con:
 //ns:Response/ns:status</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Auth Header" id="95575620-c47f-44ac-b5a1-801385dd4938"><con:configuration><path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
 //ns:Response/ns:authHeader</path><content>*</content><allowWildcards>true</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="token" value="6b28d7d2add107ebcc77ef54fbf4040f"/>
+  <con:entry key="token" value="2dc527bec1e05e9d2f7d5878a554cec5"/>
   <con:entry key="returnAuthHeader" value="1"/>
   <con:entry key="userName" value="fredrik.rasch@gmail.com"/>
-  <con:entry key="password" value="acc667"/>
   <con:entry key="allowTp" value="1"/>
-  <con:entry key="sig" value="3cd51a54a92302cf175c1a2ec22dd83b3f86dece"/>
+  <con:entry key="password" value="acc667"/>
+  <con:entry key="sig" value="3b46049cec3122895aa65e1405e54b4e01a059e4"/>
 </con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="Transfer Authorization Header" id="2cfcbe61-2c8a-4afc-85c7-44a74acd4402"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" useXQuery="false" entitize="false" transferChildNodes="false"><con:name>authHeader to GetWelcomeMessage</con:name><con:sourceType>ResponseAsXml</con:sourceType><con:sourceStep>SsosLogin</con:sourceStep><con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
 //ns:Response/ns:authHeader</con:sourcePath><con:targetType>Authorization</con:targetType><con:targetStep>GetWelcomeMessage</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="groovy" name="Create InfoTab Signature" id="f4ab3e16-f659-4afa-8a0a-66c3fb960079"><con:settings/><con:config><script>import java.security.*
@@ -507,10 +507,10 @@ log.info "sig = ${sig}";
 nextStep.setPropertyValue("sig", sig);</script></con:config></con:testStep><con:testStep type="restrequest" name="GetWelcomeMessage" id="00f15c93-ce40-4468-bb21-5511b5ef05be"><con:settings/><con:config service="https://gui.flysas.net" methodName="GetWelcomeMessageTask" resourcePath="/mobilegw/1.2/welcome/get" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetWelcomeMessage" mediaType="application/x-www-form-urlencoded" postQueryString="true" id="11c2f387-ab04-4c5b-b1e0-4e0af8b77720"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://gui.flysas.net</con:endpoint><con:request/><con:originalUri>https://gui.flysas.net/mobilegw/1.2/welcome/get</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="40e7ebf5-53b9-4ee5-a18d-3c8e7e36e9dd"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="XPath Match" name="Status" id="50a6c0c2-94cb-4a67-b90d-fff2fa9b0606"><con:configuration><path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/welcome/get';
 
 //ns:Response/ns:status</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="Authorization" value="CE6EKE2LPXNLbN/BrLHsQgnK6tSdbvMUauKerr4uwN94Q9n45BmEdQpl6QVCWNg7ssnj+boPjSLCDlet+BHaCdSqTtDMIJy74lOIJiOn98TdIWCCXeNGNBt7hGZWS5rhtawnerzay0f/8vHUr2YLNzZhtTuFufOV2t6er5roC4k="/>
-  <con:entry key="token" value="6b28d7d2add107ebcc77ef54fbf4040f"/>
+  <con:entry key="Authorization" value="FV4QLwJyZ366yRNtjUwEuSEWDzI2R/XsMc8JDVa7b+QmzvtLhqPKNacqWA6DM3vPJ0UfeeGXYoplMCUgARNKIJfUi9boScSm52R3wNq2lq96g6Zwk7VI8N5X+WnqabVWh1yvJbPKOWbbOthJ7P0YZQI6QY7ZdLspcbidqlUcs68="/>
+  <con:entry key="token" value="2dc527bec1e05e9d2f7d5878a554cec5"/>
   <con:entry key="firstname" value="Fredrik"/>
-  <con:entry key="sig" value="6eb2297b08fcd32b99f6897a474d71e722aa63ed"/>
+  <con:entry key="sig" value="2bdef0fe2c1331f22539935eabc1926d4d3ca03b"/>
 </con:parameters></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get Profile" searchProperties="true" id="e280ce91-e305-43f7-867c-58b6f193b1e9"><con:settings/><con:testStep type="restrequest" name="GetAppToken" id="cba34bb2-7f8b-4900-829e-129b67eb4de8"><con:settings/><con:config service="https://gui.flysas.net" methodName="GetAppTokenTask" resourcePath="/mobilegw/1.2/auth/get_app_token" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetAppToken" mediaType="application/x-www-form-urlencoded" postQueryString="true" id="07409c3a-7a53-4e70-9938-ef5c4c1be1cf"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://gui.flysas.net</con:endpoint><con:request/><con:originalUri>https://gui.flysas.net/mobilegw/1.2/auth/get_app_token</con:originalUri><con:assertion type="XPath Match" name="Status" id="d463b7b4-95c0-4880-aaec-66b1d2ad2da8"><con:configuration><path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
 //ns:Response/ns:status</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Token" id="890ab006-c19e-4b1a-9cf5-d569c5188965"><con:configuration><path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
@@ -621,12 +621,12 @@ nextStep.setPropertyValue("sig", sig);</script></con:config></con:testStep><con:
 //ns:Response/ns:status</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Auth Header" id="b0a277de-71d5-454e-857d-c0130f3e4e9c"><con:configuration><path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
 //ns:Response/ns:authHeader</path><content>*</content><allowWildcards>true</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="token" value="76a25356b9d3dac467258615eaef454f"/>
+  <con:entry key="token" value="86f08753dec2688dedbfb94c6559c147"/>
   <con:entry key="returnAuthHeader" value="1"/>
   <con:entry key="userName" value="fredrik.rasch@gmail.com"/>
-  <con:entry key="allowTp" value="1"/>
   <con:entry key="password" value="acc667"/>
-  <con:entry key="sig" value="d8e03f184478097cfc5a08b8d47785dd15c45864"/>
+  <con:entry key="allowTp" value="1"/>
+  <con:entry key="sig" value="c2bc8a3df13742ec038cbc969ef1b38261200bc9"/>
 </con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="Transfer SsosLogin Response" id="ce4140f7-a38d-49e2-83fb-e18a2abc1550"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" entitize="false" transferToAll="false" ignoreEmpty="false" useXQuery="false" transferChildNodes="false"><con:name>authHeader to GetPnrList</con:name><con:sourceType>ResponseAsXml</con:sourceType><con:sourceStep>SsosLogin</con:sourceStep><con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
 //ns:Response/ns:authHeader</con:sourcePath><con:targetType>Authorization</con:targetType><con:targetStep>GetPnrList</con:targetStep><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" transferChildNodes="false" useXQuery="false" ignoreEmpty="false"><con:name>eb to GetPnrList</con:name><con:sourceType>ResponseAsXml</con:sourceType><con:sourceStep>SsosLogin</con:sourceStep><con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
@@ -656,10 +656,10 @@ log.info "sig = ${sig}";
 nextStep.setPropertyValue("sig", sig);</script></con:config></con:testStep><con:testStep type="restrequest" name="GetPnrList" id="7a506da0-92f4-46e6-99ba-f2c352f09a83"><con:settings/><con:config service="https://gui.flysas.net" methodName="GetPnrListTask" resourcePath="/mobilegw/1.2/bookings/getpnrlist" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetPnrList" mediaType="application/x-www-form-urlencoded" postQueryString="true" id="a3ef2e5b-d845-4416-88c0-021d2459d678"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://gui.flysas.net</con:endpoint><con:request/><con:originalUri>https://gui.flysas.net/mobilegw/1.2/bookings/getpnrlist</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="87c41aef-4bfd-4c8b-8c4a-8d292ab88ca5"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="XPath Match" name="PNR Exists" id="c1b43afc-4f11-4cda-bb04-9ea7de09a5d4"><con:configuration><path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/bookings/getpnrlist';
 
 exists(//ns:Response/ns:pnr)</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="Authorization" value="lD3QojRM7kuIvMPPpazeU4FFXyoODl8LVmdIAuC9tvGzLjaxwaNhDEqW0JhxlRGPe/pVWbNJH65zDxvnOjLWRowG0ZVOFXPxmGE9F/OtBGoRHFBREkpkleUi8I8n4wXpj/UYxvobFs5ms1hY2jFiPFJBouoGRnM3vFxgxPHT/As="/>
-  <con:entry key="token" value="76a25356b9d3dac467258615eaef454f"/>
+  <con:entry key="Authorization" value="g7H9fqc9gvAOhNSA19VYdDUnxtRYmHgyswPb/onPHwXr/QocOSMOl98XIZaBHJJNqulngKZH8U45aHCME1GE6SO8HSb6mN6ooOm0Slg6RwdL6TQhG6/59eLwrdmT0Ugfw84NPHb8BtSuIvzUpv0tLVzfadSBYqhjkODArNqSqoU="/>
+  <con:entry key="token" value="86f08753dec2688dedbfb94c6559c147"/>
   <con:entry key="eb" value="EBS617941430"/>
-  <con:entry key="sig" value="de948d67ac800cb83668188ad8cbbd0e539c95e7"/>
+  <con:entry key="sig" value="5b1f62317d0adaf4c6225209689e36fbf8f41db6"/>
 </con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="Transfer GetPnrList Response" id="02dec4eb-956d-434f-99ee-1be941144ef2"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" useXQuery="false" entitize="false" transferChildNodes="false"><con:name>pnr[1] to GetBooking</con:name><con:sourceType>ResponseAsXml</con:sourceType><con:sourceStep>GetPnrList</con:sourceStep><con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/bookings/getpnrlist';
 
 //ns:Response/ns:pnr/ns:e[1]</con:sourcePath><con:targetType>pnr</con:targetType><con:targetStep>GetBooking</con:targetStep><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" entitize="false" transferToAll="false"><con:name>pnr[1] to GetBookingByName</con:name><con:sourceType>ResponseAsXml</con:sourceType><con:sourceStep>GetPnrList</con:sourceStep><con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/bookings/getpnrlist';
@@ -690,12 +690,12 @@ log.info "sig = ${sig}";
 
 nextStep.setPropertyValue("sig", sig);</script></con:config></con:testStep><con:testStep type="restrequest" name="GetBooking" id="86203771-832e-4495-b434-3a6efcf5a0ed"><con:settings/><con:config service="https://gui.flysas.net" methodName="GetBookingTask" resourcePath="/mobilegw/1.2/bookings/get" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetBooking" mediaType="application/x-www-form-urlencoded" postQueryString="true" id="872ac3f7-4c22-467d-b404-09d89db884ec"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://gui.flysas.net</con:endpoint><con:request/><con:originalUri>https://gui.flysas.net/mobilegw/1.2/bookings/get</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="488b7f27-8a24-4ab1-b7f8-3e42df62512a"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
   <con:entry key="no_flightstatus" value="1"/>
-  <con:entry key="Authorization" value="lD3QojRM7kuIvMPPpazeU4FFXyoODl8LVmdIAuC9tvGzLjaxwaNhDEqW0JhxlRGPe/pVWbNJH65zDxvnOjLWRowG0ZVOFXPxmGE9F/OtBGoRHFBREkpkleUi8I8n4wXpj/UYxvobFs5ms1hY2jFiPFJBouoGRnM3vFxgxPHT/As="/>
-  <con:entry key="token" value="76a25356b9d3dac467258615eaef454f"/>
+  <con:entry key="Authorization" value="g7H9fqc9gvAOhNSA19VYdDUnxtRYmHgyswPb/onPHwXr/QocOSMOl98XIZaBHJJNqulngKZH8U45aHCME1GE6SO8HSb6mN6ooOm0Slg6RwdL6TQhG6/59eLwrdmT0Ugfw84NPHb8BtSuIvzUpv0tLVzfadSBYqhjkODArNqSqoU="/>
+  <con:entry key="token" value="86f08753dec2688dedbfb94c6559c147"/>
   <con:entry key="blacklist_after" value="23"/>
-  <con:entry key="pnr" value="7Q5JJS"/>
+  <con:entry key="pnr" value="6XBK42"/>
   <con:entry key="refresh" value="1"/>
-  <con:entry key="sig" value="c91d954de4e3fce19e2573cebf63f5cae29aed28"/>
+  <con:entry key="sig" value="7b247016c252fbe4e8e957228699b551c33b5044"/>
 </con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="Transfer GetBooking Response" id="491d1b38-dc7a-46d0-b888-dd26975b4d35"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" useXQuery="false" entitize="false" transferChildNodes="false"><con:name>e[1]/travellers/e[1]/lastname to GetBookingByName</con:name><con:sourceType>ResponseAsXml</con:sourceType><con:sourceStep>GetBooking</con:sourceStep><con:sourcePath>//Response/e[1]/travellers/e[1]/lastname</con:sourcePath><con:targetType>lastname</con:targetType><con:targetStep>GetBookingByName</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="groovy" name="Create GetBookingByName Signature" disabled="true" id="8bb8211b-c8b7-4c3c-bbde-35efe6b9ac7e"><con:settings/><con:config><script>import java.security.*
 
 def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
@@ -723,11 +723,11 @@ def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0'
 log.info "sig = ${sig}";
 
 nextStep.setPropertyValue("sig", sig);</script></con:config></con:testStep><con:testStep type="restrequest" name="GetBookingByName" disabled="true" id="020edff9-f7dc-49d6-b95b-f4603a816355"><con:settings/><con:config service="https://gui.flysas.net" methodName="GetBookingByNameTask" resourcePath="/mobilegw/1.2/bookings/getbyname" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetBookingByName" mediaType="application/x-www-form-urlencoded" postQueryString="true" id="c78d372e-de6f-4ca9-a7a5-ced597cf5353"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://gui.flysas.net</con:endpoint><con:request/><con:originalUri>https://gui.flysas.net/mobilegw/1.2/bookings/getbyname</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="7b90a9cb-ea93-49ca-ae74-034fed17b41e"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="Authorization" value="lD3QojRM7kuIvMPPpazeU4FFXyoODl8LVmdIAuC9tvGzLjaxwaNhDEqW0JhxlRGPe/pVWbNJH65zDxvnOjLWRowG0ZVOFXPxmGE9F/OtBGoRHFBREkpkleUi8I8n4wXpj/UYxvobFs5ms1hY2jFiPFJBouoGRnM3vFxgxPHT/As="/>
-  <con:entry key="token" value="76a25356b9d3dac467258615eaef454f"/>
+  <con:entry key="Authorization" value="g7H9fqc9gvAOhNSA19VYdDUnxtRYmHgyswPb/onPHwXr/QocOSMOl98XIZaBHJJNqulngKZH8U45aHCME1GE6SO8HSb6mN6ooOm0Slg6RwdL6TQhG6/59eLwrdmT0Ugfw84NPHb8BtSuIvzUpv0tLVzfadSBYqhjkODArNqSqoU="/>
+  <con:entry key="token" value="86f08753dec2688dedbfb94c6559c147"/>
   <con:entry key="blacklist_after" value="23"/>
-  <con:entry key="pnr" value="7Q5JJS"/>
   <con:entry key="lastname" value="RASCH"/>
+  <con:entry key="pnr" value="6XBK42"/>
   <con:entry key="no_flighstatus" value="1"/>
   <con:entry key="refresh" value="1"/>
   <con:entry key="sig" value="f1965034f42786f76325dbeca8d509bba7c93887"/>
@@ -857,10 +857,10 @@ def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0'
 log.info "sig = ${sig}";
 
 nextStep.setPropertyValue("sig", sig);</script></con:config></con:testStep><con:testStep type="restrequest" name="GetFlightStatus" id="3c915095-421c-49f6-b798-13e57b2a6f24"><con:settings/><con:config service="https://gui.flysas.net" methodName="GetFlightStatusTask" resourcePath="/mobilegw/1.2/flightstatus/get" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetFlightStatus" mediaType="application/x-www-form-urlencoded" postQueryString="true" id="d0cd0f0d-717e-4cf5-b236-b13182f57360"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://gui.flysas.net</con:endpoint><con:request/><con:originalUri>https://gui.flysas.net/mobilegw/1.2/flightstatus/get</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="3f81aa15-d941-48ab-957d-0e836fe36ff3"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="token" value="7d4b6dda7f94601c67f2499a94ab0210"/>
-  <con:entry key="code" value="SK0818"/>
-  <con:entry key="date" value="140714"/>
-  <con:entry key="sig" value="f0494bc1c05b8c67c76e77bd7aa672e755967ac9"/>
+  <con:entry key="token" value="54e9d4890da3a235c0ebee9560e2be19"/>
+  <con:entry key="code" value="SK4401"/>
+  <con:entry key="date" value="060115"/>
+  <con:entry key="sig" value="660a1e7b2039b31975343b239cc413f4665a8539"/>
 </con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Create GetAllFlightStatuses Parameters" id="950268b7-92af-41c9-a914-2f0a5d748ad6"><con:settings/><con:config><script>import java.security.*
 
 def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
@@ -886,11 +886,11 @@ def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0'
 log.info "sig = ${sig}";
 
 nextStep.setPropertyValue("sig", sig);</script></con:config></con:testStep><con:testStep type="restrequest" name="GetAllFlightStatuses" id="769c0c5e-9749-4438-9089-52837dc6b981"><con:settings/><con:config service="https://gui.flysas.net" methodName="GetAllFlightStatusesTask" resourcePath="/mobilegw/1.2/flightstatus/all" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetAllFlightStatuses" mediaType="application/x-www-form-urlencoded" postQueryString="true" id="306da837-82f2-4db5-a6f0-0bfd1a9fa3e1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://gui.flysas.net</con:endpoint><con:request/><con:originalUri>https://gui.flysas.net/mobilegw/1.2/flightstatus/all</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="08f0d204-68cd-4c3a-9753-078a33718c2f"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="token" value="7d4b6dda7f94601c67f2499a94ab0210"/>
-  <con:entry key="code" value="TOS"/>
-  <con:entry key="date" value="140714"/>
-  <con:entry key="type" value="A"/>
-  <con:entry key="sig" value="0d36293bd0454d8e62c4196a5cad19173f77ff1a"/>
+  <con:entry key="token" value="54e9d4890da3a235c0ebee9560e2be19"/>
+  <con:entry key="code" value="OSL"/>
+  <con:entry key="type" value="D"/>
+  <con:entry key="date" value="060115"/>
+  <con:entry key="sig" value="13ec94a00016b9747d035361d849b19f05eb6684"/>
 </con:parameters></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get Low Fare Calendar Data" searchProperties="true" id="86fac740-4ee4-4f94-a1da-1ce93dda3bc1"><con:settings/><con:testStep type="restrequest" name="GetAppToken" id="7ee6e525-90b9-43f7-aa04-e96cc5e990dd"><con:settings/><con:config service="https://gui.flysas.net" methodName="GetAppTokenTask" resourcePath="/mobilegw/1.2/auth/get_app_token" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetAppToken" mediaType="application/x-www-form-urlencoded" postQueryString="true" id="295238f4-f2cf-4624-842c-c000a6d700f4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://gui.flysas.net</con:endpoint><con:request/><con:originalUri>https://gui.flysas.net/mobilegw/1.2/auth/get_app_token</con:originalUri><con:assertion type="XPath Match" name="Status" id="a5dd018f-1c2d-4f5e-8fe1-63ec99845a29"><con:configuration><path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
 //ns:Response/ns:status</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Token" id="2776c33d-fbd1-4c95-a8bc-3ff6ea22fdbc"><con:configuration><path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
