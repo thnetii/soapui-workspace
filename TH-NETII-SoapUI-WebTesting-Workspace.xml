@@ -13,4 +13,5 @@
   <con:project name="AtB Sanntid">AtB-Sanntid-soapui-project.xml</con:project>
   <con:project name="Kolumbus Sanntid">Kolumbus-Sanntid-soapui-project.xml</con:project>
   <con:project name="Ruter REIS API">Ruter-REIS-API-soapui-project.xml</con:project>
+  <con:project name="Microsoft MTPS Services">Microsoft-MTPS-Services-soapui-project.xml</con:project>
 </con:soapui-workspace>
