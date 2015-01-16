@@ -8781,9 +8781,26 @@
     <con:endpoints>
       <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightHistoryGetHistory</con:endpoint>
     </con:endpoints>
-    <con:operation isOneWay="false" action="" name="FlightHistoryGetHistoryOperation" bindingOperationName="FlightHistoryGetHistoryOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="772fd4f7-d0ff-442b-b5ca-d27403e1dcb3">
+    <con:operation isOneWay="false" action="" name="FlightHistoryGetHistoryOperation" bindingOperationName="FlightHistoryGetHistoryOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="772fd4f7-d0ff-442b-b5ca-d27403e1dcb3" anonymous="optional">
       <con:settings/>
-    </con:operation>
+    <con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightHistoryGetHistory</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightHistoryService.xsd">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <flig:FlightHistoryGetHistoryRequest>
+         <flig:Login Guid="49e3481552e7c4c9:-5b147615:12ee3ed13b5:-5f90"/>
+         <flig:FlightHistoryGetHistoryInfo UpdateIfNeeded="true">
+            <flig:SpecificationFlight FlightNumber="4430" SearchCodeshares="true">
+               <flig:Airline AirlineCode="SK"/>
+            </flig:SpecificationFlight>
+            <flig:SpecificationDateRange DepartureDateTimeMin="2015-01-14T00:00:00+02:00" DepartureDateTimeMax="2015-01-15T00:00:00+02:00"/>
+            <flig:FlightHistoryGetHistoryRequestedData ActualAirportDelays="true" 
+            	Codeshares="true" Events="true" FlightRecords="true" 
+            	LennocFlightHistories="true" MaxPositionalUpdates="150" 
+            	ScheduleEntries="true"/>
+         </flig:FlightHistoryGetHistoryInfo>
+      </flig:FlightHistoryGetHistoryRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/FlightHistoryService.wsdl/FlightHistoryGetHistoryPort/FlightHistoryGetHistoryOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="EMSFlightMonitorVerifySOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl}EMSFlightMonitorVerifySOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl" id="f15a6975-4183-4eb2-80d6-83d932692191" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>

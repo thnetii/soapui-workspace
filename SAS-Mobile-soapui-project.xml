@@ -857,10 +857,10 @@ def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0'
 log.info "sig = ${sig}";
 
 nextStep.setPropertyValue("sig", sig);</script></con:config></con:testStep><con:testStep type="restrequest" name="GetFlightStatus" id="3c915095-421c-49f6-b798-13e57b2a6f24"><con:settings/><con:config service="https://gui.flysas.net" methodName="GetFlightStatusTask" resourcePath="/mobilegw/1.2/flightstatus/get" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetFlightStatus" mediaType="application/x-www-form-urlencoded" postQueryString="true" id="d0cd0f0d-717e-4cf5-b236-b13182f57360"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://gui.flysas.net</con:endpoint><con:request/><con:originalUri>https://gui.flysas.net/mobilegw/1.2/flightstatus/get</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="3f81aa15-d941-48ab-957d-0e836fe36ff3"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="token" value="54e9d4890da3a235c0ebee9560e2be19"/>
-  <con:entry key="code" value="SK4401"/>
-  <con:entry key="date" value="060115"/>
-  <con:entry key="sig" value="660a1e7b2039b31975343b239cc413f4665a8539"/>
+  <con:entry key="token" value="c866f7aa9f112f21f06e2eaf17c64a28"/>
+  <con:entry key="code" value="SK4430"/>
+  <con:entry key="date" value="140115"/>
+  <con:entry key="sig" value="026bfa99f4608b8e359b7ece16866dd8933f904f"/>
 </con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Create GetAllFlightStatuses Parameters" id="950268b7-92af-41c9-a914-2f0a5d748ad6"><con:settings/><con:config><script>import java.security.*
 
 def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
@@ -886,11 +886,11 @@ def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0'
 log.info "sig = ${sig}";
 
 nextStep.setPropertyValue("sig", sig);</script></con:config></con:testStep><con:testStep type="restrequest" name="GetAllFlightStatuses" id="769c0c5e-9749-4438-9089-52837dc6b981"><con:settings/><con:config service="https://gui.flysas.net" methodName="GetAllFlightStatusesTask" resourcePath="/mobilegw/1.2/flightstatus/all" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetAllFlightStatuses" mediaType="application/x-www-form-urlencoded" postQueryString="true" id="306da837-82f2-4db5-a6f0-0bfd1a9fa3e1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://gui.flysas.net</con:endpoint><con:request/><con:originalUri>https://gui.flysas.net/mobilegw/1.2/flightstatus/all</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes" id="08f0d204-68cd-4c3a-9753-078a33718c2f"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="token" value="54e9d4890da3a235c0ebee9560e2be19"/>
+  <con:entry key="token" value="c866f7aa9f112f21f06e2eaf17c64a28"/>
   <con:entry key="code" value="OSL"/>
+  <con:entry key="date" value="140115"/>
   <con:entry key="type" value="D"/>
-  <con:entry key="date" value="060115"/>
-  <con:entry key="sig" value="13ec94a00016b9747d035361d849b19f05eb6684"/>
+  <con:entry key="sig" value="b86437bda38a767d6692d71ffa2bda02b99b6dd9"/>
 </con:parameters></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get Low Fare Calendar Data" searchProperties="true" id="86fac740-4ee4-4f94-a1da-1ce93dda3bc1"><con:settings/><con:testStep type="restrequest" name="GetAppToken" id="7ee6e525-90b9-43f7-aa04-e96cc5e990dd"><con:settings/><con:config service="https://gui.flysas.net" methodName="GetAppTokenTask" resourcePath="/mobilegw/1.2/auth/get_app_token" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetAppToken" mediaType="application/x-www-form-urlencoded" postQueryString="true" id="295238f4-f2cf-4624-842c-c000a6d700f4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://gui.flysas.net</con:endpoint><con:request/><con:originalUri>https://gui.flysas.net/mobilegw/1.2/auth/get_app_token</con:originalUri><con:assertion type="XPath Match" name="Status" id="a5dd018f-1c2d-4f5e-8fe1-63ec99845a29"><con:configuration><path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
 //ns:Response/ns:status</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Token" id="2776c33d-fbd1-4c95-a8bc-3ff6ea22fdbc"><con:configuration><path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
