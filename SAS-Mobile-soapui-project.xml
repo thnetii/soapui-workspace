@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="SAS Mobile" resourceRoot="" soapui-version="5.1.3" abortOnError="false" runType="SEQUENTIAL" id="5abe7b23-e3a1-44c9-b37b-19275dd4a7a5" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default" name="SAS Mobile" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" id="5abe7b23-e3a1-44c9-b37b-19275dd4a7a5" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
   <con:entry key="Environment" value="Default"/>
   <con:entry key="Global Properties" value=""/>
   <con:entry key="TestSuite" value="Test Suite"/>
