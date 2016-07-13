@@ -9977,9 +9977,9 @@
          <ems:EMSFlightMonitorAddRulesInfo>\r
             <!--1 or more repetitions:-->\r
             <ems:EMSFlightRule Active="true" 
-            				 DepartureDate="2015-07-15T16:30:00+02:00" 
-            				 ArrivalDate="2015-07-15T18:20:00+02:00"
-            				 FlightNumber="818" Name="SK818">\r
+            				 DepartureDate="2016-07-13T17:40:00+02:00" 
+            				 ArrivalDate="2016-07-13T19:50:00+02:00"
+            				 FlightNumber="2591" Name="SK2591">\r
                <!--Optional:-->\r
                <ems:Airline AirlineCode="SK" />\r
                <!--Zero or more repetitions:-->\r
@@ -9987,9 +9987,9 @@
                					Cancelled="true"
                					Departed="true"
                					Diverted="true"
-               					FlightArrivedLateThreshold="15" FlightArrivedLate="true"
-               					FlightDepartedLateThreshold="15" FlightDepartedLate="true"
-               					StatusBeforeArrivalMinutes="15" StatusBeforeArrival="true"
+               					FlightArrivedLateThreshold="15" FlightArrivedLate="false"
+               					FlightDepartedLateThreshold="15" FlightDepartedLate="false"
+               					StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
                                         Arrived="true" >\r
                   <ems:EMSFlightDelayAndGateEvents ArrivalGateChange="true"
                                                    BaggageChange="true"
@@ -9997,7 +9997,8 @@
                                                    DepartureGateChange="false"
                                                    ArrivalDelayEvent="true" />
                   <!--1 or more repetitions:-->\r
-                  <ems:EMSDeliveryDestination Name="Email" Type="Email" Value="lisa.hoeisaether@gmail.com" />\r
+                  <ems:EMSDeliveryDestination Name="Email" Type="Email" Value="fredrik.rasch@gmail.com" />\r
+                  <ems:EMSDeliveryDestination Name="Email" Type="Email" Value="lisa.hoeisaether@gmail.com" />
                </ems:EMSFlightRuleEvents>\r
             </ems:EMSFlightRule>\r
          </ems:EMSFlightMonitorAddRulesInfo>\r
