@@ -9956,7 +9956,7 @@
    <soapenv:Body>\r
       <ems:EMSFlightMonitorDeleteRulesRequest>\r
          <ems:Login Guid="${#Project#GUID}" />\r
-         <ems:EMSFlightRule Id="285060185" />
+         <ems:EMSFlightRule Id="385106121" />
       </ems:EMSFlightMonitorDeleteRulesRequest>\r
    </soapenv:Body>\r
 </soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorDeleteRulesPort/EMSFlightMonitorDeleteRulesOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
@@ -9977,13 +9977,12 @@
          <ems:EMSFlightMonitorAddRulesInfo>\r
             <!--1 or more repetitions:-->\r
             <ems:EMSFlightRule Active="true" 
-            				 DepartureDate="2016-07-13T17:40:00+02:00" 
-            				 ArrivalDate="2016-07-13T19:50:00+02:00"
-            				 FlightNumber="2591" Name="SK2591">\r
+            				 DepartureDate="2016-08-11T21:24:00+02:00" 
+            				 FlightNumber="892" Name="WF892">\r
                <!--Optional:-->\r
-               <ems:Airline AirlineCode="SK" />\r
+               <ems:Airline AirlineCode="WF" />\r
                <!--Zero or more repetitions:-->\r
-               <ems:EMSFlightRuleEvents AllEvents="false" 
+               <ems:EMSFlightRuleEvents AllEvents="true" 
                					Cancelled="true"
                					Departed="true"
                					Diverted="true"
@@ -9993,12 +9992,11 @@
                                         Arrived="true" >\r
                   <ems:EMSFlightDelayAndGateEvents ArrivalGateChange="true"
                                                    BaggageChange="true"
-                                                   DepartureDelayEvent="false"
-                                                   DepartureGateChange="false"
+                                                   DepartureDelayEvent="true"
+                                                   DepartureGateChange="true"
                                                    ArrivalDelayEvent="true" />
                   <!--1 or more repetitions:-->\r
                   <ems:EMSDeliveryDestination Name="Email" Type="Email" Value="fredrik.rasch@gmail.com" />\r
-                  <ems:EMSDeliveryDestination Name="Email" Type="Email" Value="lisa.hoeisaether@gmail.com" />
                </ems:EMSFlightRuleEvents>\r
             </ems:EMSFlightRule>\r
          </ems:EMSFlightMonitorAddRulesInfo>\r
