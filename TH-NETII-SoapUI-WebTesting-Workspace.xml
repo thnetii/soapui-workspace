@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-workspace name="Projects" projectRoot="${workspaceDir}" soapui-version="5.3.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:project name="ASEAG">ASEAG-soapui-project.xml</con:project>
+  <con:project name="Avinor Flydata">Avinor-Flydata-soapui-project.xml</con:project>
+  <con:project name="DUS International">DUS-International-soapui-project.xml</con:project>
+  <con:project name="Fronter RSS">Fronter-RSS-soapui-project.xml</con:project>
+  <con:project name="Pathfinder-Xml">Pathfinder-Xml-soapui-project.xml</con:project>
+  <con:project name="SAS Mobile">SAS-Mobile-soapui-project.xml</con:project>
+  <con:project name="TheTVDB">TheTVDB-soapui-project.xml</con:project>
+  <con:project name="TravelMagic">TravelMagic-soapui-project.xml</con:project>
+  <con:project name="Norwegian">Norwegian-soapui-project.xml</con:project>
+  <con:project name="AtB Sanntid">AtB-Sanntid-soapui-project.xml</con:project>
+  <con:project name="Kolumbus Sanntid">Kolumbus-Sanntid-soapui-project.xml</con:project>
+  <con:project name="Ruter REIS API">Ruter-REIS-API-soapui-project.xml</con:project>
+  <con:project name="Microsoft MTPS Services">Microsoft-MTPS-Services-soapui-project.xml</con:project>
+  <con:collectInfoForSupport>false</con:collectInfoForSupport>
+</con:soapui-workspace>
