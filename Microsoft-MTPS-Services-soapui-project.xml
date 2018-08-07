@@ -1,2 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="Microsoft MTPS Services" resourceRoot="${projectDir}" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" id="cf0ce0fc-feb1-4d67-9fde-809ba5d71334" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://services.mtps.microsoft.com" type="rest" id="433dcf83-5df8-4df7-9ec2-4e4be8a26cba" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://services.mtps.microsoft.com</con:endpoint></con:endpoints><con:resource name="ServiceAPI" path="/ServiceAPI" id="36d5f7ee-6000-488c-9823-38d15454321f"><con:settings/><con:parameters/><con:resource name="catalogs" path="catalogs" id="5d69f13d-b8e7-4be1-bedc-8bfe6b6a8b2b"><con:settings/><con:parameters/><con:resource name="VisualStudio14" path="VisualStudio14" id="5bc6c034-d090-4ae4-954b-0c01a1acb092"><con:settings/><con:parameters/><con:resource name="{culture}" path="{culture}" id="ca0acd75-9fe2-4164-ac26-c974ff216348"><con:settings/><con:parameters><con:parameter required="true"><con:name>culture</con:name><con:value>en-US</con:value><con:style>TEMPLATE</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:language</con:type><con:default>en-US</con:default></con:parameter></con:parameters><con:method name="GetVs14Catalogs" method="GET" id="54459f58-2af1-4d1a-a423-c7493b2295cc"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" mediaType="application/json" id="a6514811-7be6-460e-b814-b89949907c5f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://services.mtps.microsoft.com</con:endpoint><con:request/><con:originalUri>http://services.mtps.microsoft.com/ServiceAPI/catalogs/visualstudio12/en-us</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:resource></con:resource></con:resource></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+<con:soapui-project activeEnvironment="Default" name="Microsoft MTPS Services" resourceRoot="${projectDir}" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" id="cf0ce0fc-feb1-4d67-9fde-809ba5d71334" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://services.mtps.microsoft.com" type="rest" id="433dcf83-5df8-4df7-9ec2-4e4be8a26cba" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://services.mtps.microsoft.com</con:endpoint>
+    </con:endpoints>
+    <con:resource name="ServiceAPI" path="/ServiceAPI" id="36d5f7ee-6000-488c-9823-38d15454321f">
+      <con:settings/>
+      <con:parameters/>
+      <con:resource name="catalogs" path="catalogs" id="5d69f13d-b8e7-4be1-bedc-8bfe6b6a8b2b">
+        <con:settings/>
+        <con:parameters/>
+        <con:resource name="VisualStudio14" path="VisualStudio14" id="5bc6c034-d090-4ae4-954b-0c01a1acb092">
+          <con:settings/>
+          <con:parameters/>
+          <con:resource name="{culture}" path="{culture}" id="ca0acd75-9fe2-4164-ac26-c974ff216348">
+            <con:settings/>
+            <con:parameters>
+              <con:parameter required="true">
+                <con:name>culture</con:name>
+                <con:value>en-US</con:value>
+                <con:style>TEMPLATE</con:style>
+                <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:language</con:type>
+                <con:default>en-US</con:default>
+              </con:parameter>
+            </con:parameters>
+            <con:method name="GetVs14Catalogs" method="GET" id="54459f58-2af1-4d1a-a423-c7493b2295cc">
+              <con:settings/>
+              <con:parameters/>
+              <con:representation type="RESPONSE">
+                <con:mediaType>text/html; charset=utf-8</con:mediaType>
+                <con:status>200</con:status>
+                <con:params/>
+                <con:element>html</con:element>
+              </con:representation>
+              <con:request name="Request 1" mediaType="application/json" id="a6514811-7be6-460e-b814-b89949907c5f">
+                <con:settings>
+                  <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+                </con:settings>
+                <con:endpoint>http://services.mtps.microsoft.com</con:endpoint>
+                <con:request/>
+                <con:originalUri>http://services.mtps.microsoft.com/ServiceAPI/catalogs/visualstudio12/en-us</con:originalUri>
+                <con:credentials>
+                  <con:authType>No Authorization</con:authType>
+                </con:credentials>
+                <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+                <con:jmsPropertyConfig/>
+                <con:parameters/>
+              </con:request>
+            </con:method>
+          </con:resource>
+        </con:resource>
+      </con:resource>
+    </con:resource>
+  </con:interface>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:sensitiveInformation/>
+</con:soapui-project>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="Pathfinder-Xml" resourceRoot="" soapui-version="5.3.0" abortOnError="false" runType="PARALLELL" id="98806e88-07c6-4beb-a214-661a6bc6f24a" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default" name="Pathfinder-Xml" resourceRoot="${projectDir}" soapui-version="5.4.0" abortOnError="false" runType="PARALLELL" id="98806e88-07c6-4beb-a214-661a6bc6f24a" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="AirlineGetAirlinesSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/AirlineService.wsdl}AirlineGetAirlinesSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/AirlineService.wsdl" id="4cdb9771-f972-4abc-a7f2-c9a1c773ce65" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -551,7 +551,13 @@
     </con:endpoints>
     <con:operation isOneWay="false" action="" name="AirlineGetAirlineDetailOperation" bindingOperationName="AirlineGetAirlineDetailOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="ce7c04a3-30f2-4756-abd5-49feb9f2b4de" anonymous="optional">
       <con:settings/>
-    <con:call id="f9bf9fee-6156-4d4c-a130-13679665f429" name="ICAO"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirlineGetAirlineDetail</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirlineService.xsd">\r
+      <con:call id="f9bf9fee-6156-4d4c-a130-13679665f429" name="ICAO">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirlineGetAirlineDetail</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirlineService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <air:AirlineGetAirlineDetailRequest>\r
@@ -559,7 +565,16 @@
          <air:Airline ICAOCode="DLH"/>\r
       </air:AirlineGetAirlineDetailRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/AirlineService.wsdl/AirlineGetAirlineDetailPort/AirlineGetAirlineDetailOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/AirlineService.wsdl/AirlineGetAirlineDetailPort/AirlineGetAirlineDetailOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="AirlineGetAllAirlinesSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/AirlineService.wsdl}AirlineGetAllAirlinesSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/AirlineService.wsdl" id="19033b01-41c3-4908-85d1-bfd052c8f372" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -1111,7 +1126,13 @@
     </con:endpoints>
     <con:operation isOneWay="false" action="" name="AirlineGetAirlineOperation" bindingOperationName="AirlineGetAirlineOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="f3317b6a-98e9-4273-9e96-7dc8fb621c45" anonymous="optional">
       <con:settings/>
-    <con:call id="24e7b385-6ef8-470c-aa7b-ce8c3cac6af7" name="ICAO"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirlineGetAirline</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirlineService.xsd">\r
+      <con:call id="24e7b385-6ef8-470c-aa7b-ce8c3cac6af7" name="ICAO">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirlineGetAirline</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirlineService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <air:AirlineGetAirlineRequest>\r
@@ -1119,7 +1140,16 @@
          <air:Airline ICAOCode="AMC"/>\r
       </air:AirlineGetAirlineRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/AirlineService.wsdl/AirlineGetAirlinePort/AirlineGetAirlineOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/AirlineService.wsdl/AirlineGetAirlinePort/AirlineGetAirlineOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="AirportGetNearestAirportsSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/AirportService.wsdl}AirportGetNearestAirportsSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/AirportService.wsdl" id="57824ba2-ea9c-4416-a674-5a507016ee3b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -1714,7 +1744,13 @@
     </con:endpoints>
     <con:operation isOneWay="false" action="" name="AirportGetNearestAirportsOperation" bindingOperationName="AirportGetNearestAirportsOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="33b7fadc-2c9a-4ef4-a41c-c92769b682d8" anonymous="optional">
       <con:settings/>
-    <con:call id="86074157-f1e9-4472-978e-dfc4efc02abb" name="Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirportGetNearestAirports</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirportService.xsd">\r
+      <con:call id="86074157-f1e9-4472-978e-dfc4efc02abb" name="Request">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirportGetNearestAirports</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirportService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <air:AirportGetNearestAirportsRequest>\r
@@ -1722,12 +1758,23 @@
          <air:City CountryCode="US" Name="Houston" Radius="100K" StateCode="TX"/>\r
       </air:AirportGetNearestAirportsRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/AirportService.wsdl/AirportGetNearestAirportsPort/AirportGetNearestAirportsOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/AirportService.wsdl/AirportGetNearestAirportsPort/AirportGetNearestAirportsOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="AirportGetAirportDetailSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/AirportService.wsdl}AirportGetAirportDetailSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/AirportService.wsdl" id="e417d19e-ad57-4805-94b8-b6e9a21d54ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/AirportService.wsdl"><con:part><con:url>http://pathfinder-xml.com/development/WSDL/AirportService.wsdl</con:url><con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns:ns="http://pathfinder-xml/AirportService.xsd">
+    <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/AirportService.wsdl">
+      <con:part>
+        <con:url>http://pathfinder-xml.com/development/WSDL/AirportService.wsdl</con:url>
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns:ns="http://pathfinder-xml/AirportService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportService.xsd">
       <xsd:complexType name="AggregatedAirport">
@@ -2304,18 +2351,37 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetNearestAirports"/>
     </port>
   </service>
-</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints>
+</definitions>]]></con:content>
+        <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
+      </con:part>
+    </con:definitionCache>
+    <con:endpoints>
       <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirportGetAirportDetail</con:endpoint>
     </con:endpoints>
     <con:operation isOneWay="false" action="" name="AirportGetAirportDetailOperation" bindingOperationName="AirportGetAirportDetailOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="65d42ca0-6d12-42e2-b497-8e7cf9d8bd15" anonymous="optional">
       <con:settings/>
-    <con:call id="21404b6d-4529-46e9-8f10-3d44b004cdab" name="Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirportGetAirportDetail</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirportService.xsd">\r
+      <con:call id="21404b6d-4529-46e9-8f10-3d44b004cdab" name="Request">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirportGetAirportDetail</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirportService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <air:AirportGetAirportDetailRequest>\r
 	 </air:AirportGetAirportDetailRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/AirportService.wsdl/AirportGetAirportDetailPort/AirportGetAirportDetailOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/AirportService.wsdl/AirportGetAirportDetailPort/AirportGetAirportDetailOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="AirportGetAllAirportsSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/AirportService.wsdl}AirportGetAllAirportsSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/AirportService.wsdl" id="d3da3ea2-42e1-4e36-a828-35ab88dc7393" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -4340,7 +4406,13 @@
     </con:endpoints>
     <con:operation isOneWay="false" action="" name="MetarGetCurrentConditionsForWeatherStationOperation" bindingOperationName="MetarGetCurrentConditionsForWeatherStationOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="9e7d6216-bcf7-4122-822d-2587fdb3955b" anonymous="optional">
       <con:settings/>
-    <con:call id="952227b2-4465-4402-a935-25712bcc95a7" name="METAR ENTC"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/MetarGetCurrentConditionsForWeatherStation</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:met="http://pathfinder-xml/MetarService.xsd">\r
+      <con:call id="952227b2-4465-4402-a935-25712bcc95a7" name="METAR ENTC">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/MetarGetCurrentConditionsForWeatherStation</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:met="http://pathfinder-xml/MetarService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <met:MetarGetCurrentConditionsForWeatherStationRequest>\r
@@ -4348,7 +4420,16 @@
          <met:WeatherStation ICAOCode="ENTC"/>\r
       </met:MetarGetCurrentConditionsForWeatherStationRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/MetarService.wsdl/MetarGetCurrentConditionsForWeatherStationPort/MetarGetCurrentConditionsForWeatherStationOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/MetarService.wsdl/MetarGetCurrentConditionsForWeatherStationPort/MetarGetCurrentConditionsForWeatherStationOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="WeatherForecastGetAllForecastZonesSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/WeatherForecastService.wsdl}WeatherForecastGetAllForecastZonesSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/WeatherForecastService.wsdl" id="f65133ba-89ee-4551-9d00-b8a5f5fd47d0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -6578,7 +6659,13 @@
     </con:endpoints>
     <con:operation isOneWay="false" action="" name="FlightScheduleGetFlightsOperation" bindingOperationName="FlightScheduleGetFlightsOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="852f840c-3b0b-46b5-b493-07ee77e7320e" anonymous="optional">
       <con:settings/>
-    <con:call id="b59f4e35-341e-415d-8f89-f1b4e3b4ad60" name="Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightScheduleGetFlights</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleService.xsd">
+      <con:call id="b59f4e35-341e-415d-8f89-f1b4e3b4ad60" name="Request">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightScheduleGetFlights</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleService.xsd">
    <soapenv:Header/>
    <soapenv:Body>
       <flig:FlightScheduleGetFlightsRequest>
@@ -6597,7 +6684,16 @@
          </flig:FlightScheduleGetFlightsInfo>
       </flig:FlightScheduleGetFlightsRequest>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/FlightScheduleService.wsdl/FlightScheduleGetFlightsPort/FlightScheduleGetFlightsOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/FlightScheduleService.wsdl/FlightScheduleGetFlightsPort/FlightScheduleGetFlightsOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="FlightScheduleGetFlightsDecodedSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/FlightScheduleService.wsdl}FlightScheduleGetFlightsDecodedSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/FlightScheduleService.wsdl" id="32579c57-8f93-4fb0-9ae4-a917a76e4da7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -7049,7 +7145,13 @@
     </con:endpoints>
     <con:operation isOneWay="false" action="" name="FlightScheduleGetFlightsDecodedOperation" bindingOperationName="FlightScheduleGetFlightsDecodedOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="ff4b404e-f49f-4611-ac40-55eab25cf06c" anonymous="optional">
       <con:settings/>
-    <con:call id="0d1f52c4-9652-4454-8857-764b69f5997b" name="Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightScheduleGetFlightsDecoded</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleService.xsd">\r
+      <con:call id="0d1f52c4-9652-4454-8857-764b69f5997b" name="Request">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightScheduleGetFlightsDecoded</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <flig:FlightScheduleGetFlightsDecodedRequest>\r
@@ -7067,7 +7169,16 @@
          </flig:FlightScheduleGetFlightsInfo>\r
       </flig:FlightScheduleGetFlightsDecodedRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/FlightScheduleService.wsdl/FlightScheduleGetFlightsDecodedPort/FlightScheduleGetFlightsDecodedOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/FlightScheduleService.wsdl/FlightScheduleGetFlightsDecodedPort/FlightScheduleGetFlightsDecodedOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="FlightScheduleAggregatorGetFlightsSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/FlightScheduleAggregatorService.wsdl}FlightScheduleAggregatorGetFlightsSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/FlightScheduleAggregatorService.wsdl" id="ed3b73c3-bdf2-461f-9428-673aa08ddf07" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -7423,7 +7534,13 @@
     </con:endpoints>
     <con:operation isOneWay="false" action="" name="FlightScheduleAggregatorGetFlightsOperation" bindingOperationName="FlightScheduleAggregatorGetFlightsOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="f2ed3936-41bf-4820-99af-f145dabc8d3f" anonymous="optional">
       <con:settings/>
-    <con:call id="587643cc-1006-4c69-a357-89dc53d88eaf" name="Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightScheduleAggregatorGetFlights</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleAggregatorService.xsd">
+      <con:call id="587643cc-1006-4c69-a357-89dc53d88eaf" name="Request">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightScheduleAggregatorGetFlights</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleAggregatorService.xsd">
    <soapenv:Header/>
    <soapenv:Body>
       <flig:FlightScheduleAggregatorGetFlightsRequest>
@@ -7487,7 +7604,16 @@
          </flig:FlightScheduleGetFlightsInfo>
       </flig:FlightScheduleAggregatorGetFlightsRequest>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/FlightScheduleAggregatorService.wsdl/FlightScheduleAggregatorGetFlightsPort/FlightScheduleAggregatorGetFlightsOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/FlightScheduleAggregatorService.wsdl/FlightScheduleAggregatorGetFlightsPort/FlightScheduleAggregatorGetFlightsOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="RatingGetFlightRatingSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/RatingService.wsdl}RatingGetFlightRatingSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/RatingService.wsdl" id="e4872b23-128d-465d-a32f-f0e4e61f70e3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -8726,7 +8852,13 @@
     </con:endpoints>
     <con:operation isOneWay="false" action="" name="FlightHistoryGetRecordsOperation" bindingOperationName="FlightHistoryGetRecordsOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="eb404710-15ae-4e25-8960-ea6859f9fa25" anonymous="optional">
       <con:settings/>
-    <con:call id="1c81aef0-cf94-4c5b-bfed-192de33c7b08" name="FlightHistoryGetRecordsRequest"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightHistoryGetRecords</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightHistoryService.xsd">
+      <con:call id="1c81aef0-cf94-4c5b-bfed-192de33c7b08" name="FlightHistoryGetRecordsRequest">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightHistoryGetRecords</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightHistoryService.xsd">
    <soapenv:Header/>
    <soapenv:Body>
       <flig:FlightHistoryGetRecordsRequest>
@@ -8743,7 +8875,16 @@
          </flig:FlightHistoryGetRecordsInfo>
       </flig:FlightHistoryGetRecordsRequest>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/FlightHistoryService.wsdl/FlightHistoryGetRecordsPort/FlightHistoryGetRecordsOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/FlightHistoryService.wsdl/FlightHistoryGetRecordsPort/FlightHistoryGetRecordsOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="FlightHistoryGetHistorySOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/FlightHistoryService.wsdl}FlightHistoryGetHistorySOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/FlightHistoryService.wsdl" id="41be448e-8475-4877-a3ba-b8d480c21e45" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -9516,7 +9657,13 @@
     </con:endpoints>
     <con:operation isOneWay="false" action="" name="FlightHistoryGetHistoryOperation" bindingOperationName="FlightHistoryGetHistoryOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="772fd4f7-d0ff-442b-b5ca-d27403e1dcb3" anonymous="optional">
       <con:settings/>
-    <con:call name="FlightHistoryGetHistoryRequest" id="1f75a8aa-2548-4103-a537-6289c0625330"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightHistoryGetHistory</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightHistoryService.xsd">
+      <con:call name="FlightHistoryGetHistoryRequest" id="1f75a8aa-2548-4103-a537-6289c0625330">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightHistoryGetHistory</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightHistoryService.xsd">
    <soapenv:Header/>
    <soapenv:Body>
       <flig:FlightHistoryGetHistoryRequest>
@@ -9549,7 +9696,16 @@
          </flig:FlightHistoryGetHistoryInfo>
       </flig:FlightHistoryGetHistoryRequest>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/FlightHistoryService.wsdl/FlightHistoryGetHistoryPort/FlightHistoryGetHistoryOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/FlightHistoryService.wsdl/FlightHistoryGetHistoryPort/FlightHistoryGetHistoryOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="EMSFlightMonitorVerifySOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl}EMSFlightMonitorVerifySOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl" id="f15a6975-4183-4eb2-80d6-83d932692191" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -9930,7 +10086,13 @@
     </con:endpoints>
     <con:operation isOneWay="false" action="" name="EMSFlightMonitorVerifyOperation" bindingOperationName="EMSFlightMonitorVerifyOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="8752c413-7529-42db-934e-bde8977f0377" anonymous="optional">
       <con:settings/>
-    <con:call id="69d0e598-47dc-4e44-b6e9-6cf2a0955f12" name="Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorVerify</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
+      <con:call id="69d0e598-47dc-4e44-b6e9-6cf2a0955f12" name="Request">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorVerify</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ems:EMSFlightMonitorVerifyRequest>\r
@@ -9941,7 +10103,16 @@
          </ems:VerifyInfo>\r
       </ems:EMSFlightMonitorVerifyRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorVerifyPort/EMSFlightMonitorVerifyOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorVerifyPort/EMSFlightMonitorVerifyOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="EMSFlightMonitorDeleteRulesSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl}EMSFlightMonitorDeleteRulesSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl" id="14537ad9-8c83-433b-afcc-23d4faba84f5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -9951,7 +10122,13 @@
     </con:endpoints>
     <con:operation isOneWay="false" action="" name="EMSFlightMonitorDeleteRulesOperation" bindingOperationName="EMSFlightMonitorDeleteRulesOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="deee83ab-f4fa-49d4-a026-f40e419e9b16" anonymous="optional">
       <con:settings/>
-    <con:call id="70cede2c-0ed2-4816-8e77-3c8b5075e909" name="Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorDeleteRules</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
+      <con:call id="70cede2c-0ed2-4816-8e77-3c8b5075e909" name="Request">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorDeleteRules</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ems:EMSFlightMonitorDeleteRulesRequest>\r
@@ -9959,7 +10136,16 @@
          <ems:EMSFlightRule Id="385106121" />
       </ems:EMSFlightMonitorDeleteRulesRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorDeleteRulesPort/EMSFlightMonitorDeleteRulesOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorDeleteRulesPort/EMSFlightMonitorDeleteRulesOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="EMSFlightMonitorAddRulesSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl}EMSFlightMonitorAddRulesSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl" id="4c147043-795d-4a4f-b8f1-4fba26930988" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -9969,7 +10155,13 @@
     </con:endpoints>
     <con:operation isOneWay="false" action="" name="EMSFlightMonitorAddRulesOperation" bindingOperationName="EMSFlightMonitorAddRulesOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="33ff0f11-1d76-49bc-88de-05efb92f4964" anonymous="optional">
       <con:settings/>
-    <con:call id="4bda663d-4420-43f5-86c1-a9da55872c73" name="Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorAddRules</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
+      <con:call id="4bda663d-4420-43f5-86c1-a9da55872c73" name="Request">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorAddRules</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ems:EMSFlightMonitorAddRulesRequest>\r
@@ -10002,7 +10194,16 @@
          </ems:EMSFlightMonitorAddRulesInfo>\r
       </ems:EMSFlightMonitorAddRulesRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorAddRulesPort/EMSFlightMonitorAddRulesOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorAddRulesPort/EMSFlightMonitorAddRulesOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="EMSFlightMonitorUpdateRuleSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl}EMSFlightMonitorUpdateRuleSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl" id="561cb304-10a0-451d-86bd-d0be9fbd4716" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -10393,7 +10594,11 @@
     </con:endpoints>
     <con:operation isOneWay="false" action="" name="EMSFlightMonitorGetRulesOperation" bindingOperationName="EMSFlightMonitorGetRulesOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="0a637ecd-8978-4bc3-9bdb-9e7fd1686b1d" anonymous="optional">
       <con:settings/>
-    <con:call id="6b6c4036-6c36-4be8-aaaa-1ac89d9965b4" name="Request"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorGetRules</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
+      <con:call id="6b6c4036-6c36-4be8-aaaa-1ac89d9965b4" name="Request">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorGetRules</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ems:EMSFlightMonitorGetRulesRequest>\r
@@ -10418,7 +10623,16 @@
          </ems:EMSFlightRule>\r
       </ems:EMSFlightMonitorGetRulesRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorGetRulesPort/EMSFlightMonitorGetRulesOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorGetRulesPort/EMSFlightMonitorGetRulesOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="AirportHistoryGetAirportHistoriesSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/AirportHistoryService.wsdl}AirportHistoryGetAirportHistoriesSOAPBinding" soapVersion="1_1" anonymous="optional" definition="https://www.flightstats.com/developers/bin/download/Web+Services/WSDL/AirportHistoryService.wsdl" id="7d709017-0423-4a2f-bc57-180bcd44db44" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -11011,7 +11225,13 @@
     </con:endpoints>
     <con:operation isOneWay="false" action="" name="SchedulesConnectionsOperation" bindingOperationName="SchedulesConnectionsOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="f22ed289-d9dc-4825-a862-6daff019854b" anonymous="optional">
       <con:settings/>
-    <con:call id="b2e75fb7-5bc4-4641-aa81-52155b7624e9" name="Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/SchedulesConnections</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://pathfinder-xml/SchedulesConnectionsService.xsd">\r
+      <con:call id="b2e75fb7-5bc4-4641-aa81-52155b7624e9" name="Request">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/SchedulesConnections</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://pathfinder-xml/SchedulesConnectionsService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <sch:SchedulesConnectionsRequest From="2015-08-01T09:00:00+02:00" To="2015-08-01T13:00:00+02:00">\r
@@ -11024,7 +11244,16 @@
          <sch:Destination AirportCode="TOS" />\r
       </sch:SchedulesConnectionsRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/SchedulesConnectionsService.wsdl/SchedulesConnectionsPort/SchedulesConnectionsOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/SchedulesConnectionsService.wsdl/SchedulesConnectionsPort/SchedulesConnectionsOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="FlightAvailabilityGetFlightAvailabilitySOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/FlightAvailabilityService.wsdl}FlightAvailabilityGetFlightAvailabilitySOAPBinding" soapVersion="1_1" anonymous="optional" definition="https://www.flightstats.com/developers/bin/download/Web+Services/WSDL/FlightAvailabilityService.wsdl" id="f4c99377-cb4a-40e5-83d9-836b52da9ee0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -11588,8 +11817,12 @@
       <con:settings/>
     </con:operation>
   </con:interface>
-  
-  <con:interface xsi:type="con:WsdlInterface" id="d8167306-e8c3-4107-b1f0-2707105a30a5" wsaVersion="NONE" name="VersionSoapBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/soap/services/Version}VersionSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://www.pathfinder-xml.com/soap/services/Version?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://www.pathfinder-xml.com/soap/services/Version?wsdl"><con:part><con:url>http://www.pathfinder-xml.com/soap/services/Version?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.pathfinder-xml.com/soap/services/Version" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://www.pathfinder-xml.com/soap/services/Version" xmlns:intf="http://www.pathfinder-xml.com/soap/services/Version" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <con:interface xsi:type="con:WsdlInterface" id="d8167306-e8c3-4107-b1f0-2707105a30a5" wsaVersion="NONE" name="VersionSoapBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/soap/services/Version}VersionSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://www.pathfinder-xml.com/soap/services/Version?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart="http://www.pathfinder-xml.com/soap/services/Version?wsdl">
+      <con:part>
+        <con:url>http://www.pathfinder-xml.com/soap/services/Version?wsdl</con:url>
+        <con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.pathfinder-xml.com/soap/services/Version" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://www.pathfinder-xml.com/soap/services/Version" xmlns:intf="http://www.pathfinder-xml.com/soap/services/Version" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <wsdl:message name="getVersionResponse">
     <wsdl:part name="getVersionResponse" type="xsd:string"/>
   </wsdl:message>
@@ -11617,12 +11850,38 @@
       <wsdlsoap:address location="http://www.pathfinder-xml.com/soap/services/Version"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://www.pathfinder-xml.com/soap/services/Version</con:endpoint></con:endpoints><con:operation id="c545b1df-0c64-4f70-aaed-1c71ce472f23" isOneWay="false" action="" name="getVersion" bindingOperationName="getVersion" type="Request-Response" outputName="getVersionResponse" inputName="getVersionRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7d57663a-168f-42c7-aad2-c800ae468233" name="Request"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.pathfinder-xml.com/soap/services/Version</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:axis="http://axis.jboss.org">\r
+</wsdl:definitions>]]></con:content>
+        <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
+      </con:part>
+    </con:definitionCache>
+    <con:endpoints>
+      <con:endpoint>http://www.pathfinder-xml.com/soap/services/Version</con:endpoint>
+    </con:endpoints>
+    <con:operation id="c545b1df-0c64-4f70-aaed-1c71ce472f23" isOneWay="false" action="" name="getVersion" bindingOperationName="getVersion" type="Request-Response" outputName="getVersionResponse" inputName="getVersionRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional">
+      <con:settings/>
+      <con:call id="7d57663a-168f-42c7-aad2-c800ae468233" name="Request">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://www.pathfinder-xml.com/soap/services/Version</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:axis="http://axis.jboss.org">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <axis:getVersion soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/soap/services/Version/Version/getVersionRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:requirements/>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/soap/services/Version/Version/getVersionRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
+  </con:interface>
+  <con:requirements/>
   <con:properties>
     <con:property>
       <con:name>GUID</con:name>
@@ -11636,7 +11895,8 @@
   <con:wssContainer/>
   <con:databaseConnectionContainer/>
   <con:oAuth2ProfileContainer/>
-  <con:oAuth1ProfileContainer/><con:reporting>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
     <con:xmlTemplates/>
     <con:parameters/>
   </con:reporting>
