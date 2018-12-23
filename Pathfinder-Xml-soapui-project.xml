@@ -10133,7 +10133,7 @@
    <soapenv:Body>\r
       <ems:EMSFlightMonitorDeleteRulesRequest>\r
          <ems:Login Guid="${#Project#GUID}" />\r
-         <ems:EMSFlightRule Id="385106121" />
+         <ems:EMSFlightRule Id="696338594" />
       </ems:EMSFlightMonitorDeleteRulesRequest>\r
    </soapenv:Body>\r
 </soapenv:Envelope>]]></con:request>
@@ -10169,10 +10169,10 @@
          <ems:EMSFlightMonitorAddRulesInfo>\r
             <!--1 or more repetitions:-->\r
             <ems:EMSFlightRule Active="true" 
-            				 DepartureDate="2016-08-11T21:24:00+02:00" 
-            				 FlightNumber="892" Name="WF892">\r
+            				 DepartureDate="2018-12-20T12:50:00+01:00" 
+            				 FlightNumber="2198" Name="LH2198">\r
                <!--Optional:-->\r
-               <ems:Airline AirlineCode="WF" />\r
+               <ems:Airline AirlineCode="LH" />\r
                <!--Zero or more repetitions:-->\r
                <ems:EMSFlightRuleEvents AllEvents="true" 
                					Cancelled="true"
@@ -10191,6 +10191,98 @@
                   <ems:EMSDeliveryDestination Name="Email" Type="Email" Value="fredrik.rasch@gmail.com" />\r
                </ems:EMSFlightRuleEvents>\r
             </ems:EMSFlightRule>\r
+            <ems:EMSFlightRule Active="true" 
+            				 DepartureDate="2018-12-28T15:00:00+01:00" 
+            				 FlightNumber="2199" Name="LH2199">
+               <!--Optional:-->
+               <ems:Airline AirlineCode="LH" />
+               <!--Zero or more repetitions:-->
+               <ems:EMSFlightRuleEvents AllEvents="true" 
+               					Cancelled="true"
+               					Departed="true"
+               					Diverted="true"
+               					FlightArrivedLateThreshold="15" FlightArrivedLate="false"
+               					FlightDepartedLateThreshold="15" FlightDepartedLate="false"
+               					StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
+                                        Arrived="true" >
+                  <ems:EMSFlightDelayAndGateEvents ArrivalGateChange="true"
+                                                   BaggageChange="true"
+                                                   DepartureDelayEvent="true"
+                                                   DepartureGateChange="true"
+                                                   ArrivalDelayEvent="true" />
+                  <!--1 or more repetitions:-->
+                  <ems:EMSDeliveryDestination Name="Email" Type="Email" Value="fredrik.rasch@gmail.com" />
+               </ems:EMSFlightRuleEvents>
+            </ems:EMSFlightRule>
+            <ems:EMSFlightRule Active="true" 
+            				 DepartureDate="2018-12-28T18:55:00+01:00" 
+            				 FlightNumber="4746" Name="SK4746">
+               <!--Optional:-->
+               <ems:Airline AirlineCode="SK" />
+               <!--Zero or more repetitions:-->
+               <ems:EMSFlightRuleEvents AllEvents="true" 
+               					Cancelled="true"
+               					Departed="true"
+               					Diverted="true"
+               					FlightArrivedLateThreshold="15" FlightArrivedLate="false"
+               					FlightDepartedLateThreshold="15" FlightDepartedLate="false"
+               					StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
+                                        Arrived="true" >
+                  <ems:EMSFlightDelayAndGateEvents ArrivalGateChange="true"
+                                                   BaggageChange="true"
+                                                   DepartureDelayEvent="true"
+                                                   DepartureGateChange="true"
+                                                   ArrivalDelayEvent="true" />
+                  <!--1 or more repetitions:-->
+                  <ems:EMSDeliveryDestination Name="Email" Type="Email" Value="fredrik.rasch@gmail.com" />
+               </ems:EMSFlightRuleEvents>
+            </ems:EMSFlightRule>
+            <ems:EMSFlightRule Active="true" 
+            				 DepartureDate="2018-12-28T21:55:00+01:00" 
+            				 FlightNumber="382" Name="SK0382">
+               <!--Optional:-->
+               <ems:Airline AirlineCode="SK" />
+               <!--Zero or more repetitions:-->
+               <ems:EMSFlightRuleEvents AllEvents="true" 
+               					Cancelled="true"
+               					Departed="true"
+               					Diverted="true"
+               					FlightArrivedLateThreshold="15" FlightArrivedLate="false"
+               					FlightDepartedLateThreshold="15" FlightDepartedLate="false"
+               					StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
+                                        Arrived="true" >
+                  <ems:EMSFlightDelayAndGateEvents ArrivalGateChange="true"
+                                                   BaggageChange="true"
+                                                   DepartureDelayEvent="true"
+                                                   DepartureGateChange="true"
+                                                   ArrivalDelayEvent="true" />
+                  <!--1 or more repetitions:-->
+                  <ems:EMSDeliveryDestination Name="Email" Type="Email" Value="fredrik.rasch@gmail.com" />
+               </ems:EMSFlightRuleEvents>
+            </ems:EMSFlightRule>
+            <ems:EMSFlightRule Active="true" 
+            				 DepartureDate="2019-01-04T17:05:00+01:00" 
+            				 FlightNumber="4572" Name="SK4572">
+               <!--Optional:-->
+               <ems:Airline AirlineCode="SK" />
+               <!--Zero or more repetitions:-->
+               <ems:EMSFlightRuleEvents AllEvents="true" 
+               					Cancelled="true"
+               					Departed="true"
+               					Diverted="true"
+               					FlightArrivedLateThreshold="15" FlightArrivedLate="false"
+               					FlightDepartedLateThreshold="15" FlightDepartedLate="false"
+               					StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
+                                        Arrived="true" >
+                  <ems:EMSFlightDelayAndGateEvents ArrivalGateChange="true"
+                                                   BaggageChange="true"
+                                                   DepartureDelayEvent="true"
+                                                   DepartureGateChange="true"
+                                                   ArrivalDelayEvent="true" />
+                  <!--1 or more repetitions:-->
+                  <ems:EMSDeliveryDestination Name="Email" Type="Email" Value="fredrik.rasch@gmail.com" />
+               </ems:EMSFlightRuleEvents>
+            </ems:EMSFlightRule>
          </ems:EMSFlightMonitorAddRulesInfo>\r
       </ems:EMSFlightMonitorAddRulesRequest>\r
    </soapenv:Body>\r
@@ -10203,7 +10295,34 @@
         <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorAddRulesPort/EMSFlightMonitorAddRulesOperationRequest"/>
         <con:wsrmConfig version="1.2"/>
       </con:call>
-    </con:operation>
+    <con:call id="3ee7d448-56fa-4897-bd33-fc5aabb094a0" name="Request Mock"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorAddRules</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ems:EMSFlightMonitorAddRulesRequest>\r
+         <ems:Login AccountId="?" Guid="?" Password="?" UserId="?"/>\r
+         <ems:EMSFlightMonitorAddRulesInfo>\r
+            <!--1 or more repetitions:-->\r
+            <ems:EMSFlightRule Active="?" ArrivalDate="?" DepartureDate="?" Description="?" FlightNumber="?" Id="?" Name="?" UserId="?">\r
+               <!--Optional:-->\r
+               <ems:Airline AirlineCode="?" IATACode="?" ICAOCode="?" Name="?"/>\r
+               <!--Optional:-->\r
+               <ems:DepartureAirport AirportCode="?" FAACode="?" IATACode="?" ICAOCode="?" Name="?"/>\r
+               <!--Optional:-->\r
+               <ems:ArrivalAirport AirportCode="?" FAACode="?" IATACode="?" ICAOCode="?" Name="?"/>\r
+               <!--Zero or more repetitions:-->\r
+               <ems:EMSFlightRuleEvents AllEvents="?" Arrived="?" Cancelled="?" Departed="?" Diverted="?" EMSRuleId="?" FlightArrivedLateThreshold="?" FlightArrivedLate="?" FlightDepartedLateThreshold="?" FlightDepartedLate="?" Id="?" StatusBeforeArrivalMinutes="?" StatusBeforeArrival="?" StatusBeforeDeparture1Minutes="?" StatusBeforeDeparture1="?" StatusBeforeDeparture2Minutes="?" StatusBeforeDeparture2="?" StatusBeforeDeparture3Minutes="?" StatusBeforeDeparture3="?">\r
+                  <!--Optional:-->\r
+                  <ems:EMSFlightDelayAndGateEvents ArrivalDelayAllowRunwayTimes="?" ArrivalDelayDelta="?" ArrivalDelayEvent="?" ArrivalDelayThreshold="?" ArrivalDelayWindowStart="?" ArrivalGateChange="?" ArrivalGateWindowStart="?" BaggageChangeWindowStart="?" BaggageChange="?" DepartureDelayAllowRunwayTimes="?" DepartureDelayDelta="?" DepartureDelayEvent="?" DepartureDelayThreshold="?" DepartureDelayWindowStart="?" DepartureGateChange="?" DepartureGateWindowStart="?"/>\r
+                  <!--1 or more repetitions:-->\r
+                  <ems:EMSDeliveryDestination EndTime="?" Friday="?" Id="?" Monday="?" Name="?" RuleSpecific="?" Saturday="?" StartTime="?" Sunday="?" Thursday="?" Tuesday="?" Type="?" UserId="?" Value="?" Wednesday="?"/>\r
+               </ems:EMSFlightRuleEvents>\r
+               <!--Zero or more repetitions:-->\r
+               <ems:EMSRuleNameValue EMSRuleId="?" Id="?" Name="?" Value="?"/>\r
+            </ems:EMSFlightRule>\r
+         </ems:EMSFlightMonitorAddRulesInfo>\r
+      </ems:EMSFlightMonitorAddRulesRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorAddRulesPort/EMSFlightMonitorAddRulesOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="EMSFlightMonitorUpdateRuleSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl}EMSFlightMonitorUpdateRuleSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl" id="561cb304-10a0-451d-86bd-d0be9fbd4716" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
