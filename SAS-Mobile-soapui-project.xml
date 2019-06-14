@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="SAS Mobile" resourceRoot="${projectDir}" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" id="5abe7b23-e3a1-44c9-b37b-19275dd4a7a5" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default" name="SAS Mobile" resourceRoot="${projectDir}" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" id="5abe7b23-e3a1-44c9-b37b-19275dd4a7a5" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[
+      <xml-fragment xmlns:con="http://eviware.com/soapui/config">
   <con:entry key="Environment" value="Default"/>
   <con:entry key="Global Properties" value=""/>
   <con:entry key="TestSuite" value="Test Suite"/>
@@ -31,7 +32,8 @@
   <con:entry key="Add Settings" value="false"/>
   <con:entry key="Endpoint" value=""/>
   <con:entry key="Select Report Type" value=""/>
-</xml-fragment>]]></con:setting>
+</xml-fragment>
+    ]]></con:setting>
   </con:settings>
   <con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://gui.flysas.net" type="rest" id="f275318b-37d6-47df-89a1-23be73ae4d8e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -1265,8 +1267,10 @@
         </con:method>
       </con:resource>
     </con:resource>
-    <con:inferredSchema><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<inf:schema xmlns:inf="http://www.eviware.com/soapui/InferredSchema"><inf:namespace>https://gui.flysas.net/mobilegw/1.2/eurobonus/activities</inf:namespace><inf:particle xsi:type="inf:ElementParticle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><inf:name>Response</inf:name><inf:type xsi:type="inf:TypeReference"><inf:reference xmlns:act="https://gui.flysas.net/mobilegw/1.2/eurobonus/activities">act:_Response</inf:reference></inf:type></inf:particle><inf:prefix key="http://www.w3.org/2001/XMLSchema" value="xs"/><inf:complexType><inf:completed>true</inf:completed><inf:mixed>false</inf:mixed><inf:name>Response_pnr</inf:name><inf:content xsi:type="inf:SequenceContent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><inf:completed>true</inf:completed><inf:particle xsi:type="inf:ElementParticle"><inf:name>e</inf:name><inf:type xsi:type="inf:SimpleType"><inf:completed>false</inf:completed><inf:typeName>string</inf:typeName></inf:type></inf:particle><inf:comesBefore qname="act:e" xmlns:act="https://gui.flysas.net/mobilegw/1.2/eurobonus/activities"/></inf:content></inf:complexType><inf:complexType><inf:completed>true</inf:completed><inf:mixed>false</inf:mixed><inf:name>_Response</inf:name><inf:content xsi:type="inf:SequenceContent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><inf:completed>true</inf:completed><inf:particle xsi:type="inf:ElementParticle"><inf:name>pnr</inf:name><inf:type xsi:type="inf:TypeReference"><inf:reference xmlns:act="https://gui.flysas.net/mobilegw/1.2/eurobonus/activities">act:Response_pnr</inf:reference></inf:type></inf:particle><inf:comesBefore qname="act:pnr" xmlns:act="https://gui.flysas.net/mobilegw/1.2/eurobonus/activities"/></inf:content></inf:complexType></inf:schema>]]></con:inferredSchema>
+    <con:inferredSchema><![CDATA[
+      <?xml version="1.0" encoding="UTF-8"?>
+<inf:schema xmlns:inf="http://www.eviware.com/soapui/InferredSchema"><inf:namespace>https://gui.flysas.net/mobilegw/1.2/eurobonus/activities</inf:namespace><inf:particle xsi:type="inf:ElementParticle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><inf:name>Response</inf:name><inf:type xsi:type="inf:TypeReference"><inf:reference xmlns:act="https://gui.flysas.net/mobilegw/1.2/eurobonus/activities">act:_Response</inf:reference></inf:type></inf:particle><inf:prefix key="http://www.w3.org/2001/XMLSchema" value="xs"/><inf:complexType><inf:completed>true</inf:completed><inf:mixed>false</inf:mixed><inf:name>Response_pnr</inf:name><inf:content xsi:type="inf:SequenceContent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><inf:completed>true</inf:completed><inf:particle xsi:type="inf:ElementParticle"><inf:name>e</inf:name><inf:type xsi:type="inf:SimpleType"><inf:completed>false</inf:completed><inf:typeName>string</inf:typeName></inf:type></inf:particle><inf:comesBefore qname="act:e" xmlns:act="https://gui.flysas.net/mobilegw/1.2/eurobonus/activities"/></inf:content></inf:complexType><inf:complexType><inf:completed>true</inf:completed><inf:mixed>false</inf:mixed><inf:name>_Response</inf:name><inf:content xsi:type="inf:SequenceContent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><inf:completed>true</inf:completed><inf:particle xsi:type="inf:ElementParticle"><inf:name>pnr</inf:name><inf:type xsi:type="inf:TypeReference"><inf:reference xmlns:act="https://gui.flysas.net/mobilegw/1.2/eurobonus/activities">act:Response_pnr</inf:reference></inf:type></inf:particle><inf:comesBefore qname="act:pnr" xmlns:act="https://gui.flysas.net/mobilegw/1.2/eurobonus/activities"/></inf:content></inf:complexType></inf:schema>
+    ]]></con:inferredSchema>
   </con:interface>
   <con:testSuite name="Test Suite" id="75f6248c-0ffb-44bf-b8f1-81f3136e41ff">
     <con:settings/>
@@ -1286,9 +1290,11 @@
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/auth/get_app_token</con:originalUri>
             <con:assertion type="XPath Match" name="Status" id="fa55a4f1-f6d2-45b8-9bae-f75b2236ba7f">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -1297,9 +1303,11 @@
             </con:assertion>
             <con:assertion type="XPath Match" name="Token" id="bb11aa4b-cfed-466c-a575-9dcee04cdb73">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -1336,9 +1344,11 @@
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/auth/get_app_token</con:originalUri>
             <con:assertion type="XPath Match" name="Status" id="2cd703b1-3147-4533-b8c0-33ee39dabd0c">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -1347,9 +1357,11 @@
             </con:assertion>
             <con:assertion type="XPath Match" name="Token" id="d235f98f-92a7-4550-ad8e-447f6ae9d661">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -1375,9 +1387,11 @@
             <con:name>TokenToCurrencies</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>GetCurrencies</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -1387,25 +1401,27 @@
       <con:testStep type="groovy" name="Create GetCurrencies Signature" id="d413fa25-c289-4a8f-aec3-1322eb06d123">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtLng = nextStep.getPropertyValue('lng');
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "lng = ${nxtLng}";
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtLng = nextStep.getPropertyValue('lng');
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "lng = ${nxtLng}";
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}lng${nxtLng}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}lng${nxtLng}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetCurrencies" id="d5bf9e25-f585-48ce-929a-92bec28f8742">
@@ -1456,9 +1472,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/auth/get_app_token</con:originalUri>
             <con:assertion type="XPath Match" name="Status" id="e84a8334-6688-4566-83c5-55211d279635">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -1467,9 +1485,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Token" id="c633d17b-d5a9-494f-8b86-fd604c7c0438">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -1495,9 +1515,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>Token to GetCurrencies</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>GetCurrencies</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -1506,9 +1528,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>Token to GetAirports</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>GetAirports</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -1518,25 +1542,27 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create GetCurrencies Signature" id="f52ba0e5-9ded-4594-8580-7194329c96af">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtLng = nextStep.getPropertyValue('lng');
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "lng = ${nxtLng}";
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtLng = nextStep.getPropertyValue('lng');
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "lng = ${nxtLng}";
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}lng${nxtLng}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}lng${nxtLng}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetCurrencies" id="39d1946c-9dd9-4371-9da1-c641e80664d8">
@@ -1572,27 +1598,29 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create GetAirports Signature" id="f9eae291-12aa-43ff-a158-0885e1ac432c">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtCurrency = nextStep.getPropertyValue('currency');
-def nxtLng = nextStep.getPropertyValue('lng');
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "currency = ${nxtCurrency}";
-log.info "lng = ${nxtLng}";
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtCurrency = nextStep.getPropertyValue('currency');
+            def nxtLng = nextStep.getPropertyValue('lng');
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "currency = ${nxtCurrency}";
+            log.info "lng = ${nxtLng}";
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}currency${nxtCurrency}lng${nxtLng}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}currency${nxtCurrency}lng${nxtLng}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetAirports" id="7cf17603-c98d-4189-89bc-356ea592a0fa">
@@ -1649,9 +1677,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/auth/get_app_token</con:originalUri>
             <con:assertion type="XPath Match" name="Status" id="9e954a7f-da03-4f89-90d3-dba3b738e07a">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -1660,9 +1690,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Token" id="51c86934-defa-4146-826e-d87627158ab7">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -1688,9 +1720,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>Token to SsosLogin</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>SsosLogin</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -1699,9 +1733,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>Token to SsosReLogin</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>SsosReLogin</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -1710,9 +1746,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>Token to SsosLogout</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>SsosLogout</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -1722,31 +1760,33 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create SsosLogin Signature" id="1c2c7f72-c244-41d0-a235-05960eab26d0">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtAllowTp = nextStep.getPropertyValue('allowTp');
-def nxtPassword = nextStep.getPropertyValue('password');
-def nxtReturnAuthHeader = nextStep.getPropertyValue('returnAuthHeader');
-def nxtToken = nextStep.getPropertyValue('token');
-def nxtUserName = nextStep.getPropertyValue('userName');
-log.info "allowTp = ${nxtAllowTp}";
-log.info "password = ${nxtPassword}";
-log.info "returnAuthHeader = ${nxtReturnAuthHeader}";
-log.info "token = ${nxtToken}";
-log.info "userName = ${nxtUserName}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtAllowTp = nextStep.getPropertyValue('allowTp');
+            def nxtPassword = nextStep.getPropertyValue('password');
+            def nxtReturnAuthHeader = nextStep.getPropertyValue('returnAuthHeader');
+            def nxtToken = nextStep.getPropertyValue('token');
+            def nxtUserName = nextStep.getPropertyValue('userName');
+            log.info "allowTp = ${nxtAllowTp}";
+            log.info "password = ${nxtPassword}";
+            log.info "returnAuthHeader = ${nxtReturnAuthHeader}";
+            log.info "token = ${nxtToken}";
+            log.info "userName = ${nxtUserName}";
 
-def clearText = "${nxtToken}allowTp${nxtAllowTp}password${nxtPassword}returnAuthHeader${nxtReturnAuthHeader}token${nxtToken}userName${nxtUserName}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}allowTp${nxtAllowTp}password${nxtPassword}returnAuthHeader${nxtReturnAuthHeader}token${nxtToken}userName${nxtUserName}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="SsosLogin" id="e0ce39e4-82ee-49ea-ba5f-398f2cd1dad6">
@@ -1762,9 +1802,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/ssos/login</con:originalUri>
             <con:assertion type="XPath Match" name="Token" id="50db4938-a38d-46c2-83f5-a22028b7bc9f">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>${token}</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -1773,9 +1815,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Status" id="51fb6e05-2ea3-4288-904f-db3cddb31646">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -1784,9 +1828,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Auth Header" id="0167e794-5c09-4c13-b59a-0e71c25fdb7c">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</path>
+                  //ns:Response/ns:authHeader
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -1816,9 +1862,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>authHeader to SsosReLogin</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>SsosLogin</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</con:sourcePath>
+              //ns:Response/ns:authHeader
+            </con:sourcePath>
             <con:targetType>Authorization</con:targetType>
             <con:targetStep>SsosReLogin</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -1827,9 +1875,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>authHeader to SsosLogout</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>SsosLogin</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</con:sourcePath>
+              //ns:Response/ns:authHeader
+            </con:sourcePath>
             <con:targetType>Authorization</con:targetType>
             <con:targetStep>SsosLogout</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -1839,31 +1889,33 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create SsosReLogin Signature" id="f3ac6070-b8b7-4a3f-acbb-e2ae0fb27c9d">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtAllowTp = nextStep.getPropertyValue('allowTp');
-def nxtPassword = nextStep.getPropertyValue('password');
-def nxtReturnAuthHeader = nextStep.getPropertyValue('returnAuthHeader');
-def nxtToken = nextStep.getPropertyValue('token');
-def nxtUserName = nextStep.getPropertyValue('userName');
-log.info "allowTp = ${nxtAllowTp}";
-log.info "password = ${nxtPassword}";
-log.info "returnAuthHeader = ${nxtReturnAuthHeader}";
-log.info "token = ${nxtToken}";
-log.info "userName = ${nxtUserName}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtAllowTp = nextStep.getPropertyValue('allowTp');
+            def nxtPassword = nextStep.getPropertyValue('password');
+            def nxtReturnAuthHeader = nextStep.getPropertyValue('returnAuthHeader');
+            def nxtToken = nextStep.getPropertyValue('token');
+            def nxtUserName = nextStep.getPropertyValue('userName');
+            log.info "allowTp = ${nxtAllowTp}";
+            log.info "password = ${nxtPassword}";
+            log.info "returnAuthHeader = ${nxtReturnAuthHeader}";
+            log.info "token = ${nxtToken}";
+            log.info "userName = ${nxtUserName}";
 
-def clearText = "${nxtToken}allowTp${nxtAllowTp}password${nxtPassword}returnAuthHeader${nxtReturnAuthHeader}token${nxtToken}userName${nxtUserName}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}allowTp${nxtAllowTp}password${nxtPassword}returnAuthHeader${nxtReturnAuthHeader}token${nxtToken}userName${nxtUserName}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="SsosReLogin" id="eb36078a-e5ed-4780-bf50-77444e394b6b">
@@ -1879,9 +1931,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/ssos/relogin</con:originalUri>
             <con:assertion type="XPath Match" name="Token" id="3f9044ac-87c0-4143-90d4-72c1715f7040">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/relogin';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/relogin';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>${token}</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -1890,9 +1944,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Status" id="1703b671-ae57-42a2-a7d5-bcf941860f2d">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/relogin';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/relogin';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -1901,9 +1957,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Auth Header" id="e8e457eb-183a-4902-9580-88e29fb50326">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/relogin';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/relogin';
 
-//ns:Response/ns:authHeader</path>
+                  //ns:Response/ns:authHeader
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -1939,23 +1997,25 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create SsosLogout Signature" id="3d2b3675-6522-40fb-b6c0-df17a2a1bec0">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="SsosLogout" id="b6f9eb87-a9ea-4b86-a15f-12d19a6991ec">
@@ -1976,9 +2036,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Status" id="85bc931d-8de3-48be-a766-a9a112095cd8">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/logout';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/logout';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -1987,9 +2049,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Token" id="f2b75baa-206e-4766-8ed9-aa23b5c90c21">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/logout';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/logout';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>${token}</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2027,9 +2091,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/auth/get_app_token</con:originalUri>
             <con:assertion type="XPath Match" name="Status" id="67e4e530-387e-4f94-9552-41df09cd91d8">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2038,9 +2104,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Token" id="0083e909-176e-4502-86ae-98a1ddc3ffb7">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2066,9 +2134,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>token to SsosLogin</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>SsosLogin</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -2077,9 +2147,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>token to GetEuroBonus</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>GetEuroBonus</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -2088,9 +2160,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>token to GetProfileActivities</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>GetProfileActivities</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -2099,9 +2173,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>token to GetEuroBonusExpiring</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>GetEuroBonusExpiring</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -2110,9 +2186,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>token to GetEuroBonusBenefits</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>GetEuroBonusBenefits</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -2122,31 +2200,33 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create SsosLogin Signature" id="6adfa6e5-5cf2-4133-b79b-e65b8ba76732">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtAllowTp = nextStep.getPropertyValue('allowTp');
-def nxtPassword = nextStep.getPropertyValue('password');
-def nxtReturnAuthHeader = nextStep.getPropertyValue('returnAuthHeader');
-def nxtToken = nextStep.getPropertyValue('token');
-def nxtUserName = nextStep.getPropertyValue('userName');
-log.info "allowTp = ${nxtAllowTp}";
-log.info "password = ${nxtPassword}";
-log.info "returnAuthHeader = ${nxtReturnAuthHeader}";
-log.info "token = ${nxtToken}";
-log.info "userName = ${nxtUserName}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtAllowTp = nextStep.getPropertyValue('allowTp');
+            def nxtPassword = nextStep.getPropertyValue('password');
+            def nxtReturnAuthHeader = nextStep.getPropertyValue('returnAuthHeader');
+            def nxtToken = nextStep.getPropertyValue('token');
+            def nxtUserName = nextStep.getPropertyValue('userName');
+            log.info "allowTp = ${nxtAllowTp}";
+            log.info "password = ${nxtPassword}";
+            log.info "returnAuthHeader = ${nxtReturnAuthHeader}";
+            log.info "token = ${nxtToken}";
+            log.info "userName = ${nxtUserName}";
 
-def clearText = "${nxtToken}allowTp${nxtAllowTp}password${nxtPassword}returnAuthHeader${nxtReturnAuthHeader}token${nxtToken}userName${nxtUserName}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}allowTp${nxtAllowTp}password${nxtPassword}returnAuthHeader${nxtReturnAuthHeader}token${nxtToken}userName${nxtUserName}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="SsosLogin" id="236d94dc-c0d8-4b67-8a10-14df4f821f09">
@@ -2162,9 +2242,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/ssos/login</con:originalUri>
             <con:assertion type="XPath Match" name="Token" id="a0c78c6b-f241-4613-bf84-487105ac7c68">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>${token}</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2173,9 +2255,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Status" id="2923f0c1-66dc-4cf3-81fa-0b564a1236dd">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2184,9 +2268,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Auth Header" id="ab1fbcea-c09a-4c2e-9b25-84c1d7c98d36">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</path>
+                  //ns:Response/ns:authHeader
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2216,9 +2302,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>authHeader to GetEuroBonus</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>SsosLogin</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</con:sourcePath>
+              //ns:Response/ns:authHeader
+            </con:sourcePath>
             <con:targetType>Authorization</con:targetType>
             <con:targetStep>GetEuroBonus</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -2227,9 +2315,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>authHeader to GetProfileActivities</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>SsosLogin</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</con:sourcePath>
+              //ns:Response/ns:authHeader
+            </con:sourcePath>
             <con:targetType>Authorization</con:targetType>
             <con:targetStep>GetProfileActivities</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -2238,9 +2328,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>authHeader to GetEuroBonusExpiring</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>SsosLogin</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</con:sourcePath>
+              //ns:Response/ns:authHeader
+            </con:sourcePath>
             <con:targetType>Authorization</con:targetType>
             <con:targetStep>GetEuroBonusExpiring</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -2249,9 +2341,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>authHeader to GetEuroBonusBenefits</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>SsosLogin</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</con:sourcePath>
+              //ns:Response/ns:authHeader
+            </con:sourcePath>
             <con:targetType>Authorization</con:targetType>
             <con:targetStep>GetEuroBonusBenefits</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -2261,23 +2355,25 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create GetEuroBonus Signature" id="2444a8cc-8383-4ae0-be6f-168469b1d40c">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetEuroBonus" id="9cc3f0d8-d4fc-46f1-9561-08a4457d34c8">
@@ -2312,25 +2408,27 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create GetProfileActivities Signature" id="045a9b9a-dc15-4067-a254-e2b61d94fb69">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtPage = nextStep.getPropertyValue('page');
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "page = ${nxtPage}";
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtPage = nextStep.getPropertyValue('page');
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "page = ${nxtPage}";
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}page${nxtPage}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}page${nxtPage}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetProfileActivities" id="b58f8c68-47ae-4d8d-a932-cc049322c02e">
@@ -2366,23 +2464,25 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create GetEuroBonusExpiring Signature" id="13a0dfee-0129-476c-9087-d97908640a1d">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetEuroBonusExpiring" id="226bc7b4-b033-4d12-8772-d130c609d1c7">
@@ -2416,23 +2516,25 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create GetEuroBonusBenefits Signature" id="bea2d37a-4b66-4d0c-886c-0517caca49a3">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetEuroBonusBenefits" id="12906933-d02d-41c1-89fc-c7befeecd695">
@@ -2482,9 +2584,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/auth/get_app_token</con:originalUri>
             <con:assertion type="XPath Match" name="Status" id="2eda104e-cd30-4aaa-981f-19b7af47605e">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2493,9 +2597,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Token" id="63539a4c-83b2-4f3b-a1f4-9c4b6576bb86">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2521,9 +2627,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>Token to SsosLogin</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>SsosLogin</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -2532,9 +2640,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>Token to InfoTab</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>InfoTab</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -2544,31 +2654,33 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create SsosLogin Signature" id="112f584b-5114-445a-894e-a9197de58932">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtAllowTp = nextStep.getPropertyValue('allowTp');
-def nxtPassword = nextStep.getPropertyValue('password');
-def nxtReturnAuthHeader = nextStep.getPropertyValue('returnAuthHeader');
-def nxtToken = nextStep.getPropertyValue('token');
-def nxtUserName = nextStep.getPropertyValue('userName');
-log.info "allowTp = ${nxtAllowTp}";
-log.info "password = ${nxtPassword}";
-log.info "returnAuthHeader = ${nxtReturnAuthHeader}";
-log.info "token = ${nxtToken}";
-log.info "userName = ${nxtUserName}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtAllowTp = nextStep.getPropertyValue('allowTp');
+            def nxtPassword = nextStep.getPropertyValue('password');
+            def nxtReturnAuthHeader = nextStep.getPropertyValue('returnAuthHeader');
+            def nxtToken = nextStep.getPropertyValue('token');
+            def nxtUserName = nextStep.getPropertyValue('userName');
+            log.info "allowTp = ${nxtAllowTp}";
+            log.info "password = ${nxtPassword}";
+            log.info "returnAuthHeader = ${nxtReturnAuthHeader}";
+            log.info "token = ${nxtToken}";
+            log.info "userName = ${nxtUserName}";
 
-def clearText = "${nxtToken}allowTp${nxtAllowTp}password${nxtPassword}returnAuthHeader${nxtReturnAuthHeader}token${nxtToken}userName${nxtUserName}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}allowTp${nxtAllowTp}password${nxtPassword}returnAuthHeader${nxtReturnAuthHeader}token${nxtToken}userName${nxtUserName}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="SsosLogin" id="079a0ded-1535-4c4c-ade8-9b5f844728ef">
@@ -2584,9 +2696,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/ssos/login</con:originalUri>
             <con:assertion type="XPath Match" name="Token" id="109514b7-7d11-434f-a2df-bbb1c35a5d0b">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>${token}</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2595,9 +2709,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Status" id="2ed5fa5e-5b1e-4362-b969-e67ec1e2d356">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2606,9 +2722,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Auth Header" id="13c70dd1-232b-454f-a906-153d49054b8c">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</path>
+                  //ns:Response/ns:authHeader
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2638,9 +2756,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>authHeader to InfoTab</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>SsosLogin</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</con:sourcePath>
+              //ns:Response/ns:authHeader
+            </con:sourcePath>
             <con:targetType>Authorization</con:targetType>
             <con:targetStep>InfoTab</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -2650,23 +2770,25 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create InfoTab Signature" id="217cf425-51db-4f5d-8e9f-ab6f076c32d8">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="InfoTab" id="b85dc89d-c87b-4b1c-94cf-d8c1b43572ba">
@@ -2716,9 +2838,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/auth/get_app_token</con:originalUri>
             <con:assertion type="XPath Match" name="Status" id="62185afc-04a2-4efe-ad68-b79b95f590af">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2727,9 +2851,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Token" id="9f8036ef-923d-4949-90d1-775395b0514a">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2755,9 +2881,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>Token to SsosLogin</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>SsosLogin</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -2766,9 +2894,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>Token to GetWelcomeMessage</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>GetWelcomeMessage</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -2778,31 +2908,33 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create SsosLogin Signature" id="988bc853-567b-4325-9120-979d9a332a0a">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtAllowTp = nextStep.getPropertyValue('allowTp');
-def nxtPassword = nextStep.getPropertyValue('password');
-def nxtReturnAuthHeader = nextStep.getPropertyValue('returnAuthHeader');
-def nxtToken = nextStep.getPropertyValue('token');
-def nxtUserName = nextStep.getPropertyValue('userName');
-log.info "allowTp = ${nxtAllowTp}";
-log.info "password = ${nxtPassword}";
-log.info "returnAuthHeader = ${nxtReturnAuthHeader}";
-log.info "token = ${nxtToken}";
-log.info "userName = ${nxtUserName}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtAllowTp = nextStep.getPropertyValue('allowTp');
+            def nxtPassword = nextStep.getPropertyValue('password');
+            def nxtReturnAuthHeader = nextStep.getPropertyValue('returnAuthHeader');
+            def nxtToken = nextStep.getPropertyValue('token');
+            def nxtUserName = nextStep.getPropertyValue('userName');
+            log.info "allowTp = ${nxtAllowTp}";
+            log.info "password = ${nxtPassword}";
+            log.info "returnAuthHeader = ${nxtReturnAuthHeader}";
+            log.info "token = ${nxtToken}";
+            log.info "userName = ${nxtUserName}";
 
-def clearText = "${nxtToken}allowTp${nxtAllowTp}password${nxtPassword}returnAuthHeader${nxtReturnAuthHeader}token${nxtToken}userName${nxtUserName}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}allowTp${nxtAllowTp}password${nxtPassword}returnAuthHeader${nxtReturnAuthHeader}token${nxtToken}userName${nxtUserName}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="SsosLogin" id="6cc7a470-01da-47eb-afde-dee7c6c1c7f3">
@@ -2818,9 +2950,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/ssos/login</con:originalUri>
             <con:assertion type="XPath Match" name="Token" id="fdf4498e-511f-45fe-be04-f03671c414d5">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>${token}</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2829,9 +2963,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Status" id="0e9bfd25-16cf-43c9-a628-05df901d8a63">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2840,9 +2976,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Auth Header" id="95575620-c47f-44ac-b5a1-801385dd4938">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</path>
+                  //ns:Response/ns:authHeader
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2872,9 +3010,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>authHeader to GetWelcomeMessage</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>SsosLogin</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</con:sourcePath>
+              //ns:Response/ns:authHeader
+            </con:sourcePath>
             <con:targetType>Authorization</con:targetType>
             <con:targetStep>GetWelcomeMessage</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -2884,25 +3024,27 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create InfoTab Signature" id="f4ab3e16-f659-4afa-8a0a-66c3fb960079">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtFirstname = nextStep.getPropertyValue('firstname');
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "firstname = ${nxtFirstname}";
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtFirstname = nextStep.getPropertyValue('firstname');
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "firstname = ${nxtFirstname}";
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}firstname${nxtFirstname}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}firstname${nxtFirstname}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetWelcomeMessage" id="00f15c93-ce40-4468-bb21-5511b5ef05be">
@@ -2923,9 +3065,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Status" id="50a6c0c2-94cb-4a67-b90d-fff2fa9b0606">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/welcome/get';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/welcome/get';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2964,9 +3108,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/auth/get_app_token</con:originalUri>
             <con:assertion type="XPath Match" name="Status" id="d463b7b4-95c0-4880-aaec-66b1d2ad2da8">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -2975,9 +3121,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Token" id="890ab006-c19e-4b1a-9cf5-d569c5188965">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -3003,9 +3151,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>Token to SsosLogin</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>SsosLogin</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -3014,9 +3164,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>Token to GetProfile</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>GetProfile</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -3026,31 +3178,33 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create SsosLogin Signature" id="5a67d9eb-6872-45d7-8ffe-e27f25220b60">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtAllowTp = nextStep.getPropertyValue('allowTp');
-def nxtPassword = nextStep.getPropertyValue('password');
-def nxtReturnAuthHeader = nextStep.getPropertyValue('returnAuthHeader');
-def nxtToken = nextStep.getPropertyValue('token');
-def nxtUserName = nextStep.getPropertyValue('userName');
-log.info "allowTp = ${nxtAllowTp}";
-log.info "password = ${nxtPassword}";
-log.info "returnAuthHeader = ${nxtReturnAuthHeader}";
-log.info "token = ${nxtToken}";
-log.info "userName = ${nxtUserName}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtAllowTp = nextStep.getPropertyValue('allowTp');
+            def nxtPassword = nextStep.getPropertyValue('password');
+            def nxtReturnAuthHeader = nextStep.getPropertyValue('returnAuthHeader');
+            def nxtToken = nextStep.getPropertyValue('token');
+            def nxtUserName = nextStep.getPropertyValue('userName');
+            log.info "allowTp = ${nxtAllowTp}";
+            log.info "password = ${nxtPassword}";
+            log.info "returnAuthHeader = ${nxtReturnAuthHeader}";
+            log.info "token = ${nxtToken}";
+            log.info "userName = ${nxtUserName}";
 
-def clearText = "${nxtToken}allowTp${nxtAllowTp}password${nxtPassword}returnAuthHeader${nxtReturnAuthHeader}token${nxtToken}userName${nxtUserName}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}allowTp${nxtAllowTp}password${nxtPassword}returnAuthHeader${nxtReturnAuthHeader}token${nxtToken}userName${nxtUserName}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="SsosLogin" id="d6070a57-13de-4843-a1bb-940b571df0da">
@@ -3066,9 +3220,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/ssos/login</con:originalUri>
             <con:assertion type="XPath Match" name="Token" id="9682544f-280d-4eae-8c20-1c147986121b">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>${token}</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -3077,9 +3233,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Status" id="f3cb7139-3c8f-46fe-94db-9dd90addf007">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -3088,9 +3246,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Auth Header" id="7190d44d-35cb-47a4-ac34-2a484a206f41">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</path>
+                  //ns:Response/ns:authHeader
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -3120,9 +3280,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>authHeader to GetProfile</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>SsosLogin</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</con:sourcePath>
+              //ns:Response/ns:authHeader
+            </con:sourcePath>
             <con:targetType>Authorization</con:targetType>
             <con:targetStep>GetProfile</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -3132,23 +3294,25 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create GetProfile Signature" id="6cc63ab4-6d88-4b0a-810c-090a9143a384">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetProfile" id="13081319-9990-45fd-a8b6-106386a8e735">
@@ -3198,9 +3362,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/auth/get_app_token</con:originalUri>
             <con:assertion type="XPath Match" name="Status" id="63a3703e-f692-49bf-be99-37b5397f0484">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -3209,9 +3375,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Token" id="3242239c-1a21-4302-b35f-5dc827a1a4f3">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -3237,9 +3405,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>token to SsosLogin</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>SsosLogin</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -3248,9 +3418,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>token to GetPnrList</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>GetPnrList</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -3259,9 +3431,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>token to GetBooking</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>GetBooking</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -3270,9 +3444,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>token to GetBookingByName</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>GetBookingByName</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -3282,31 +3458,33 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create SsosLogin Signature" id="44d76d73-f627-461a-9bae-07da32a6b962">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtAllowTp = nextStep.getPropertyValue('allowTp');
-def nxtPassword = nextStep.getPropertyValue('password');
-def nxtReturnAuthHeader = nextStep.getPropertyValue('returnAuthHeader');
-def nxtToken = nextStep.getPropertyValue('token');
-def nxtUserName = nextStep.getPropertyValue('userName');
-log.info "allowTp = ${nxtAllowTp}";
-log.info "password = ${nxtPassword}";
-log.info "returnAuthHeader = ${nxtReturnAuthHeader}";
-log.info "token = ${nxtToken}";
-log.info "userName = ${nxtUserName}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtAllowTp = nextStep.getPropertyValue('allowTp');
+            def nxtPassword = nextStep.getPropertyValue('password');
+            def nxtReturnAuthHeader = nextStep.getPropertyValue('returnAuthHeader');
+            def nxtToken = nextStep.getPropertyValue('token');
+            def nxtUserName = nextStep.getPropertyValue('userName');
+            log.info "allowTp = ${nxtAllowTp}";
+            log.info "password = ${nxtPassword}";
+            log.info "returnAuthHeader = ${nxtReturnAuthHeader}";
+            log.info "token = ${nxtToken}";
+            log.info "userName = ${nxtUserName}";
 
-def clearText = "${nxtToken}allowTp${nxtAllowTp}password${nxtPassword}returnAuthHeader${nxtReturnAuthHeader}token${nxtToken}userName${nxtUserName}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}allowTp${nxtAllowTp}password${nxtPassword}returnAuthHeader${nxtReturnAuthHeader}token${nxtToken}userName${nxtUserName}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="SsosLogin" id="1520a835-4957-4e06-8e94-20b0a52fa41e">
@@ -3322,9 +3500,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/ssos/login</con:originalUri>
             <con:assertion type="XPath Match" name="Token" id="bc8fda96-1cbe-4a84-be3c-0a5dd5155393">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>${token}</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -3333,9 +3513,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Status" id="b1be6a0a-c9ba-4c88-85ea-e733a83ec935">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -3344,9 +3526,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Auth Header" id="b0a277de-71d5-454e-857d-c0130f3e4e9c">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</path>
+                  //ns:Response/ns:authHeader
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -3376,9 +3560,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>authHeader to GetPnrList</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>SsosLogin</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</con:sourcePath>
+              //ns:Response/ns:authHeader
+            </con:sourcePath>
             <con:targetType>Authorization</con:targetType>
             <con:targetStep>GetPnrList</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -3387,9 +3573,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>eb to GetPnrList</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>SsosLogin</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:eb</con:sourcePath>
+              //ns:Response/ns:eb
+            </con:sourcePath>
             <con:targetType>eb</con:targetType>
             <con:targetStep>GetPnrList</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -3398,9 +3586,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>authHeader to GetBooking</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>SsosLogin</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</con:sourcePath>
+              //ns:Response/ns:authHeader
+            </con:sourcePath>
             <con:targetType>Authorization</con:targetType>
             <con:targetStep>GetBooking</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -3409,9 +3599,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>authHeader to GetBookingByName</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>SsosLogin</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</con:sourcePath>
+              //ns:Response/ns:authHeader
+            </con:sourcePath>
             <con:targetType>Authorization</con:targetType>
             <con:targetStep>GetBookingByName</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -3421,25 +3613,27 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create GetPnrList Signature" id="65335173-3fec-4e13-9b04-8a5378ba0397">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtEb = nextStep.getPropertyValue('eb');
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "eb = ${nxtEb}";
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtEb = nextStep.getPropertyValue('eb');
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "eb = ${nxtEb}";
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}eb${nxtEb}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}eb${nxtEb}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetPnrList" id="7a506da0-92f4-46e6-99ba-f2c352f09a83">
@@ -3460,9 +3654,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="PNR Exists" id="c1b43afc-4f11-4cda-bb04-9ea7de09a5d4">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/bookings/getpnrlist';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/bookings/getpnrlist';
 
-exists(//ns:Response/ns:pnr)</path>
+                  exists(//ns:Response/ns:pnr)
+                </path>
                 <content>true</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -3490,9 +3686,11 @@ exists(//ns:Response/ns:pnr)</path>
             <con:name>pnr[1] to GetBooking</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetPnrList</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/bookings/getpnrlist';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/bookings/getpnrlist';
 
-//ns:Response/ns:pnr/ns:e[1]</con:sourcePath>
+              //ns:Response/ns:pnr/ns:e[1]
+            </con:sourcePath>
             <con:targetType>pnr</con:targetType>
             <con:targetStep>GetBooking</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -3501,9 +3699,11 @@ exists(//ns:Response/ns:pnr)</path>
             <con:name>pnr[1] to GetBookingByName</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetPnrList</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/bookings/getpnrlist';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/bookings/getpnrlist';
 
-//ns:Response/ns:pnr/ns:e[1]</con:sourcePath>
+              //ns:Response/ns:pnr/ns:e[1]
+            </con:sourcePath>
             <con:targetType>pnr</con:targetType>
             <con:targetStep>GetBookingByName</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -3513,31 +3713,33 @@ exists(//ns:Response/ns:pnr)</path>
       <con:testStep type="groovy" name="Create GetBooking Signature" id="445d098c-2038-46b6-b8aa-edb41d5ef4d7">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtBlacklistAfter = nextStep.getPropertyValue('blacklist_after');
-def nxtNoFlightstatus = nextStep.getPropertyValue('no_flightstatus');
-def nxtPnr = nextStep.getPropertyValue('pnr');
-def nxtRefresh = nextStep.getPropertyValue('refresh');
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "blacklist_after = ${nxtBlacklistAfter}";
-log.info "no_flightstatus = ${nxtNoFlightstatus}";
-log.info "pnr = ${nxtPnr}";
-log.info "refresh = ${nxtRefresh}";
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtBlacklistAfter = nextStep.getPropertyValue('blacklist_after');
+            def nxtNoFlightstatus = nextStep.getPropertyValue('no_flightstatus');
+            def nxtPnr = nextStep.getPropertyValue('pnr');
+            def nxtRefresh = nextStep.getPropertyValue('refresh');
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "blacklist_after = ${nxtBlacklistAfter}";
+            log.info "no_flightstatus = ${nxtNoFlightstatus}";
+            log.info "pnr = ${nxtPnr}";
+            log.info "refresh = ${nxtRefresh}";
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}blacklist_after${nxtBlacklistAfter}no_flightstatus${nxtNoFlightstatus}pnr${nxtPnr}refresh${nxtRefresh}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}blacklist_after${nxtBlacklistAfter}no_flightstatus${nxtNoFlightstatus}pnr${nxtPnr}refresh${nxtRefresh}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetBooking" id="86203771-832e-4495-b434-3a6efcf5a0ed">
@@ -3590,33 +3792,35 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create GetBookingByName Signature" disabled="true" id="8bb8211b-c8b7-4c3c-bbde-35efe6b9ac7e">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtBlacklistAfter = nextStep.getPropertyValue('blacklist_after');
-def nxtLastname = nextStep.getPropertyValue('lastname');
-def nxtNoFlightstatus = nextStep.getPropertyValue('no_flightstatus');
-def nxtPnr = nextStep.getPropertyValue('pnr');
-def nxtRefresh = nextStep.getPropertyValue('refresh');
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "blacklist_after = ${nxtBlacklistAfter}";
-log.info "lastname = ${nxtLastname}";
-log.info "no_flightstatus = ${nxtNoFlightstatus}";
-log.info "pnr = ${nxtPnr}";
-log.info "refresh = ${nxtRefresh}";
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtBlacklistAfter = nextStep.getPropertyValue('blacklist_after');
+            def nxtLastname = nextStep.getPropertyValue('lastname');
+            def nxtNoFlightstatus = nextStep.getPropertyValue('no_flightstatus');
+            def nxtPnr = nextStep.getPropertyValue('pnr');
+            def nxtRefresh = nextStep.getPropertyValue('refresh');
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "blacklist_after = ${nxtBlacklistAfter}";
+            log.info "lastname = ${nxtLastname}";
+            log.info "no_flightstatus = ${nxtNoFlightstatus}";
+            log.info "pnr = ${nxtPnr}";
+            log.info "refresh = ${nxtRefresh}";
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}blacklist_after${nxtBlacklistAfter}lastname${nxtLastname}no_flightstatus${nxtNoFlightstatus}pnr${nxtPnr}refresh${nxtRefresh}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}blacklist_after${nxtBlacklistAfter}lastname${nxtLastname}no_flightstatus${nxtNoFlightstatus}pnr${nxtPnr}refresh${nxtRefresh}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetBookingByName" disabled="true" id="020edff9-f7dc-49d6-b95b-f4603a816355">
@@ -3671,9 +3875,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/auth/get_app_token</con:originalUri>
             <con:assertion type="XPath Match" name="Status" id="974b2d6d-98f6-4a7f-90ab-663c66a8895f">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -3682,9 +3888,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Token" id="84ad18be-b102-4b3a-8954-3d4c9b64cb39">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -3710,9 +3918,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>Token to CheckOriginDest</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>CheckOriginDest</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -3722,29 +3932,31 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create CheckOriginDest Signature" id="5b630438-2acd-4a23-8f37-035c5a7ab684">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtCurrency = nextStep.getPropertyValue('currency');
-def nxtDest = nextStep.getPropertyValue('dest');
-def nxtOrg = nextStep.getPropertyValue('org');
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "currency = ${nxtCurrency}";
-log.info "dest = ${nxtDest}";
-log.info "org = ${nxtOrg}";
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtCurrency = nextStep.getPropertyValue('currency');
+            def nxtDest = nextStep.getPropertyValue('dest');
+            def nxtOrg = nextStep.getPropertyValue('org');
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "currency = ${nxtCurrency}";
+            log.info "dest = ${nxtDest}";
+            log.info "org = ${nxtOrg}";
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}currency${nxtCurrency}dest${nxtDest}org${nxtOrg}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}currency${nxtCurrency}dest${nxtDest}org${nxtOrg}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="CheckOriginDest" id="3b619767-b751-4147-81e8-d5228d584746">
@@ -3796,9 +4008,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/auth/get_app_token</con:originalUri>
             <con:assertion type="XPath Match" name="Status" id="81df2116-96d5-48d1-895c-985068cf2b6f">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -3807,9 +4021,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Token" id="322bd231-2f55-4148-b578-662ca7d6d67b">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -3835,9 +4051,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>token To GetWeather</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>GetWeather</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -3846,9 +4064,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>token to GetHistoricWeather</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>GetHistoricWeather</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -3858,27 +4078,29 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create GetWeather Signature" id="468aea88-ae67-4d39-8353-b15315496845">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtCode = nextStep.getPropertyValue('code');
-def nxtOffset = nextStep.getPropertyValue('offset');
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "code = ${nxtCode}";
-log.info "offset = ${nxtOffset}";
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtCode = nextStep.getPropertyValue('code');
+            def nxtOffset = nextStep.getPropertyValue('offset');
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "code = ${nxtCode}";
+            log.info "offset = ${nxtOffset}";
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}code${nxtCode}offset${nxtOffset}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}code${nxtCode}offset${nxtOffset}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetWeather" id="3c8b8f23-cf6b-40db-8f9a-d04a4e59a1fc">
@@ -3899,9 +4121,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Status" id="8498d267-3861-4211-b559-6e18c3df9e8b">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/weather/get';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/weather/get';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -3925,25 +4149,27 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create GetHistoricWeather Signature" id="88406e23-78af-4e92-add8-3bd230658f81">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtCode = nextStep.getPropertyValue('code');
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "code = ${nxtCode}";
-log.info "token = ${nxtToken}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtCode = nextStep.getPropertyValue('code');
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "code = ${nxtCode}";
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}code${nxtCode}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}code${nxtCode}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetHistoricWeather" id="3ad40a4e-33dd-4985-9786-d7e6d3bf4097">
@@ -3963,9 +4189,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Status" id="26223751-9b8d-4b30-94c3-5c7a7cb92059">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/weather/historic';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/weather/historic';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -4003,9 +4231,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/auth/get_app_token</con:originalUri>
             <con:assertion type="XPath Match" name="Status" id="3d7109cd-6447-4d7e-a1ee-a4c089a4eea7">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -4014,9 +4244,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Token" id="1d9af3e2-6071-44fd-a4ce-e50feda4ef52">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -4042,9 +4274,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>token to GetFlightStatus</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>GetFlightStatus</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -4053,9 +4287,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>token to GetAllFlightStatuses</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>GetAllFlightStatuses</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -4065,31 +4301,33 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create GetFlightStatus Parameters" id="c98459bc-b085-4986-a019-b3e59da270b2">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-nextStep.setPropertyValue('date', new Date().format("ddMMyy"));
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            nextStep.setPropertyValue('date', new Date().format("ddMMyy"));
 
-def nxtCode = nextStep.getPropertyValue('code');
-def nxtDate = nextStep.getPropertyValue('date');
-def nxtToken = nextStep.getPropertyValue('token');
-def nxtType = nextStep.getPropertyValue('type');
-log.info "code = ${nxtCode}";
-log.info "date = ${nxtDate}";
-log.info "token = ${nxtToken}";
-log.info "type = ${nxtType}";
+            def nxtCode = nextStep.getPropertyValue('code');
+            def nxtDate = nextStep.getPropertyValue('date');
+            def nxtToken = nextStep.getPropertyValue('token');
+            def nxtType = nextStep.getPropertyValue('type');
+            log.info "code = ${nxtCode}";
+            log.info "date = ${nxtDate}";
+            log.info "token = ${nxtToken}";
+            log.info "type = ${nxtType}";
 
-def clearText = "${nxtToken}code${nxtCode}date${nxtDate}token${nxtToken}type${nxtType}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}code${nxtCode}date${nxtDate}token${nxtToken}type${nxtType}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetFlightStatus" id="3c915095-421c-49f6-b798-13e57b2a6f24">
@@ -4124,31 +4362,33 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create GetAllFlightStatuses Parameters" id="950268b7-92af-41c9-a914-2f0a5d748ad6">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-nextStep.setPropertyValue('date', new Date().format("ddMMyy"));
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            nextStep.setPropertyValue('date', new Date().format("ddMMyy"));
 
-def nxtCode = nextStep.getPropertyValue('code');
-def nxtDate = nextStep.getPropertyValue('date');
-def nxtToken = nextStep.getPropertyValue('token');
-def nxtType = nextStep.getPropertyValue('type');
-log.info "code = ${nxtCode}";
-log.info "date = ${nxtDate}";
-log.info "token = ${nxtToken}";
-log.info "type = ${nxtType}";
+            def nxtCode = nextStep.getPropertyValue('code');
+            def nxtDate = nextStep.getPropertyValue('date');
+            def nxtToken = nextStep.getPropertyValue('token');
+            def nxtType = nextStep.getPropertyValue('type');
+            log.info "code = ${nxtCode}";
+            log.info "date = ${nxtDate}";
+            log.info "token = ${nxtToken}";
+            log.info "type = ${nxtType}";
 
-def clearText = "${nxtToken}code${nxtCode}date${nxtDate}token${nxtToken}type${nxtType}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}code${nxtCode}date${nxtDate}token${nxtToken}type${nxtType}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetAllFlightStatuses" id="769c0c5e-9749-4438-9089-52837dc6b981">
@@ -4200,9 +4440,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/auth/get_app_token</con:originalUri>
             <con:assertion type="XPath Match" name="Status" id="a5dd018f-1c2d-4f5e-8fe1-63ec99845a29">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -4211,9 +4453,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Token" id="2776c33d-fbd1-4c95-a8bc-3ff6ea22fdbc">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -4239,9 +4483,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>token to GetLowFareCalendarData</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>SsosLogin</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -4250,9 +4496,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>token to SsosLogin</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>GetAppToken</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/auth/get_app_token';
 
-//ns:Response/ns:token</con:sourcePath>
+              //ns:Response/ns:token
+            </con:sourcePath>
             <con:targetType>token</con:targetType>
             <con:targetStep>SsosLogin</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -4262,31 +4510,33 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create SsosLogin Signature" id="cad4c5e5-857b-4ba0-9efc-965fc6a2dfca">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
-def nxtAllowTp = nextStep.getPropertyValue('allowTp');
-def nxtPassword = nextStep.getPropertyValue('password');
-def nxtReturnAuthHeader = nextStep.getPropertyValue('returnAuthHeader');
-def nxtToken = nextStep.getPropertyValue('token');
-def nxtUserName = nextStep.getPropertyValue('userName');
-log.info "allowTp = ${nxtAllowTp}";
-log.info "password = ${nxtPassword}";
-log.info "returnAuthHeader = ${nxtReturnAuthHeader}";
-log.info "token = ${nxtToken}";
-log.info "userName = ${nxtUserName}";
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nxtAllowTp = nextStep.getPropertyValue('allowTp');
+            def nxtPassword = nextStep.getPropertyValue('password');
+            def nxtReturnAuthHeader = nextStep.getPropertyValue('returnAuthHeader');
+            def nxtToken = nextStep.getPropertyValue('token');
+            def nxtUserName = nextStep.getPropertyValue('userName');
+            log.info "allowTp = ${nxtAllowTp}";
+            log.info "password = ${nxtPassword}";
+            log.info "returnAuthHeader = ${nxtReturnAuthHeader}";
+            log.info "token = ${nxtToken}";
+            log.info "userName = ${nxtUserName}";
 
-def clearText = "${nxtToken}allowTp${nxtAllowTp}password${nxtPassword}returnAuthHeader${nxtReturnAuthHeader}token${nxtToken}userName${nxtUserName}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}allowTp${nxtAllowTp}password${nxtPassword}returnAuthHeader${nxtReturnAuthHeader}token${nxtToken}userName${nxtUserName}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="SsosLogin" id="8a7821d2-8b63-4c16-9b4a-cc5ef53007ed">
@@ -4302,9 +4552,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:originalUri>https://gui.flysas.net/mobilegw/1.2/ssos/login</con:originalUri>
             <con:assertion type="XPath Match" name="Token" id="5ada4d4f-58f3-4d40-99ab-dcc70a2e054c">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:token</path>
+                  //ns:Response/ns:token
+                </path>
                 <content>${token}</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -4313,9 +4565,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Status" id="2d9f2e73-c8ff-4f19-a5aa-656e1be8687a">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:status</path>
+                  //ns:Response/ns:status
+                </path>
                 <content>1</content>
                 <allowWildcards>false</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -4324,9 +4578,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             </con:assertion>
             <con:assertion type="XPath Match" name="Auth Header" id="d46b746f-ce30-46ca-979f-4aaa2aa594cf">
               <con:configuration>
-                <path>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+                <path>
+                  declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</path>
+                  //ns:Response/ns:authHeader
+                </path>
                 <content>*</content>
                 <allowWildcards>true</allowWildcards>
                 <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
@@ -4356,9 +4612,11 @@ nextStep.setPropertyValue("sig", sig);</script>
             <con:name>authHeader to GetLowFareCalendarData</con:name>
             <con:sourceType>ResponseAsXml</con:sourceType>
             <con:sourceStep>SsosLogin</con:sourceStep>
-            <con:sourcePath>declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
+            <con:sourcePath>
+              declare namespace ns='https://gui.flysas.net/mobilegw/1.2/ssos/login';
 
-//ns:Response/ns:authHeader</con:sourcePath>
+              //ns:Response/ns:authHeader
+            </con:sourcePath>
             <con:targetType>Authorization</con:targetType>
             <con:targetStep>GetLowFareCalendarData</con:targetStep>
             <con:upgraded>true</con:upgraded>
@@ -4368,36 +4626,38 @@ nextStep.setPropertyValue("sig", sig);</script>
       <con:testStep type="groovy" name="Create GetLowFareCalendarData Parameters" id="1498b5b3-91de-4492-8f39-3f72bf8a1413">
         <con:settings/>
         <con:config>
-          <script>import java.security.*
+          <script>
+            import java.security.*
 
-def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
+            def nextStep = context.getTestCase().getTestStepAt(context.getCurrentStepIndex() + 1);
 
-def nxtCurrency = nextStep.getPropertyValue('currency');
-def nxtDest = nextStep.getPropertyValue('dest');
-def nxtIn = nextStep.getPropertyValue('in');
-def nxtOrg = nextStep.getPropertyValue('org');
-def nxtOut = nextStep.getPropertyValue('out');
-def nxtTriptype = nextStep.getPropertyValue('triptype');
-def nxtToken = nextStep.getPropertyValue('token');
-log.info "currency = ${nxtCurrency}";
-log.info "dest = ${nxtDest}";
-log.info "in = ${nxtIn}";
-log.info "org = ${nxtOrg}";
-log.info "out = ${nxtOut}";
-log.info "triptype = ${nxtTriptype}";
-log.info "token = ${nxtToken}";
+            def nxtCurrency = nextStep.getPropertyValue('currency');
+            def nxtDest = nextStep.getPropertyValue('dest');
+            def nxtIn = nextStep.getPropertyValue('in');
+            def nxtOrg = nextStep.getPropertyValue('org');
+            def nxtOut = nextStep.getPropertyValue('out');
+            def nxtTriptype = nextStep.getPropertyValue('triptype');
+            def nxtToken = nextStep.getPropertyValue('token');
+            log.info "currency = ${nxtCurrency}";
+            log.info "dest = ${nxtDest}";
+            log.info "in = ${nxtIn}";
+            log.info "org = ${nxtOrg}";
+            log.info "out = ${nxtOut}";
+            log.info "triptype = ${nxtTriptype}";
+            log.info "token = ${nxtToken}";
 
-def clearText = "${nxtToken}currency${nxtCurrency}dest${nxtDest}in${nxtIn}org${nxtOrg}out${nxtOut}triptype${nxtTriptype}token${nxtToken}";
-log.info "Salting string: ${clearText}";
-def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
-log.info "Salted cleartext: ${saltText}";
+            def clearText = "${nxtToken}currency${nxtCurrency}dest${nxtDest}in${nxtIn}org${nxtOrg}out${nxtOut}triptype${nxtTriptype}token${nxtToken}";
+            log.info "Salting string: ${clearText}";
+            def saltText = "${clearText}d2f828e084a7da1ca00204dd55c90774";
+            log.info "Salted cleartext: ${saltText}";
 
-def messageDigest = MessageDigest.getInstance("SHA1")
-messageDigest.update(saltText.getBytes());
-def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
-log.info "sig = ${sig}";
+            def messageDigest = MessageDigest.getInstance("SHA1")
+            messageDigest.update(saltText.getBytes());
+            def sig = new BigInteger(1, messageDigest.digest()).toString(16).padLeft(40, '0')
+            log.info "sig = ${sig}";
 
-nextStep.setPropertyValue("sig", sig);</script>
+            nextStep.setPropertyValue("sig", sig);
+          </script>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="GetLowFareCalendarData" id="da6f6035-d729-44fa-bffa-4bbae171f1c5">

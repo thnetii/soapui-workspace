@@ -1,9 +1,685 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="070b5064-49f0-4336-88e4-55fdf304f901" activeEnvironment="Default" name="FlightStats Flex" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="386b1dc0-3826-4522-986b-c579cfade324" wadlVersion="http://wadl.dev.java.net/2009/02" name="FlightStats Flex" type="rest" basePath="/" definitionUrl="https://api.flightstats.com/flex/airlines/rest/v1/schema/wadl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://api.flightstats.com</con:endpoint></con:endpoints><con:resource name="/flex/airlines/rest/v1/schema" path="/flex/airlines/rest/v1/schema" id="f5871e0d-3b6f-4083-adf5-e0cee0824b02"><con:settings/><con:parameters/><con:resource name="/xsd" path="/xsd" id="3da7d39d-42c7-4803-a3c6-cebd54deaccb"><con:settings/><con:parameters/><con:method name="GET - xsd" id="fba06b91-8f91-40e3-a40c-dacd3c5aa79b" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE" id=""><con:mediaType>application/xml</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:request name="Request 1" id="c30a502d-bcf3-465a-b0a5-8a6913455a59" mediaType="application/json"><con:settings/><con:endpoint>https://api.flightstats.com</con:endpoint><con:request/><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource><con:resource name="/wadl" path="/wadl" id="cf5ee514-6417-48a8-b61c-23ff123890d0"><con:settings/><con:parameters/><con:method name="GET - wadl" id="0da5652f-f6d3-4191-9a33-e8ffd634ae0f" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE" id=""><con:mediaType>application/vnd.sun.wadl+xml</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/xml</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:request name="Request 1" id="d890fdd6-61fd-4f27-a3b0-6224d6b1f3c9" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.flightstats.com</con:endpoint><con:request/><con:originalUri>https://api.flightstats.com//flex/airlines/rest/v1/schema/wadl</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="/json" path="/json" id="e2ff05ef-bb5d-4138-a6ef-d0a06f139352"><con:settings/><con:parameters/><con:method name="GET - json" id="1ee3352e-2873-483f-9dce-c4972a90108d" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:request name="Request 1" id="86fa4f7a-c95b-4499-9dff-a2e937a0268a" mediaType="application/json"><con:settings/><con:endpoint>https://api.flightstats.com</con:endpoint><con:request/><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource></con:resource><con:resource name="/flex/airlines/rest/v1/{format}" path="/flex/airlines/rest/v1/{format}" id="dc33bd53-a699-48d4-b626-4b3279b3f490"><con:settings/><con:parameters/><con:resource name="active" path="active" id="67b65214-8c56-49c6-ae0a-c8b411f3aa71"><con:settings/><con:parameters><con:parameter><con:name>format</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>guid</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="GET - active" id="cec24dad-e235-4a8f-bd00-023599419f71" method="GET"><con:settings/><con:parameters><con:parameter><con:name>appId</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>appKey</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>extendedOptions</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter></con:parameters><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/xml</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/javascript;charset=UTF-8</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:request name="Request 1" id="7113e5f4-2639-41c5-873a-bd9e8ac97f17" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.flightstats.com</con:endpoint><con:request/><con:originalUri>https://api.flightstats.com//flex/airlines/rest/v1//active</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="extendedOptions" value="useHTTPErrors+includeNewFields"/>
-  <con:entry key="format" value="json"/>
-  <con:entry key="guid" value="${#Project#GUID}"/>
-</con:parameters><con:parameterOrder><con:entry>format</con:entry><con:entry>appId</con:entry><con:entry>appKey</con:entry><con:entry>extendedOptions</con:entry><con:entry>guid</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="fs/{code}" path="fs/{code}" id="58a00ef7-d1c3-47ac-8ecb-efb98c024bda"><con:settings/><con:parameters><con:parameter><con:name>code</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>format</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter></con:parameters><con:method name="GET - byFSCode" id="7f87974d-1515-45d3-a5fa-ca5501384137" method="GET"><con:settings/><con:parameters><con:parameter><con:name>appId</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>appKey</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>extendedOptions</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter></con:parameters><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/xml</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/javascript;charset=UTF-8</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:request name="Request 1" id="92a4f7c1-9682-45b4-b241-b2f78e0618a9" mediaType="application/json"><con:settings/><con:endpoint>https://api.flightstats.com</con:endpoint><con:request/><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource><con:resource name="iata/{code}" path="iata/{code}" id="38f13916-5cdd-4d77-a9e9-a05f33f4c1e7"><con:settings/><con:parameters><con:parameter><con:name>code</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>format</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter></con:parameters><con:method name="GET - iata" id="5f347630-665e-4127-bff3-9364ac3a1de3" method="GET"><con:settings/><con:parameters><con:parameter><con:name>appId</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>appKey</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>extendedOptions</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter></con:parameters><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/xml</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/javascript;charset=UTF-8</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:request name="Request 1" id="f4e4bc43-abb9-44e2-94c9-1edd5ff09e99" mediaType="application/json"><con:settings/><con:endpoint>https://api.flightstats.com</con:endpoint><con:request/><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource><con:resource name="iata/{code}/{year}/{month}/{day}" path="iata/{code}/{year}/{month}/{day}" id="5dcdadcd-a7da-4bfa-9c85-031e0911473c"><con:settings/><con:parameters><con:parameter><con:name>code</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>month</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>year</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>format</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>day</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter></con:parameters><con:method name="GET - iataOnDate" id="c92d4045-ffce-449d-bbca-e1f707bdcb22" method="GET"><con:settings/><con:parameters><con:parameter><con:name>appId</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>appKey</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>extendedOptions</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter></con:parameters><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/xml</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/javascript;charset=UTF-8</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:request name="Request 1" id="d8cbfb16-959d-4611-b0b6-5f9ba0b805cd" mediaType="application/json"><con:settings/><con:endpoint>https://api.flightstats.com</con:endpoint><con:request/><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource><con:resource name="icao/{code}" path="icao/{code}" id="2bc28482-b56a-43ab-9eaa-4fb143a5d28a"><con:settings/><con:parameters><con:parameter><con:name>code</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>format</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter></con:parameters><con:method name="GET - icao" id="71e6a7e9-4e1d-44c8-9514-f19d413dbc86" method="GET"><con:settings/><con:parameters><con:parameter><con:name>appId</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>appKey</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>extendedOptions</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter></con:parameters><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/xml</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/javascript;charset=UTF-8</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:request name="Request 1" id="f4125b28-0574-40cf-8768-ca899ef8ce1b" mediaType="application/json"><con:settings/><con:endpoint>https://api.flightstats.com</con:endpoint><con:request/><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource><con:resource name="icao/{code}/{year}/{month}/{day}" path="icao/{code}/{year}/{month}/{day}" id="493f9396-fde8-4b9c-b18f-d4f5a0ba8d8e"><con:settings/><con:parameters><con:parameter><con:name>code</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>month</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>year</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>format</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>day</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter></con:parameters><con:method name="GET - icaoOnDate" id="146db525-5906-4398-ae48-e0e549c8bc34" method="GET"><con:settings/><con:parameters><con:parameter><con:name>appId</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>appKey</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>extendedOptions</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter></con:parameters><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/xml</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/javascript;charset=UTF-8</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:request name="Request 1" id="32dd9001-c417-45d3-9d6b-5ec0db3b9cdf" mediaType="application/json"><con:settings/><con:endpoint>https://api.flightstats.com</con:endpoint><con:request/><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource><con:resource name="active/{year}/{month}/{day}" path="active/{year}/{month}/{day}" id="9da5197c-2584-4b60-ac79-267ea5f346a1"><con:settings/><con:parameters><con:parameter><con:name>month</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>year</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>format</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>day</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter></con:parameters><con:method name="GET - activeOnDate" id="f4d3a788-2525-490a-95ef-f8dd8906bcb9" method="GET"><con:settings/><con:parameters><con:parameter><con:name>appId</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>appKey</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>extendedOptions</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter></con:parameters><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/xml</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/javascript;charset=UTF-8</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:request name="Request 1" id="8e74f18d-200c-484a-95f7-9e03290b43f0" mediaType="application/json"><con:settings/><con:endpoint>https://api.flightstats.com</con:endpoint><con:request/><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource><con:resource name="all" path="all" id="5e5877bc-4038-4a89-abad-819c4b5fd389"><con:settings/><con:parameters><con:parameter><con:name>format</con:name><con:value xsi:nil="true"/><con:style>TEMPLATE</con:style><con:default xsi:nil="true"/></con:parameter></con:parameters><con:method name="GET - all" id="dcf316dc-3efc-47fa-8340-c0c5a14f3dfe" method="GET"><con:settings/><con:parameters><con:parameter><con:name>appId</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>appKey</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter><con:parameter><con:name>extendedOptions</con:name><con:value xsi:nil="true"/><con:style>QUERY</con:style><con:default xsi:nil="true"/></con:parameter></con:parameters><con:representation type="RESPONSE" id=""><con:mediaType>application/json</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/xml</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:representation type="RESPONSE" id=""><con:mediaType>application/javascript;charset=UTF-8</con:mediaType><con:params/><con:element xsi:nil="true"/><con:description xsi:nil="true"/></con:representation><con:request name="Request 1" id="0149edd9-1186-4fae-99eb-ecd61b741263" mediaType="application/json"><con:settings/><con:endpoint>https://api.flightstats.com</con:endpoint><con:request/><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource></con:resource></con:interface><con:interface xsi:type="con:WsdlInterface" id="4b340cab-c713-486e-8009-921b1bcaddec" wsaVersion="NONE" name="AirlinesV1SoapServiceSoapBinding" type="wsdl" bindingName="{http://v1.airlines.cache.conducivetech.com/}AirlinesV1SoapServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="https://api.flightstats.com/flex/airlines/soap/v1/airlinesService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://api.flightstats.com/flex/airlines/soap/v1/airlinesService?wsdl"><con:part><con:url>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="AirlinesV1SoapService" targetNamespace="http://v1.airlines.cache.conducivetech.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://v1.airlines.cache.conducivetech.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http">
+<con:soapui-project id="070b5064-49f0-4336-88e4-55fdf304f901" activeEnvironment="Default" name="FlightStats Flex" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="386b1dc0-3826-4522-986b-c579cfade324" wadlVersion="http://wadl.dev.java.net/2009/02" name="FlightStats Flex" type="rest" basePath="/" definitionUrl="https://api.flightstats.com/flex/airlines/rest/v1/schema/wadl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints>
+      <con:endpoint>https://api.flightstats.com</con:endpoint>
+    </con:endpoints>
+    <con:resource name="/flex/airlines/rest/v1/schema" path="/flex/airlines/rest/v1/schema" id="f5871e0d-3b6f-4083-adf5-e0cee0824b02">
+      <con:settings/>
+      <con:parameters/>
+      <con:resource name="/xsd" path="/xsd" id="3da7d39d-42c7-4803-a3c6-cebd54deaccb">
+        <con:settings/>
+        <con:parameters/>
+        <con:method name="GET - xsd" id="fba06b91-8f91-40e3-a40c-dacd3c5aa79b" method="GET">
+          <con:settings/>
+          <con:parameters/>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/xml</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:request name="Request 1" id="c30a502d-bcf3-465a-b0a5-8a6913455a59" mediaType="application/json">
+            <con:settings/>
+            <con:endpoint>https://api.flightstats.com</con:endpoint>
+            <con:request/>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:request>
+        </con:method>
+      </con:resource>
+      <con:resource name="/wadl" path="/wadl" id="cf5ee514-6417-48a8-b61c-23ff123890d0">
+        <con:settings/>
+        <con:parameters/>
+        <con:method name="GET - wadl" id="0da5652f-f6d3-4191-9a33-e8ffd634ae0f" method="GET">
+          <con:settings/>
+          <con:parameters/>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/vnd.sun.wadl+xml</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/xml</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:request name="Request 1" id="d890fdd6-61fd-4f27-a3b0-6224d6b1f3c9" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://api.flightstats.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.flightstats.com//flex/airlines/rest/v1/schema/wadl</con:originalUri>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:request>
+        </con:method>
+      </con:resource>
+      <con:resource name="/json" path="/json" id="e2ff05ef-bb5d-4138-a6ef-d0a06f139352">
+        <con:settings/>
+        <con:parameters/>
+        <con:method name="GET - json" id="1ee3352e-2873-483f-9dce-c4972a90108d" method="GET">
+          <con:settings/>
+          <con:parameters/>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/json</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:request name="Request 1" id="86fa4f7a-c95b-4499-9dff-a2e937a0268a" mediaType="application/json">
+            <con:settings/>
+            <con:endpoint>https://api.flightstats.com</con:endpoint>
+            <con:request/>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:request>
+        </con:method>
+      </con:resource>
+    </con:resource>
+    <con:resource name="/flex/airlines/rest/v1/{format}" path="/flex/airlines/rest/v1/{format}" id="dc33bd53-a699-48d4-b626-4b3279b3f490">
+      <con:settings/>
+      <con:parameters/>
+      <con:resource name="active" path="active" id="67b65214-8c56-49c6-ae0a-c8b411f3aa71">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>format</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>guid</con:name>
+            <con:value/>
+            <con:style>QUERY</con:style>
+            <con:default/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:method name="GET - active" id="cec24dad-e235-4a8f-bd00-023599419f71" method="GET">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>appId</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>appKey</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>extendedOptions</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+          </con:parameters>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/json</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/xml</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/javascript;charset=UTF-8</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:request name="Request 1" id="7113e5f4-2639-41c5-873a-bd9e8ac97f17" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://api.flightstats.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://api.flightstats.com//flex/airlines/rest/v1//active</con:originalUri>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <con:entry key="extendedOptions" value="useHTTPErrors+includeNewFields"/>
+              <con:entry key="format" value="json"/>
+              <con:entry key="guid" value="${#Project#GUID}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>format</con:entry>
+              <con:entry>appId</con:entry>
+              <con:entry>appKey</con:entry>
+              <con:entry>extendedOptions</con:entry>
+              <con:entry>guid</con:entry>
+            </con:parameterOrder>
+          </con:request>
+        </con:method>
+      </con:resource>
+      <con:resource name="fs/{code}" path="fs/{code}" id="58a00ef7-d1c3-47ac-8ecb-efb98c024bda">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>code</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>format</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:method name="GET - byFSCode" id="7f87974d-1515-45d3-a5fa-ca5501384137" method="GET">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>appId</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>appKey</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>extendedOptions</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+          </con:parameters>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/json</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/xml</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/javascript;charset=UTF-8</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:request name="Request 1" id="92a4f7c1-9682-45b4-b241-b2f78e0618a9" mediaType="application/json">
+            <con:settings/>
+            <con:endpoint>https://api.flightstats.com</con:endpoint>
+            <con:request/>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:request>
+        </con:method>
+      </con:resource>
+      <con:resource name="iata/{code}" path="iata/{code}" id="38f13916-5cdd-4d77-a9e9-a05f33f4c1e7">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>code</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>format</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:method name="GET - iata" id="5f347630-665e-4127-bff3-9364ac3a1de3" method="GET">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>appId</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>appKey</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>extendedOptions</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+          </con:parameters>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/json</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/xml</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/javascript;charset=UTF-8</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:request name="Request 1" id="f4e4bc43-abb9-44e2-94c9-1edd5ff09e99" mediaType="application/json">
+            <con:settings/>
+            <con:endpoint>https://api.flightstats.com</con:endpoint>
+            <con:request/>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:request>
+        </con:method>
+      </con:resource>
+      <con:resource name="iata/{code}/{year}/{month}/{day}" path="iata/{code}/{year}/{month}/{day}" id="5dcdadcd-a7da-4bfa-9c85-031e0911473c">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>code</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>month</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>year</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>format</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>day</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:method name="GET - iataOnDate" id="c92d4045-ffce-449d-bbca-e1f707bdcb22" method="GET">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>appId</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>appKey</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>extendedOptions</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+          </con:parameters>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/json</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/xml</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/javascript;charset=UTF-8</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:request name="Request 1" id="d8cbfb16-959d-4611-b0b6-5f9ba0b805cd" mediaType="application/json">
+            <con:settings/>
+            <con:endpoint>https://api.flightstats.com</con:endpoint>
+            <con:request/>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:request>
+        </con:method>
+      </con:resource>
+      <con:resource name="icao/{code}" path="icao/{code}" id="2bc28482-b56a-43ab-9eaa-4fb143a5d28a">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>code</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>format</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:method name="GET - icao" id="71e6a7e9-4e1d-44c8-9514-f19d413dbc86" method="GET">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>appId</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>appKey</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>extendedOptions</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+          </con:parameters>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/json</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/xml</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/javascript;charset=UTF-8</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:request name="Request 1" id="f4125b28-0574-40cf-8768-ca899ef8ce1b" mediaType="application/json">
+            <con:settings/>
+            <con:endpoint>https://api.flightstats.com</con:endpoint>
+            <con:request/>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:request>
+        </con:method>
+      </con:resource>
+      <con:resource name="icao/{code}/{year}/{month}/{day}" path="icao/{code}/{year}/{month}/{day}" id="493f9396-fde8-4b9c-b18f-d4f5a0ba8d8e">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>code</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>month</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>year</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>format</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>day</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:method name="GET - icaoOnDate" id="146db525-5906-4398-ae48-e0e549c8bc34" method="GET">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>appId</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>appKey</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>extendedOptions</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+          </con:parameters>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/json</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/xml</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/javascript;charset=UTF-8</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:request name="Request 1" id="32dd9001-c417-45d3-9d6b-5ec0db3b9cdf" mediaType="application/json">
+            <con:settings/>
+            <con:endpoint>https://api.flightstats.com</con:endpoint>
+            <con:request/>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:request>
+        </con:method>
+      </con:resource>
+      <con:resource name="active/{year}/{month}/{day}" path="active/{year}/{month}/{day}" id="9da5197c-2584-4b60-ac79-267ea5f346a1">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>month</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>year</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>format</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter>
+            <con:name>day</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:method name="GET - activeOnDate" id="f4d3a788-2525-490a-95ef-f8dd8906bcb9" method="GET">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>appId</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>appKey</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>extendedOptions</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+          </con:parameters>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/json</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/xml</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/javascript;charset=UTF-8</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:request name="Request 1" id="8e74f18d-200c-484a-95f7-9e03290b43f0" mediaType="application/json">
+            <con:settings/>
+            <con:endpoint>https://api.flightstats.com</con:endpoint>
+            <con:request/>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:request>
+        </con:method>
+      </con:resource>
+      <con:resource name="all" path="all" id="5e5877bc-4038-4a89-abad-819c4b5fd389">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>format</con:name>
+            <con:value xsi:nil="true"/>
+            <con:style>TEMPLATE</con:style>
+            <con:default xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:method name="GET - all" id="dcf316dc-3efc-47fa-8340-c0c5a14f3dfe" method="GET">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>appId</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>appKey</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>extendedOptions</con:name>
+              <con:value xsi:nil="true"/>
+              <con:style>QUERY</con:style>
+              <con:default xsi:nil="true"/>
+            </con:parameter>
+          </con:parameters>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/json</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/xml</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:representation type="RESPONSE" id="">
+            <con:mediaType>application/javascript;charset=UTF-8</con:mediaType>
+            <con:params/>
+            <con:element xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:representation>
+          <con:request name="Request 1" id="0149edd9-1186-4fae-99eb-ecd61b741263" mediaType="application/json">
+            <con:settings/>
+            <con:endpoint>https://api.flightstats.com</con:endpoint>
+            <con:request/>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:request>
+        </con:method>
+      </con:resource>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:WsdlInterface" id="4b340cab-c713-486e-8009-921b1bcaddec" wsaVersion="NONE" name="AirlinesV1SoapServiceSoapBinding" type="wsdl" bindingName="{http://v1.airlines.cache.conducivetech.com/}AirlinesV1SoapServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="https://api.flightstats.com/flex/airlines/soap/v1/airlinesService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart="https://api.flightstats.com/flex/airlines/soap/v1/airlinesService?wsdl">
+      <con:part>
+        <con:url>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService?wsdl</con:url>
+        <con:content><![CDATA[
+          <wsdl:definitions name="AirlinesV1SoapService" targetNamespace="http://v1.airlines.cache.conducivetech.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://v1.airlines.cache.conducivetech.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http">
   <wsdl:types>
     <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://v1.airlines.cache.conducivetech.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
       <xs:element name="airlineByFsCode" type="tns:airlineByFsCode"/>
@@ -353,7 +1029,22 @@
       <soap:address location="https://api.flightstats.com/flex/airlines/soap/v1/airlinesService"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint></con:endpoints><con:operation id="a202e945-9396-4144-87d2-f0481d8b7e94" isOneWay="false" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlineByFsCodeRequest" name="airlineByFsCode" bindingOperationName="airlineByFsCode" type="Request-Response" outputName="airlineByFsCodeResponse" inputName="airlineByFsCode" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3de6512b-c34b-42cd-9ac0-a0391a0f2e2e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
+</wsdl:definitions>
+        ]]></con:content>
+        <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
+      </con:part>
+    </con:definitionCache>
+    <con:endpoints>
+      <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
+    </con:endpoints>
+    <con:operation id="a202e945-9396-4144-87d2-f0481d8b7e94" isOneWay="false" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlineByFsCodeRequest" name="airlineByFsCode" bindingOperationName="airlineByFsCode" type="Request-Response" outputName="airlineByFsCodeResponse" inputName="airlineByFsCode" receivesAttachments="false" sendsAttachments="false" anonymous="optional">
+      <con:settings/>
+      <con:call id="3de6512b-c34b-42cd-9ac0-a0391a0f2e2e" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <v1:airlineByFsCode>\r
@@ -364,7 +1055,20 @@
          <extendedOptions>?</extendedOptions>\r
       </v1:airlineByFsCode>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlineByFsCodeRequest"/></con:call></con:operation><con:operation id="52d048c1-c1c8-40ab-a42b-18134b84ef50" isOneWay="false" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlineByIcaoRequest" name="airlineByIcao" bindingOperationName="airlineByIcao" type="Request-Response" outputName="airlineByIcaoResponse" inputName="airlineByIcao" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c75a3eb8-5c04-4348-a169-21a6584a4156" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
+</soapenv:Envelope>
+        ]]></con:request>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlineByFsCodeRequest"/>
+      </con:call>
+    </con:operation>
+    <con:operation id="52d048c1-c1c8-40ab-a42b-18134b84ef50" isOneWay="false" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlineByIcaoRequest" name="airlineByIcao" bindingOperationName="airlineByIcao" type="Request-Response" outputName="airlineByIcaoResponse" inputName="airlineByIcao" receivesAttachments="false" sendsAttachments="false" anonymous="optional">
+      <con:settings/>
+      <con:call id="c75a3eb8-5c04-4348-a169-21a6584a4156" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <v1:airlineByIcao>\r
@@ -378,7 +1082,20 @@
          <extendedOptions>?</extendedOptions>\r
       </v1:airlineByIcao>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlineByIcaoRequest"/></con:call></con:operation><con:operation id="74a873f6-217f-4c23-a025-17e0e94573c6" isOneWay="false" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesRequest" name="airlines" bindingOperationName="airlines" type="Request-Response" outputName="airlinesResponse" inputName="airlines" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b4d77735-e3ea-487f-9189-5777d80d6726" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
+</soapenv:Envelope>
+        ]]></con:request>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlineByIcaoRequest"/>
+      </con:call>
+    </con:operation>
+    <con:operation id="74a873f6-217f-4c23-a025-17e0e94573c6" isOneWay="false" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesRequest" name="airlines" bindingOperationName="airlines" type="Request-Response" outputName="airlinesResponse" inputName="airlines" receivesAttachments="false" sendsAttachments="false" anonymous="optional">
+      <con:settings/>
+      <con:call id="b4d77735-e3ea-487f-9189-5777d80d6726" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <v1:airlines>\r
@@ -391,7 +1108,22 @@
          <extendedOptions>?</extendedOptions>\r
       </v1:airlines>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesRequest"/></con:call></con:operation><con:operation id="942b6a1a-d7c5-4f1e-966e-bd526c8d3650" isOneWay="false" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesByIataRequest" name="airlinesByIata" bindingOperationName="airlinesByIata" type="Request-Response" outputName="airlinesByIataResponse" inputName="airlinesByIata" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="df745bf0-92ac-472f-b490-65149d729c2b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
+</soapenv:Envelope>
+        ]]></con:request>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesRequest"/>
+      </con:call>
+    </con:operation>
+    <con:operation id="942b6a1a-d7c5-4f1e-966e-bd526c8d3650" isOneWay="false" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesByIataRequest" name="airlinesByIata" bindingOperationName="airlinesByIata" type="Request-Response" outputName="airlinesByIataResponse" inputName="airlinesByIata" receivesAttachments="false" sendsAttachments="false" anonymous="optional">
+      <con:settings/>
+      <con:call id="df745bf0-92ac-472f-b490-65149d729c2b" name="Request 1">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <v1:airlinesByIata>\r
@@ -402,7 +1134,25 @@
          <extendedOptions>?</extendedOptions>\r
       </v1:airlinesByIata>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesByIataRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="ae08b6e4-8095-4842-b83c-17e7ca432e3d" isOneWay="false" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesByIataForDateRequest" name="airlinesByIataForDate" bindingOperationName="airlinesByIataForDate" type="Request-Response" outputName="airlinesByIataForDateResponse" inputName="airlinesByIataForDate" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="15fa08d3-c232-4079-abd7-85026eb00c0b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
+</soapenv:Envelope>
+        ]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesByIataRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
+    <con:operation id="ae08b6e4-8095-4842-b83c-17e7ca432e3d" isOneWay="false" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesByIataForDateRequest" name="airlinesByIataForDate" bindingOperationName="airlinesByIataForDate" type="Request-Response" outputName="airlinesByIataForDateResponse" inputName="airlinesByIataForDate" receivesAttachments="false" sendsAttachments="false" anonymous="optional">
+      <con:settings/>
+      <con:call id="15fa08d3-c232-4079-abd7-85026eb00c0b" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <v1:airlinesByIataForDate>\r
@@ -416,7 +1166,20 @@
          <extendedOptions>?</extendedOptions>\r
       </v1:airlinesByIataForDate>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesByIataForDateRequest"/></con:call></con:operation><con:operation id="3815f53b-a4fc-40dd-993e-3c97ac864936" isOneWay="false" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesByIcaoRequest" name="airlinesByIcao" bindingOperationName="airlinesByIcao" type="Request-Response" outputName="airlinesByIcaoResponse" inputName="airlinesByIcao" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="017722ef-6156-4e15-80f4-a0bf88ad250b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
+</soapenv:Envelope>
+        ]]></con:request>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesByIataForDateRequest"/>
+      </con:call>
+    </con:operation>
+    <con:operation id="3815f53b-a4fc-40dd-993e-3c97ac864936" isOneWay="false" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesByIcaoRequest" name="airlinesByIcao" bindingOperationName="airlinesByIcao" type="Request-Response" outputName="airlinesByIcaoResponse" inputName="airlinesByIcao" receivesAttachments="false" sendsAttachments="false" anonymous="optional">
+      <con:settings/>
+      <con:call id="017722ef-6156-4e15-80f4-a0bf88ad250b" name="Request 1">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <v1:airlinesByIcao>\r
@@ -427,7 +1190,22 @@
          <extendedOptions>?</extendedOptions>\r
       </v1:airlinesByIcao>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesByIcaoRequest"/></con:call></con:operation><con:operation id="b1bb1b21-0624-4f05-b5bc-2aa5a62ed6c7" isOneWay="false" action="http://v1.airlines.cache.conducivetech.com/airlinesService/allAirlinesRequest" name="allAirlines" bindingOperationName="allAirlines" type="Request-Response" outputName="allAirlinesResponse" inputName="allAirlines" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a276046e-c5ec-4d97-bd85-d1b21f1d2268" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
+</soapenv:Envelope>
+        ]]></con:request>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesByIcaoRequest"/>
+      </con:call>
+    </con:operation>
+    <con:operation id="b1bb1b21-0624-4f05-b5bc-2aa5a62ed6c7" isOneWay="false" action="http://v1.airlines.cache.conducivetech.com/airlinesService/allAirlinesRequest" name="allAirlines" bindingOperationName="allAirlines" type="Request-Response" outputName="allAirlinesResponse" inputName="allAirlines" receivesAttachments="false" sendsAttachments="false" anonymous="optional">
+      <con:settings/>
+      <con:call id="a276046e-c5ec-4d97-bd85-d1b21f1d2268" name="Request 1">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <v1:allAirlines>\r
@@ -437,7 +1215,27 @@
          <extendedOptions>${#Project#extendedOptions}</extendedOptions>\r
       </v1:allAirlines>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/allAirlinesRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="5efef335-d22c-445f-bb7f-c3a4d0151a81" isOneWay="false" action="http://v1.airlines.cache.conducivetech.com/airlinesService/currentAirlinesRequest" name="currentAirlines" bindingOperationName="currentAirlines" type="Request-Response" outputName="currentAirlinesResponse" inputName="currentAirlines" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="46afbe9b-8283-4934-8cce-13cefd2adf07" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
+</soapenv:Envelope>
+        ]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/allAirlinesRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
+    <con:operation id="5efef335-d22c-445f-bb7f-c3a4d0151a81" isOneWay="false" action="http://v1.airlines.cache.conducivetech.com/airlinesService/currentAirlinesRequest" name="currentAirlines" bindingOperationName="currentAirlines" type="Request-Response" outputName="currentAirlinesResponse" inputName="currentAirlines" receivesAttachments="false" sendsAttachments="false" anonymous="optional">
+      <con:settings/>
+      <con:call id="46afbe9b-8283-4934-8cce-13cefd2adf07" name="Request 1">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <v1:currentAirlines>\r
@@ -447,36 +1245,588 @@
          <extendedOptions>${#Project#extendedOptions}</extendedOptions>\r
       </v1:currentAirlines>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/currentAirlinesRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:RestService" id="bf03a373-35a0-4b59-b95c-2437c13867ba" wadlVersion="http://wadl.dev.java.net/2009/02" name="FlightStats Edge" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://edge.flightstats.com</con:endpoint></con:endpoints><con:resource name="" path="" id="c5c7564e-eea6-470e-807a-726a0def4248"><con:settings/><con:parameters><con:parameter><con:name>guid</con:name><con:value>${#Project#GUID}</con:value><con:style>QUERY</con:style><con:default>${#Project#GUID}</con:default></con:parameter><con:parameter><con:name>User-Agent</con:name><con:value>FlightStats</con:value><con:style>HEADER</con:style><con:default>FlightStats</con:default></con:parameter><con:parameter><con:name>Accept</con:name><con:value>application/json</con:value><con:style>HEADER</con:style><con:default>application/json</con:default></con:parameter></con:parameters><con:resource name="airports" path="airport" id="1ec7e0df-0e6b-41b5-aa61-d9b7fee6687e"><con:settings/><con:parameters/><con:resource name="flights" path="flights/{depArr}/{airportCode}/{year}/{month}/{day}/{hour}" id="4cbf262a-42ce-4019-93ee-c84f9e7478e1"><con:settings/><con:parameters><con:parameter><con:name>depArr</con:name><con:value>dep</con:value><con:style>TEMPLATE</con:style><con:default>dep</con:default><con:option>arr</con:option><con:option>dep</con:option></con:parameter><con:parameter><con:name>airportCode</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/></con:parameter><con:parameter><con:name>year</con:name><con:value>${=new Date().format("yyyy")}</con:value><con:style>TEMPLATE</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type><con:default>${=new Date().format("yyyy")}</con:default></con:parameter><con:parameter><con:name>month</con:name><con:value>${=new Date().format("M")}</con:value><con:style>TEMPLATE</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type><con:default>${=new Date().format("M")}</con:default></con:parameter><con:parameter><con:name>day</con:name><con:value>${=new Date().format("d")}</con:value><con:style>TEMPLATE</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type><con:default>${=new Date().format("d")}</con:default></con:parameter><con:parameter><con:name>hour</con:name><con:value>12</con:value><con:style>TEMPLATE</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type><con:default>12</con:default></con:parameter><con:parameter><con:name>carrier</con:name><con:value/><con:style>QUERY</con:style><con:default/></con:parameter><con:parameter><con:name>timespan</con:name><con:value/><con:style>QUERY</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type><con:default/></con:parameter><con:parameter><con:name>airportLocal</con:name><con:value>true</con:value><con:style>QUERY</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:boolean</con:type><con:default>true</con:default></con:parameter></con:parameters><con:method name="FlightStatusByAirportCommand" id="7582fd2d-8c44-42e0-b605-8e5887bb37b4" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="https://edge.flightstats.com/airports/flights/Departing/TOS/2018/12/23/08">ns:Response</con:element></con:representation><con:request name="Request 1" id="34643f60-656c-4b76-bc0c-601d0bb57819" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edge.flightstats.com</con:endpoint><con:request/><con:originalUri>https://edge.flightstats.com/airports/flights/Departing/TOS/2018/12/23/08</con:originalUri><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="hour" value="${=new Date().format(&quot;H&quot;)}"/>
-  <con:entry key="Accept" value="application/json"/>
-  <con:entry key="airportCode" value="TOS"/>
-  <con:entry key="airportLocal" value="true"/>
-</con:parameters><con:parameterOrder><con:entry>guid</con:entry><con:entry>depArr</con:entry><con:entry>airportCode</con:entry><con:entry>year</con:entry><con:entry>month</con:entry><con:entry>day</con:entry><con:entry>hour</con:entry><con:entry>carrier</con:entry><con:entry>timespan</con:entry><con:entry>User-Agent</con:entry><con:entry>Accept</con:entry><con:entry>airportLocal</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:resource><con:resource name="reference" path="reference" id="9d0c3ab4-b8a9-4a7d-89c9-1c08955d1a70"><con:settings/><con:parameters><con:parameter><con:name>Content-Type</con:name><con:value>application/json</con:value><con:style>HEADER</con:style><con:default>application/json</con:default></con:parameter></con:parameters><con:resource name="airlines" path="airlines" id="f3ec4b76-92ce-4896-9363-84a6d37a1984"><con:settings/><con:parameters/><con:method name="GetAirlinesCommand" id="8ce054ee-8666-4ada-8625-d3aae49d460a" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="d9635bbe-fbdd-4b0a-a4a3-59bae3590541" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://edge.flightstats.com</con:endpoint><con:request/><con:originalUri>https://edge.flightstats.com/reference/airlines</con:originalUri><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="Accept" value="application/json"/>
-  <con:entry key="User-Agent" value="FlightStats"/>
-  <con:entry key="Content-Type" value="application/json"/>
-</con:parameters><con:parameterOrder><con:entry>guid</con:entry><con:entry>User-Agent</con:entry><con:entry>Accept</con:entry><con:entry>Content-Type</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="airports" path="airports" id="9f21c61d-f644-46e6-8197-d96fb7bc2f81"><con:settings/><con:parameters/><con:method name="GetAirportsCommand" id="8282ed4c-0759-4ed3-a36c-cc53e20687b7" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" id="ab26d329-16bd-4ec4-b7ce-8a03f5c8d608" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edge.flightstats.com</con:endpoint><con:request/><con:originalUri>https://edge.flightstats.com/reference/airports</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="Accept" value="application/json"/>
-  <con:entry key="User-Agent" value="FlightStats"/>
-  <con:entry key="Content-Type" value="application/json"/>
-</con:parameters><con:parameterOrder><con:entry>guid</con:entry><con:entry>User-Agent</con:entry><con:entry>Accept</con:entry><con:entry>Content-Type</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:resource><con:resource name="route" path="route" id="b538988d-0ad3-402f-8b9c-035814edc2f6"><con:settings/><con:parameters/><con:resource name="flights" path="flights/dep/{depAirportCode}/{arrAirportCode}/{year}/{month}/{day}" id="b7382e4f-16ca-4add-acde-635ada4cb577"><con:settings/><con:parameters><con:parameter><con:name>depAirportCode</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/></con:parameter><con:parameter><con:name>arrAirportCode</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/></con:parameter><con:parameter><con:name>year</con:name><con:value>${=new Date().format("yyyy")}</con:value><con:style>TEMPLATE</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type><con:default>${=new Date().format("yyyy")}</con:default></con:parameter><con:parameter><con:name>month</con:name><con:value>${=new Date().format("M")}</con:value><con:style>TEMPLATE</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type><con:default>${=new Date().format("M")}</con:default></con:parameter><con:parameter><con:name>day</con:name><con:value>${=new Date().format("d")}</con:value><con:style>TEMPLATE</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type><con:default>${=new Date().format("d")}</con:default></con:parameter></con:parameters><con:method name="FlightStatusByRouteCommand" id="d3537964-11a1-4cce-bbd0-5521d03eaf7c" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="https://edge.flightstats.com/route/flights/dep/BRU/OSL/2018/12/23">ns:Response</con:element></con:representation><con:request name="Request 1" id="1e4991f8-3879-4d43-9861-c814489df095" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edge.flightstats.com</con:endpoint><con:request/><con:originalUri>https://edge.flightstats.com/route/flights/dep/BRU/OSL/2018/12/23</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="depAirportCode" value="TOS"/>
-  <con:entry key="month" value="${=new Date().format(&quot;M&quot;)}"/>
-  <con:entry key="Accept" value="application/json"/>
-  <con:entry key="year" value="${=new Date().format(&quot;yyyy&quot;)}"/>
-  <con:entry key="day" value="${=new Date().format(&quot;d&quot;)}"/>
-  <con:entry key="arrAirportCode" value="OSL"/>
-</con:parameters><con:parameterOrder><con:entry>guid</con:entry><con:entry>User-Agent</con:entry><con:entry>depAirportCode</con:entry><con:entry>arrAirportCode</con:entry><con:entry>year</con:entry><con:entry>month</con:entry><con:entry>day</con:entry><con:entry>Accept</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:resource><con:resource name="flight" path="flight" id="542e2e0e-7274-40ec-9d31-e857edae1799"><con:settings/><con:parameters/><con:resource name="segments" path="segments/{arrDep}/{carrierCode}/{flightNumber}/{year}/{month}/{day}" id="decde808-4594-4f4c-9b76-ad0d60e2f270"><con:settings/><con:parameters><con:parameter><con:name>arrDep</con:name><con:value>dep</con:value><con:style>TEMPLATE</con:style><con:default>dep</con:default></con:parameter><con:parameter><con:name>carrierCode</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/></con:parameter><con:parameter><con:name>flightNumber</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/></con:parameter><con:parameter><con:name>year</con:name><con:value>${=new Date().format("yyyy")}</con:value><con:style>TEMPLATE</con:style><con:default>${=new Date().format("yyyy")}</con:default></con:parameter><con:parameter><con:name>month</con:name><con:value>${=new Date().format("M")}</con:value><con:style>TEMPLATE</con:style><con:default>${=new Date().format("M")}</con:default></con:parameter><con:parameter><con:name>day</con:name><con:value>${=new Date().format("d")}</con:value><con:style>TEMPLATE</con:style><con:default>${=new Date().format("d")}</con:default></con:parameter></con:parameters><con:method name="FlightStatusByFlightCommand" id="7a534fb6-e5d9-457a-8b73-b0f9fb82273c" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="https://edge.flightstats.com/flight/segments/dep/SK/4419/2018/12/23">ns:Response</con:element></con:representation><con:request name="Request 1" id="c5294460-2a77-4b57-8157-b89bc6214b81" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edge.flightstats.com</con:endpoint><con:request/><con:originalUri>https://edge.flightstats.com/flight/segments/dep/SK/4419/2018/12/23</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="Accept" value="application/json"/>
-  <con:entry key="carrierCode" value="SK"/>
-  <con:entry key="flightNumber" value="4419"/>
-</con:parameters><con:parameterOrder><con:entry>guid</con:entry><con:entry>User-Agent</con:entry><con:entry>arrDep</con:entry><con:entry>carrierCode</con:entry><con:entry>flightNumber</con:entry><con:entry>year</con:entry><con:entry>month</con:entry><con:entry>day</con:entry><con:entry>Accept</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="details" path="details/v4/{flightId}/{carrierCode}/{flightNumber}" id="48083e24-49f5-4996-b5a9-cc3733d25e71"><con:settings/><con:parameters><con:parameter><con:name>flightId</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/></con:parameter><con:parameter><con:name>carrierCode</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/></con:parameter><con:parameter><con:name>flightNumber</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/></con:parameter><con:parameter><con:name>in24Hour</con:name><con:value>true</con:value><con:style>QUERY</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:boolean</con:type><con:default>true</con:default></con:parameter><con:parameter><con:name>inMetrics</con:name><con:value>true</con:value><con:style>QUERY</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:boolean</con:type><con:default>true</con:default></con:parameter></con:parameters><con:method name="FlightStatusDetailsActivity" id="a82e7197-eb83-4b21-bf31-bb3b114ecf32" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="https://edge.flightstats.com/flight/details/v4/984300294/SK/4437">ns:Response</con:element></con:representation><con:request name="Request 1" id="3d1a30df-7e21-492e-9a97-b1f20b88c902" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edge.flightstats.com</con:endpoint><con:request/><con:originalUri>https://edge.flightstats.com/flight/details/v4/984300294/SK/4437</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="carrierCode" value="SK"/>
-  <con:entry key="flightId" value="984300294"/>
-  <con:entry key="flightNumber" value="4437"/>
-</con:parameters></con:request></con:method></con:resource><con:resource name="overview" path="overview/v4/{flightId}/{carrierCode}/{flightNumber}" id="48083e24-49f5-4996-b5a9-cc3733d25e71"><con:settings/><con:parameters><con:parameter><con:name>flightId</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/></con:parameter><con:parameter><con:name>carrierCode</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/></con:parameter><con:parameter><con:name>flightNumber</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/></con:parameter><con:parameter><con:name>in24Hour</con:name><con:value>true</con:value><con:style>QUERY</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:boolean</con:type><con:default>true</con:default></con:parameter><con:parameter><con:name>inMetrics</con:name><con:value>true</con:value><con:style>QUERY</con:style><con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:boolean</con:type><con:default>true</con:default></con:parameter></con:parameters><con:method name="FlightStatusDetailsActivity" id="a82e7197-eb83-4b21-bf31-bb3b114ecf32" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="https://edge.flightstats.com/flight/overview/v4/984300294/SK/4437">ns:Response</con:element></con:representation><con:request name="Request 1" id="3d1a30df-7e21-492e-9a97-b1f20b88c902" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://edge.flightstats.com</con:endpoint><con:request/><con:originalUri>https://edge.flightstats.com/flight/overview/v4/984300294/SK/4437</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="carrierCode" value="SK"/>
-  <con:entry key="flightId" value="984300294"/>
-  <con:entry key="flightNumber" value="4437"/>
-</con:parameters></con:request></con:method></con:resource></con:resource></con:resource></con:interface><con:properties><con:property><con:name>guid</con:name><con:value>679f8f0452a779ea:6a6a1c7:156dd340951:2383</con:value></con:property><con:property><con:name>appId</con:name><con:value>5a362965</con:value></con:property><con:property><con:name>appKey</con:name><con:value>86b940707ebe2985673cd0b570d23480</con:value></con:property><con:property><con:name>extendedOptions</con:name><con:value>useHTTPErrors+includeNewFields</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</soapenv:Envelope>
+        ]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/currentAirlinesRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="bf03a373-35a0-4b59-b95c-2437c13867ba" wadlVersion="http://wadl.dev.java.net/2009/02" name="FlightStats Edge" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://edge.flightstats.com</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="" id="c5c7564e-eea6-470e-807a-726a0def4248">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>guid</con:name>
+          <con:value>${#Project#GUID}</con:value>
+          <con:style>QUERY</con:style>
+          <con:default>${#Project#GUID}</con:default>
+        </con:parameter>
+        <con:parameter>
+          <con:name>User-Agent</con:name>
+          <con:value>FlightStats</con:value>
+          <con:style>HEADER</con:style>
+          <con:default>FlightStats</con:default>
+        </con:parameter>
+        <con:parameter>
+          <con:name>Accept</con:name>
+          <con:value>application/json</con:value>
+          <con:style>HEADER</con:style>
+          <con:default>application/json</con:default>
+        </con:parameter>
+      </con:parameters>
+      <con:resource name="airports" path="airport" id="1ec7e0df-0e6b-41b5-aa61-d9b7fee6687e">
+        <con:settings/>
+        <con:parameters/>
+        <con:resource name="flights" path="flights/{depArr}/{airportCode}/{year}/{month}/{day}/{hour}" id="4cbf262a-42ce-4019-93ee-c84f9e7478e1">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>depArr</con:name>
+              <con:value>dep</con:value>
+              <con:style>TEMPLATE</con:style>
+              <con:default>dep</con:default>
+              <con:option>arr</con:option>
+              <con:option>dep</con:option>
+            </con:parameter>
+            <con:parameter>
+              <con:name>airportCode</con:name>
+              <con:value/>
+              <con:style>TEMPLATE</con:style>
+              <con:default/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>year</con:name>
+              <con:value>${=new Date().format("yyyy")}</con:value>
+              <con:style>TEMPLATE</con:style>
+              <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type>
+              <con:default>${=new Date().format("yyyy")}</con:default>
+            </con:parameter>
+            <con:parameter>
+              <con:name>month</con:name>
+              <con:value>${=new Date().format("M")}</con:value>
+              <con:style>TEMPLATE</con:style>
+              <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type>
+              <con:default>${=new Date().format("M")}</con:default>
+            </con:parameter>
+            <con:parameter>
+              <con:name>day</con:name>
+              <con:value>${=new Date().format("d")}</con:value>
+              <con:style>TEMPLATE</con:style>
+              <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type>
+              <con:default>${=new Date().format("d")}</con:default>
+            </con:parameter>
+            <con:parameter>
+              <con:name>hour</con:name>
+              <con:value>12</con:value>
+              <con:style>TEMPLATE</con:style>
+              <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type>
+              <con:default>12</con:default>
+            </con:parameter>
+            <con:parameter>
+              <con:name>carrier</con:name>
+              <con:value/>
+              <con:style>QUERY</con:style>
+              <con:default/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>timespan</con:name>
+              <con:value/>
+              <con:style>QUERY</con:style>
+              <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type>
+              <con:default/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>airportLocal</con:name>
+              <con:value>true</con:value>
+              <con:style>QUERY</con:style>
+              <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:boolean</con:type>
+              <con:default>true</con:default>
+            </con:parameter>
+          </con:parameters>
+          <con:method name="FlightStatusByAirportCommand" id="7582fd2d-8c44-42e0-b605-8e5887bb37b4" method="GET">
+            <con:settings/>
+            <con:parameters/>
+            <con:representation type="FAULT">
+              <con:mediaType>text/plain; charset=utf-8</con:mediaType>
+              <con:status>404</con:status>
+              <con:params/>
+              <con:element>data</con:element>
+            </con:representation>
+            <con:representation type="RESPONSE">
+              <con:mediaType>application/json; charset=utf-8</con:mediaType>
+              <con:status>200</con:status>
+              <con:params/>
+              <con:element xmlns:ns="https://edge.flightstats.com/airports/flights/Departing/TOS/2018/12/23/08">ns:Response</con:element>
+            </con:representation>
+            <con:request name="Request 1" id="34643f60-656c-4b76-bc0c-601d0bb57819" mediaType="application/json">
+              <con:settings>
+                <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              </con:settings>
+              <con:endpoint>https://edge.flightstats.com</con:endpoint>
+              <con:request/>
+              <con:originalUri>https://edge.flightstats.com/airports/flights/Departing/TOS/2018/12/23/08</con:originalUri>
+              <con:credentials>
+                <con:username xsi:nil="true"/>
+                <con:password xsi:nil="true"/>
+                <con:domain xsi:nil="true"/>
+                <con:authType>No Authorization</con:authType>
+              </con:credentials>
+              <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+              <con:jmsPropertyConfig/>
+              <con:parameters>
+                <con:entry key="hour" value="${=new Date().format(&quot;H&quot;)}"/>
+                <con:entry key="Accept" value="application/json"/>
+                <con:entry key="airportCode" value="TOS"/>
+                <con:entry key="airportLocal" value="true"/>
+              </con:parameters>
+              <con:parameterOrder>
+                <con:entry>guid</con:entry>
+                <con:entry>depArr</con:entry>
+                <con:entry>airportCode</con:entry>
+                <con:entry>year</con:entry>
+                <con:entry>month</con:entry>
+                <con:entry>day</con:entry>
+                <con:entry>hour</con:entry>
+                <con:entry>carrier</con:entry>
+                <con:entry>timespan</con:entry>
+                <con:entry>User-Agent</con:entry>
+                <con:entry>Accept</con:entry>
+                <con:entry>airportLocal</con:entry>
+              </con:parameterOrder>
+            </con:request>
+          </con:method>
+        </con:resource>
+      </con:resource>
+      <con:resource name="reference" path="reference" id="9d0c3ab4-b8a9-4a7d-89c9-1c08955d1a70">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>Content-Type</con:name>
+            <con:value>application/json</con:value>
+            <con:style>HEADER</con:style>
+            <con:default>application/json</con:default>
+          </con:parameter>
+        </con:parameters>
+        <con:resource name="airlines" path="airlines" id="f3ec4b76-92ce-4896-9363-84a6d37a1984">
+          <con:settings/>
+          <con:parameters/>
+          <con:method name="GetAirlinesCommand" id="8ce054ee-8666-4ada-8625-d3aae49d460a" method="GET">
+            <con:settings/>
+            <con:parameters/>
+            <con:representation type="RESPONSE">
+              <con:mediaType xsi:nil="true"/>
+              <con:status>0</con:status>
+              <con:params/>
+              <con:element>data</con:element>
+            </con:representation>
+            <con:representation type="RESPONSE">
+              <con:mediaType>text/html; charset=utf-8</con:mediaType>
+              <con:status>200</con:status>
+              <con:params/>
+              <con:element>html</con:element>
+            </con:representation>
+            <con:representation type="REQUEST">
+              <con:mediaType>application/json</con:mediaType>
+              <con:params/>
+            </con:representation>
+            <con:request name="Request 1" id="d9635bbe-fbdd-4b0a-a4a3-59bae3590541" mediaType="application/json">
+              <con:settings>
+                <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Accept" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting>
+              </con:settings>
+              <con:endpoint>https://edge.flightstats.com</con:endpoint>
+              <con:request/>
+              <con:originalUri>https://edge.flightstats.com/reference/airlines</con:originalUri>
+              <con:credentials>
+                <con:username xsi:nil="true"/>
+                <con:password xsi:nil="true"/>
+                <con:domain xsi:nil="true"/>
+                <con:authType>No Authorization</con:authType>
+              </con:credentials>
+              <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+              <con:jmsPropertyConfig/>
+              <con:parameters>
+                <con:entry key="Accept" value="application/json"/>
+                <con:entry key="User-Agent" value="FlightStats"/>
+                <con:entry key="Content-Type" value="application/json"/>
+              </con:parameters>
+              <con:parameterOrder>
+                <con:entry>guid</con:entry>
+                <con:entry>User-Agent</con:entry>
+                <con:entry>Accept</con:entry>
+                <con:entry>Content-Type</con:entry>
+              </con:parameterOrder>
+            </con:request>
+          </con:method>
+        </con:resource>
+        <con:resource name="airports" path="airports" id="9f21c61d-f644-46e6-8197-d96fb7bc2f81">
+          <con:settings/>
+          <con:parameters/>
+          <con:method name="GetAirportsCommand" id="8282ed4c-0759-4ed3-a36c-cc53e20687b7" method="GET">
+            <con:settings/>
+            <con:parameters/>
+            <con:representation type="RESPONSE">
+              <con:mediaType>text/html; charset=utf-8</con:mediaType>
+              <con:status>200</con:status>
+              <con:params/>
+              <con:element>html</con:element>
+            </con:representation>
+            <con:request name="Request 1" id="ab26d329-16bd-4ec4-b7ce-8a03f5c8d608" mediaType="application/json">
+              <con:settings>
+                <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              </con:settings>
+              <con:endpoint>https://edge.flightstats.com</con:endpoint>
+              <con:request/>
+              <con:originalUri>https://edge.flightstats.com/reference/airports</con:originalUri>
+              <con:credentials>
+                <con:authType>No Authorization</con:authType>
+              </con:credentials>
+              <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+              <con:jmsPropertyConfig/>
+              <con:parameters>
+                <con:entry key="Accept" value="application/json"/>
+                <con:entry key="User-Agent" value="FlightStats"/>
+                <con:entry key="Content-Type" value="application/json"/>
+              </con:parameters>
+              <con:parameterOrder>
+                <con:entry>guid</con:entry>
+                <con:entry>User-Agent</con:entry>
+                <con:entry>Accept</con:entry>
+                <con:entry>Content-Type</con:entry>
+              </con:parameterOrder>
+            </con:request>
+          </con:method>
+        </con:resource>
+      </con:resource>
+      <con:resource name="route" path="route" id="b538988d-0ad3-402f-8b9c-035814edc2f6">
+        <con:settings/>
+        <con:parameters/>
+        <con:resource name="flights" path="flights/dep/{depAirportCode}/{arrAirportCode}/{year}/{month}/{day}" id="b7382e4f-16ca-4add-acde-635ada4cb577">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>depAirportCode</con:name>
+              <con:value/>
+              <con:style>TEMPLATE</con:style>
+              <con:default/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>arrAirportCode</con:name>
+              <con:value/>
+              <con:style>TEMPLATE</con:style>
+              <con:default/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>year</con:name>
+              <con:value>${=new Date().format("yyyy")}</con:value>
+              <con:style>TEMPLATE</con:style>
+              <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type>
+              <con:default>${=new Date().format("yyyy")}</con:default>
+            </con:parameter>
+            <con:parameter>
+              <con:name>month</con:name>
+              <con:value>${=new Date().format("M")}</con:value>
+              <con:style>TEMPLATE</con:style>
+              <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type>
+              <con:default>${=new Date().format("M")}</con:default>
+            </con:parameter>
+            <con:parameter>
+              <con:name>day</con:name>
+              <con:value>${=new Date().format("d")}</con:value>
+              <con:style>TEMPLATE</con:style>
+              <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type>
+              <con:default>${=new Date().format("d")}</con:default>
+            </con:parameter>
+          </con:parameters>
+          <con:method name="FlightStatusByRouteCommand" id="d3537964-11a1-4cce-bbd0-5521d03eaf7c" method="GET">
+            <con:settings/>
+            <con:parameters/>
+            <con:representation type="RESPONSE">
+              <con:mediaType>application/json; charset=utf-8</con:mediaType>
+              <con:status>200</con:status>
+              <con:params/>
+              <con:element xmlns:ns="https://edge.flightstats.com/route/flights/dep/BRU/OSL/2018/12/23">ns:Response</con:element>
+            </con:representation>
+            <con:request name="Request 1" id="1e4991f8-3879-4d43-9861-c814489df095" mediaType="application/json">
+              <con:settings>
+                <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              </con:settings>
+              <con:endpoint>https://edge.flightstats.com</con:endpoint>
+              <con:request/>
+              <con:originalUri>https://edge.flightstats.com/route/flights/dep/BRU/OSL/2018/12/23</con:originalUri>
+              <con:credentials>
+                <con:authType>No Authorization</con:authType>
+              </con:credentials>
+              <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+              <con:jmsPropertyConfig/>
+              <con:parameters>
+                <con:entry key="depAirportCode" value="TOS"/>
+                <con:entry key="month" value="${=new Date().format(&quot;M&quot;)}"/>
+                <con:entry key="Accept" value="application/json"/>
+                <con:entry key="year" value="${=new Date().format(&quot;yyyy&quot;)}"/>
+                <con:entry key="day" value="${=new Date().format(&quot;d&quot;)}"/>
+                <con:entry key="arrAirportCode" value="OSL"/>
+              </con:parameters>
+              <con:parameterOrder>
+                <con:entry>guid</con:entry>
+                <con:entry>User-Agent</con:entry>
+                <con:entry>depAirportCode</con:entry>
+                <con:entry>arrAirportCode</con:entry>
+                <con:entry>year</con:entry>
+                <con:entry>month</con:entry>
+                <con:entry>day</con:entry>
+                <con:entry>Accept</con:entry>
+              </con:parameterOrder>
+            </con:request>
+          </con:method>
+        </con:resource>
+      </con:resource>
+      <con:resource name="flight" path="flight" id="542e2e0e-7274-40ec-9d31-e857edae1799">
+        <con:settings/>
+        <con:parameters/>
+        <con:resource name="segments" path="segments/{arrDep}/{carrierCode}/{flightNumber}/{year}/{month}/{day}" id="decde808-4594-4f4c-9b76-ad0d60e2f270">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>arrDep</con:name>
+              <con:value>dep</con:value>
+              <con:style>TEMPLATE</con:style>
+              <con:default>dep</con:default>
+            </con:parameter>
+            <con:parameter>
+              <con:name>carrierCode</con:name>
+              <con:value/>
+              <con:style>TEMPLATE</con:style>
+              <con:default/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>flightNumber</con:name>
+              <con:value/>
+              <con:style>TEMPLATE</con:style>
+              <con:default/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>year</con:name>
+              <con:value>${=new Date().format("yyyy")}</con:value>
+              <con:style>TEMPLATE</con:style>
+              <con:default>${=new Date().format("yyyy")}</con:default>
+            </con:parameter>
+            <con:parameter>
+              <con:name>month</con:name>
+              <con:value>${=new Date().format("M")}</con:value>
+              <con:style>TEMPLATE</con:style>
+              <con:default>${=new Date().format("M")}</con:default>
+            </con:parameter>
+            <con:parameter>
+              <con:name>day</con:name>
+              <con:value>${=new Date().format("d")}</con:value>
+              <con:style>TEMPLATE</con:style>
+              <con:default>${=new Date().format("d")}</con:default>
+            </con:parameter>
+          </con:parameters>
+          <con:method name="FlightStatusByFlightCommand" id="7a534fb6-e5d9-457a-8b73-b0f9fb82273c" method="GET">
+            <con:settings/>
+            <con:parameters/>
+            <con:representation type="RESPONSE">
+              <con:mediaType>application/json; charset=utf-8</con:mediaType>
+              <con:status>200</con:status>
+              <con:params/>
+              <con:element xmlns:ns="https://edge.flightstats.com/flight/segments/dep/SK/4419/2018/12/23">ns:Response</con:element>
+            </con:representation>
+            <con:request name="Request 1" id="c5294460-2a77-4b57-8157-b89bc6214b81" mediaType="application/json">
+              <con:settings>
+                <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              </con:settings>
+              <con:endpoint>https://edge.flightstats.com</con:endpoint>
+              <con:request/>
+              <con:originalUri>https://edge.flightstats.com/flight/segments/dep/SK/4419/2018/12/23</con:originalUri>
+              <con:credentials>
+                <con:authType>No Authorization</con:authType>
+              </con:credentials>
+              <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+              <con:jmsPropertyConfig/>
+              <con:parameters>
+                <con:entry key="Accept" value="application/json"/>
+                <con:entry key="carrierCode" value="SK"/>
+                <con:entry key="flightNumber" value="4419"/>
+              </con:parameters>
+              <con:parameterOrder>
+                <con:entry>guid</con:entry>
+                <con:entry>User-Agent</con:entry>
+                <con:entry>arrDep</con:entry>
+                <con:entry>carrierCode</con:entry>
+                <con:entry>flightNumber</con:entry>
+                <con:entry>year</con:entry>
+                <con:entry>month</con:entry>
+                <con:entry>day</con:entry>
+                <con:entry>Accept</con:entry>
+              </con:parameterOrder>
+            </con:request>
+          </con:method>
+        </con:resource>
+        <con:resource name="details" path="details/v4/{flightId}/{carrierCode}/{flightNumber}" id="48083e24-49f5-4996-b5a9-cc3733d25e71">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>flightId</con:name>
+              <con:value/>
+              <con:style>TEMPLATE</con:style>
+              <con:default/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>carrierCode</con:name>
+              <con:value/>
+              <con:style>TEMPLATE</con:style>
+              <con:default/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>flightNumber</con:name>
+              <con:value/>
+              <con:style>TEMPLATE</con:style>
+              <con:default/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>in24Hour</con:name>
+              <con:value>true</con:value>
+              <con:style>QUERY</con:style>
+              <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:boolean</con:type>
+              <con:default>true</con:default>
+            </con:parameter>
+            <con:parameter>
+              <con:name>inMetrics</con:name>
+              <con:value>true</con:value>
+              <con:style>QUERY</con:style>
+              <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:boolean</con:type>
+              <con:default>true</con:default>
+            </con:parameter>
+          </con:parameters>
+          <con:method name="FlightStatusDetailsActivity" id="a82e7197-eb83-4b21-bf31-bb3b114ecf32" method="GET">
+            <con:settings/>
+            <con:parameters/>
+            <con:representation type="RESPONSE">
+              <con:mediaType>application/json; charset=utf-8</con:mediaType>
+              <con:status>200</con:status>
+              <con:params/>
+              <con:element xmlns:ns="https://edge.flightstats.com/flight/details/v4/984300294/SK/4437">ns:Response</con:element>
+            </con:representation>
+            <con:request name="Request 1" id="3d1a30df-7e21-492e-9a97-b1f20b88c902" mediaType="application/json">
+              <con:settings>
+                <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              </con:settings>
+              <con:endpoint>https://edge.flightstats.com</con:endpoint>
+              <con:request/>
+              <con:originalUri>https://edge.flightstats.com/flight/details/v4/984300294/SK/4437</con:originalUri>
+              <con:credentials>
+                <con:authType>No Authorization</con:authType>
+              </con:credentials>
+              <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+              <con:jmsPropertyConfig/>
+              <con:parameters>
+                <con:entry key="carrierCode" value="SK"/>
+                <con:entry key="flightId" value="984300294"/>
+                <con:entry key="flightNumber" value="4437"/>
+              </con:parameters>
+            </con:request>
+          </con:method>
+        </con:resource>
+        <con:resource name="overview" path="overview/v4/{flightId}/{carrierCode}/{flightNumber}" id="48083e24-49f5-4996-b5a9-cc3733d25e71">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>flightId</con:name>
+              <con:value/>
+              <con:style>TEMPLATE</con:style>
+              <con:default/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>carrierCode</con:name>
+              <con:value/>
+              <con:style>TEMPLATE</con:style>
+              <con:default/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>flightNumber</con:name>
+              <con:value/>
+              <con:style>TEMPLATE</con:style>
+              <con:default/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>in24Hour</con:name>
+              <con:value>true</con:value>
+              <con:style>QUERY</con:style>
+              <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:boolean</con:type>
+              <con:default>true</con:default>
+            </con:parameter>
+            <con:parameter>
+              <con:name>inMetrics</con:name>
+              <con:value>true</con:value>
+              <con:style>QUERY</con:style>
+              <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:boolean</con:type>
+              <con:default>true</con:default>
+            </con:parameter>
+          </con:parameters>
+          <con:method name="FlightStatusDetailsActivity" id="a82e7197-eb83-4b21-bf31-bb3b114ecf32" method="GET">
+            <con:settings/>
+            <con:parameters/>
+            <con:representation type="RESPONSE">
+              <con:mediaType>application/json; charset=utf-8</con:mediaType>
+              <con:status>200</con:status>
+              <con:params/>
+              <con:element xmlns:ns="https://edge.flightstats.com/flight/overview/v4/984300294/SK/4437">ns:Response</con:element>
+            </con:representation>
+            <con:request name="Request 1" id="3d1a30df-7e21-492e-9a97-b1f20b88c902" mediaType="application/json">
+              <con:settings>
+                <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              </con:settings>
+              <con:endpoint>https://edge.flightstats.com</con:endpoint>
+              <con:request/>
+              <con:originalUri>https://edge.flightstats.com/flight/overview/v4/984300294/SK/4437</con:originalUri>
+              <con:credentials>
+                <con:authType>No Authorization</con:authType>
+              </con:credentials>
+              <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+              <con:jmsPropertyConfig/>
+              <con:parameters>
+                <con:entry key="carrierCode" value="SK"/>
+                <con:entry key="flightId" value="984300294"/>
+                <con:entry key="flightNumber" value="4437"/>
+              </con:parameters>
+            </con:request>
+          </con:method>
+        </con:resource>
+      </con:resource>
+    </con:resource>
+  </con:interface>
+  <con:properties>
+    <con:property>
+      <con:name>guid</con:name>
+      <con:value>679f8f0452a779ea:6a6a1c7:156dd340951:2383</con:value>
+    </con:property>
+    <con:property>
+      <con:name>appId</con:name>
+      <con:value>5a362965</con:value>
+    </con:property>
+    <con:property>
+      <con:name>appKey</con:name>
+      <con:value>86b940707ebe2985673cd0b570d23480</con:value>
+    </con:property>
+    <con:property>
+      <con:name>extendedOptions</con:name>
+      <con:value>useHTTPErrors+includeNewFields</con:value>
+    </con:property>
+  </con:properties>
+  <con:wssContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:sensitiveInformation/>
+</con:soapui-project>

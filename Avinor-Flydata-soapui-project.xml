@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="Avinor Flydata" resourceRoot="${projectDir}" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" id="00a0cbde-3639-4ffd-85f2-b265056be05e" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default" name="Avinor Flydata" resourceRoot="${projectDir}" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" id="00a0cbde-3639-4ffd-85f2-b265056be05e" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://flydata.avinor.no" type="rest" id="47d6667e-7337-43e1-a97d-a8df95dedaa1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -117,7 +117,7 @@
             <con:option>D</con:option>
             <con:option>E</con:option>
             <con:option>N</con:option>
-            <con:description>Parameteren "code" angir hvilken statuskode det ÃƒÂ¸nskes ÃƒÂ¥ hente statustekst for. Alternativt hentes alle statustekster for samtlige statuskoder.</con:description>
+            <con:description>Parameteren "code" angir hvilken statuskode det ønskes ÃƒÂ¥ hente statustekst for. Alternativt hentes alle statustekster for samtlige statuskoder.</con:description>
           </con:parameter>
         </con:parameters>
         <con:representation type="RESPONSE">
@@ -126,7 +126,37 @@
           <con:params/>
           <con:element>flightStatuses</con:element>
         </con:representation>
-      <con:request name="All Flight Status Descriptions" id="4468cc9a-c432-4033-a897-4a58ca20df99" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://flydata.avinor.no</con:endpoint><con:request/><con:originalUri>https://flydata.avinor.no/flightStatuses.asp</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Flight Status Description by Code" id="4468cc9a-c432-4033-a897-4a58ca20df99" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://flydata.avinor.no</con:endpoint><con:request/><con:originalUri>https://flydata.avinor.no/flightStatuses.asp</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="code" value="C" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method>
+        <con:request name="All Flight Status Descriptions" id="4468cc9a-c432-4033-a897-4a58ca20df99" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://flydata.avinor.no</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://flydata.avinor.no/flightStatuses.asp</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+        <con:request name="Flight Status Description by Code" id="4468cc9a-c432-4033-a897-4a58ca20df99" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://flydata.avinor.no</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://flydata.avinor.no/flightStatuses.asp</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="code" value="C" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+        </con:request>
+      </con:method>
     </con:resource>
     <con:resource name="AirportNames.asp" path="/airportNames.asp" id="878ffa63-117e-449b-ad13-2432d3bdd499">
       <con:settings/>
@@ -140,17 +170,63 @@
             <con:style>QUERY</con:style>
             <con:default/>
           </con:parameter>
-        <con:parameter><con:name>shortname</con:name><con:value>N</con:value><con:style>QUERY</con:style><con:default>N</con:default><con:option>Y</con:option><con:option>N</con:option></con:parameter></con:parameters>
+          <con:parameter>
+            <con:name>shortname</con:name>
+            <con:value>N</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>N</con:default>
+            <con:option>Y</con:option>
+            <con:option>N</con:option>
+          </con:parameter>
+        </con:parameters>
         <con:representation type="RESPONSE">
           <con:mediaType>text/xml; Charset=iso-8859-1</con:mediaType>
           <con:status>200</con:status>
           <con:params/>
           <con:element>airportNames</con:element>
         </con:representation>
-      <con:request name="AllAirports" id="38851886-2445-4d93-8b9d-88dabaf57cf5" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://flydata.avinor.no</con:endpoint><con:request/><con:originalUri>https://flydata.avinor.no/airportNames.asp</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="shortname" value="Y" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>airport</con:entry><con:entry>shortname</con:entry></con:parameterOrder></con:request><con:request name="AirportByIata" id="38851886-2445-4d93-8b9d-88dabaf57cf5" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://flydata.avinor.no</con:endpoint><con:request/><con:originalUri>https://flydata.avinor.no/airportNames.asp</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="shortname" value="Y"/>
-  <con:entry key="airport" value="TOS"/>
-</con:parameters><con:parameterOrder><con:entry>airport</con:entry><con:entry>shortname</con:entry></con:parameterOrder></con:request></con:method>
+        <con:request name="AllAirports" id="38851886-2445-4d93-8b9d-88dabaf57cf5" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://flydata.avinor.no</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://flydata.avinor.no/airportNames.asp</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="shortname" value="Y" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>airport</con:entry>
+            <con:entry>shortname</con:entry>
+          </con:parameterOrder>
+        </con:request>
+        <con:request name="AirportByIata" id="38851886-2445-4d93-8b9d-88dabaf57cf5" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://flydata.avinor.no</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://flydata.avinor.no/airportNames.asp</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <con:entry key="shortname" value="Y"/>
+            <con:entry key="airport" value="TOS"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>airport</con:entry>
+            <con:entry>shortname</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
     </con:resource>
     <con:resource name="AirlineNames.asp" path="/airlineNames.asp" id="09d70535-4494-4ca7-ab0e-48e77f2997a2">
       <con:settings/>
@@ -169,7 +245,37 @@
           <con:params/>
           <con:element>airlineNames</con:element>
         </con:representation>
-      <con:request name="AllAirlines" id="8bffb47d-0a5b-49ba-9e2a-08207604001d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://flydata.avinor.no</con:endpoint><con:request/><con:originalUri>https://flydata.avinor.no/airlineNames.asp</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="AirlineByIata" id="8bffb47d-0a5b-49ba-9e2a-08207604001d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://flydata.avinor.no</con:endpoint><con:request/><con:originalUri>https://flydata.avinor.no/airlineNames.asp</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="airline" value="WF" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method>
+        <con:request name="AllAirlines" id="8bffb47d-0a5b-49ba-9e2a-08207604001d" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://flydata.avinor.no</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://flydata.avinor.no/airlineNames.asp</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+        <con:request name="AirlineByIata" id="8bffb47d-0a5b-49ba-9e2a-08207604001d" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://flydata.avinor.no</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://flydata.avinor.no/airlineNames.asp</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="airline" value="WF" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+        </con:request>
+      </con:method>
     </con:resource>
     <con:resource name="XmlFeed.xsd" path="/XmlFeed.xsd" id="869edbe1-4358-4d23-a720-d06a9bf0a947">
       <con:settings/>
@@ -324,7 +430,7 @@
             <con:entry>code</con:entry>
           </con:parameterOrder>
         </con:request>
-      <con:request name="Gate Status Description by Code" id="303557fa-3ec6-4164-ad5f-e194ca0ef4c0" mediaType="application/json">
+        <con:request name="Gate Status Description by Code" id="303557fa-3ec6-4164-ad5f-e194ca0ef4c0" mediaType="application/json">
           <con:settings>
             <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
           </con:settings>
@@ -336,11 +442,14 @@
           </con:credentials>
           <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
           <con:jmsPropertyConfig/>
-          <con:parameters><entry key="code" value="B" xmlns="http://eviware.com/soapui/config"/></con:parameters>
+          <con:parameters>
+            <entry key="code" value="B" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
           <con:parameterOrder>
             <con:entry>code</con:entry>
           </con:parameterOrder>
-        </con:request></con:method>
+        </con:request>
+      </con:method>
     </con:resource>
     <con:resource name="GateStatuses.xsd" path="/GateStatuses.xsd" id="834e664b-dfd4-463a-9c8d-2e948d2ff61b">
       <con:settings/>
@@ -370,7 +479,96 @@
         </con:request>
       </con:method>
     </con:resource>
-  <con:resource name="BeltStatuses.xsd" path="/BeltStatuses.xsd" id="a80ce2b6-fbb3-46f4-bc85-810c5e2f66dc"><con:settings/><con:parameters/><con:method name="Retrieve Schema" id="8825abf2-5efd-4518-8fed-776864f3e718" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:schema</con:element></con:representation><con:request name="Request" id="6214f3a0-7c1f-45e3-976c-c9309b99d6d0" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://flydata.avinor.no</con:endpoint><con:request/><con:originalUri>https://flydata.avinor.no/BeltStatuses.xsd</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="BeltStatuses.asp" path="/BeltStatuses.asp" id="e768eeb8-6ad8-48b1-8ec6-b07a0584b107"><con:settings/><con:parameters/><con:method name="Get Belt Status Description" id="f5a95051-ce41-48d1-9ce6-3a6ef87d1e66" method="GET"><con:settings/><con:parameters><con:parameter><con:name>code</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>O</con:option><con:option>C</con:option></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>text/xml; Charset=iso-8859-1</con:mediaType><con:status>200</con:status><con:params/><con:element>beltStatuses</con:element></con:representation><con:request name="All Belt Status Descriptions" id="fb822cda-2aec-412a-a287-968b778ee5c4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://flydata.avinor.no</con:endpoint><con:request/><con:originalUri>https://flydata.avinor.no/BeltStatuses.asp</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="code" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>code</con:entry></con:parameterOrder></con:request><con:request name="Belt Status Description by Code" id="fb822cda-2aec-412a-a287-968b778ee5c4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://flydata.avinor.no</con:endpoint><con:request/><con:originalUri>https://flydata.avinor.no/BeltStatuses.asp</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="code" value="O" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>code</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface>
+    <con:resource name="BeltStatuses.xsd" path="/BeltStatuses.xsd" id="a80ce2b6-fbb3-46f4-bc85-810c5e2f66dc">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Retrieve Schema" id="8825abf2-5efd-4518-8fed-776864f3e718" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>text/xml</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:schema</con:element>
+        </con:representation>
+        <con:request name="Request" id="6214f3a0-7c1f-45e3-976c-c9309b99d6d0" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://flydata.avinor.no</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://flydata.avinor.no/BeltStatuses.xsd</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="BeltStatuses.asp" path="/BeltStatuses.asp" id="e768eeb8-6ad8-48b1-8ec6-b07a0584b107">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Get Belt Status Description" id="f5a95051-ce41-48d1-9ce6-3a6ef87d1e66" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>code</con:name>
+            <con:value/>
+            <con:style>QUERY</con:style>
+            <con:default/>
+            <con:option>O</con:option>
+            <con:option>C</con:option>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE">
+          <con:mediaType>text/xml; Charset=iso-8859-1</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>beltStatuses</con:element>
+        </con:representation>
+        <con:request name="All Belt Status Descriptions" id="fb822cda-2aec-412a-a287-968b778ee5c4" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://flydata.avinor.no</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://flydata.avinor.no/BeltStatuses.asp</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="code" value="" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>code</con:entry>
+          </con:parameterOrder>
+        </con:request>
+        <con:request name="Belt Status Description by Code" id="fb822cda-2aec-412a-a287-968b778ee5c4" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://flydata.avinor.no</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://flydata.avinor.no/BeltStatuses.asp</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="code" value="O" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>code</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
   <con:interface xsi:type="con:RestService" id="9bb61a26-506d-4197-94bd-03b0143462d8" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://tjenester.avinor.no" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
     <con:definitionCache type="TEXT" rootPart=""/>
@@ -407,18 +605,19 @@
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
             <con:endpoint>https://tjenester.avinor.no</con:endpoint>
-            <con:request>{
-  "flightId":"WF913",
-  "iata":"TOS",
-  "direction":"A",
-  "schedule":"2015-06-30",
-  "operatingSystem":"ANDROID",	
-  "pushServiceToken":"dnW8SOfzdSs:APA91bGPEcxFjZ1Zuekzjw5xxSdzT5LFz6iVMIp86oKsufbFn-ppBMV1jKv29lN7D2_Jp0dwnRKvxl1mopSY2AC_voEb6cQDatxYvju9eh3oL2SSwHTZksL_8otNilAMha0HDoglGklN",
-  "applicationIdentifier":"${#Project#applicationIdentifier}",
-  "applicationName":"avinorflights",
-  "language":"en"
-}
-</con:request>
+            <con:request>
+              {
+              "flightId":"WF913",
+              "iata":"TOS",
+              "direction":"A",
+              "schedule":"2015-06-30",
+              "operatingSystem":"ANDROID",
+              "pushServiceToken":"dnW8SOfzdSs:APA91bGPEcxFjZ1Zuekzjw5xxSdzT5LFz6iVMIp86oKsufbFn-ppBMV1jKv29lN7D2_Jp0dwnRKvxl1mopSY2AC_voEb6cQDatxYvju9eh3oL2SSwHTZksL_8otNilAMha0HDoglGklN",
+              "applicationIdentifier":"${#Project#applicationIdentifier}",
+              "applicationName":"avinorflights",
+              "language":"en"
+              }
+            </con:request>
             <con:originalUri>https://tjenester.avinor.no/flightpns-2.0/subscriptions</con:originalUri>
             <con:credentials>
               <con:username>avinorflights</con:username>
@@ -499,9 +698,9 @@
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:jmsPropertyConfig/>
             <con:parameters>
-  <con:entry key="shortname" value="Y"/>
-  <con:entry key="airport" value="TOS"/>
-</con:parameters>
+              <con:entry key="shortname" value="Y"/>
+              <con:entry key="airport" value="TOS"/>
+            </con:parameters>
             <con:parameterOrder>
               <con:entry>airport</con:entry>
               <con:entry>shortname</con:entry>
@@ -756,7 +955,7 @@
               <con:entry>code</con:entry>
             </con:parameterOrder>
           </con:request>
-        <con:request name="GateStatusByCode" id="6af93fb0-c93b-41fe-ac49-67ca8245810d" mediaType="application/json">
+          <con:request name="GateStatusByCode" id="6af93fb0-c93b-41fe-ac49-67ca8245810d" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
@@ -768,13 +967,77 @@
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:jmsPropertyConfig/>
-            <con:parameters><entry key="code" value="B" xmlns="http://eviware.com/soapui/config"/></con:parameters>
+            <con:parameters>
+              <entry key="code" value="B" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
             <con:parameterOrder>
               <con:entry>code</con:entry>
             </con:parameterOrder>
-          </con:request></con:method>
+          </con:request>
+        </con:method>
       </con:resource>
-    <con:resource name="beltstatuses" path="beltstatuses" id="19bb6607-feec-4385-a7af-b4a49cc548eb"><con:settings/><con:parameters/><con:method name="BeltStatuses" id="ce62b1a6-9da6-4f18-b77d-e47c78c30e42" method="GET"><con:settings/><con:parameters><con:parameter><con:name>code</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:option>O</con:option><con:option>C</con:option></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="AllBeltStatuses" id="f698f1c4-b9a2-4215-beb2-339dcda239d1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://tjenester.avinor.no</con:endpoint><con:request/><con:originalUri>https://tjenester.avinor.no/flightservice-1.0/beltstatuses</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="code" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>code</con:entry></con:parameterOrder></con:request><con:request name="BeltStatusByCode" id="f698f1c4-b9a2-4215-beb2-339dcda239d1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://tjenester.avinor.no</con:endpoint><con:request/><con:originalUri>https://tjenester.avinor.no/flightservice-1.0/beltstatuses</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="code" value="O" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>code</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:resource>
+      <con:resource name="beltstatuses" path="beltstatuses" id="19bb6607-feec-4385-a7af-b4a49cc548eb">
+        <con:settings/>
+        <con:parameters/>
+        <con:method name="BeltStatuses" id="ce62b1a6-9da6-4f18-b77d-e47c78c30e42" method="GET">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>code</con:name>
+              <con:value/>
+              <con:style>QUERY</con:style>
+              <con:default/>
+              <con:option>O</con:option>
+              <con:option>C</con:option>
+            </con:parameter>
+          </con:parameters>
+          <con:representation type="RESPONSE">
+            <con:mediaType>application/json;charset=utf-8</con:mediaType>
+            <con:status>200</con:status>
+            <con:params/>
+            <con:element>Response</con:element>
+          </con:representation>
+          <con:request name="AllBeltStatuses" id="f698f1c4-b9a2-4215-beb2-339dcda239d1" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://tjenester.avinor.no</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://tjenester.avinor.no/flightservice-1.0/beltstatuses</con:originalUri>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <entry key="code" value="" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>code</con:entry>
+            </con:parameterOrder>
+          </con:request>
+          <con:request name="BeltStatusByCode" id="f698f1c4-b9a2-4215-beb2-339dcda239d1" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://tjenester.avinor.no</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://tjenester.avinor.no/flightservice-1.0/beltstatuses</con:originalUri>
+            <con:credentials>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <entry key="code" value="O" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>code</con:entry>
+            </con:parameterOrder>
+          </con:request>
+        </con:method>
+      </con:resource>
+    </con:resource>
     <con:resource name="airportservice-1.0" path="/airportservice-1.0" id="c0dab04d-bdfc-440d-bae4-081ac7ffed27">
       <con:settings/>
       <con:parameters/>
@@ -812,7 +1075,7 @@
               <con:params/>
               <con:element xmlns:tos="https://tjenester.avinor.no/airportservice-1.0/service/statusmessage/json/en/TOS">tos:Response</con:element>
             </con:representation>
-            <con:request name="TromsÃƒÂ¸" id="2c10fd48-327e-4bd1-9ee6-e22e87520ef6" mediaType="application/json">
+            <con:request name="Tromsø" id="2c10fd48-327e-4bd1-9ee6-e22e87520ef6" mediaType="application/json">
               <con:settings>
                 <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
               </con:settings>
@@ -872,7 +1135,7 @@
                 <con:params/>
                 <con:element>data</con:element>
               </con:representation>
-              <con:request name="TromsÃƒÂ¸ #0" id="14ea05df-0178-4ca4-a5bf-a419df13d796" mediaType="application/json">
+              <con:request name="Tromsø #0" id="14ea05df-0178-4ca4-a5bf-a419df13d796" mediaType="application/json">
                 <con:settings>
                   <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
                 </con:settings>
@@ -961,8 +1224,14 @@
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:jmsPropertyConfig/>
-            <con:parameters><entry key="shortname" value="Y" xmlns="http://eviware.com/soapui/config"/></con:parameters>
-          <con:parameterOrder><con:entry>airport</con:entry><con:entry>shortname</con:entry></con:parameterOrder></con:restRequest>
+            <con:parameters>
+              <entry key="shortname" value="Y" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>airport</con:entry>
+              <con:entry>shortname</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
         </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="Get All Avinor Airline names" id="ab9c7c88-f23d-41c7-9828-d94d6d6ddc7f">
@@ -1062,4 +1331,5 @@
     <con:xmlTemplates/>
     <con:parameters/>
   </con:reporting>
-<con:sensitiveInformation/></con:soapui-project>
+  <con:sensitiveInformation/>
+</con:soapui-project>

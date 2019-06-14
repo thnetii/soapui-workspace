@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="ASEAG" resourceRoot="${projectDir}" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" id="47c8c237-a934-4b46-9760-56029384cf6d" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default" name="ASEAG" resourceRoot="${projectDir}" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" id="47c8c237-a934-4b46-9760-56029384cf6d" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://ivu.aseag.de" type="rest" id="19027a97-3fe6-49ba-a1e7-196f2c114270" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>

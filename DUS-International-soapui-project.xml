@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="DUS International" resourceRoot="${projectDir}" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" id="6abb2d39-dd34-4e43-bfec-94ccc296ad9f" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default" name="DUS International" resourceRoot="${projectDir}" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" id="6abb2d39-dd34-4e43-bfec-94ccc296ad9f" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://ws.dus.com" type="rest" id="df5904ff-c806-41b6-a287-46e319fa5a9e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>

@@ -3,8 +3,8 @@
   <con:settings/>
   <con:interface xsi:type="con:RestService" wadlVersion="http://research.sun.com/wadl/2006/10" name="Account creation" type="rest" basePath="/" definitionUrl="WSDL-WADL/sample-service.wadl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT"/><con:endpoints>
+    <con:definitionCache type="TEXT"/>
+    <con:endpoints>
       <con:endpoint>http://localhost:8080</con:endpoint>
     </con:endpoints>
     <con:resource name="accountcreation" path="accountcreation">
@@ -122,9 +122,11 @@
         </con:config>
       </con:testStep>
       <con:properties/>
-    <con:reportParameters/></con:testCase>
+      <con:reportParameters/>
+    </con:testCase>
     <con:properties/>
-  <con:reportParameters/></con:testSuite>
+    <con:reportParameters/>
+  </con:testSuite>
   <con:restMockService port="8080" path="/" name="Account creation mock" host="LPTWRK-ANDREAS">
     <con:settings/>
     <con:properties/>
@@ -134,22 +136,24 @@
       <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
       <con:response name="Form View" httpResponseStatus="200" mediaType="text/html">
         <con:settings/>
-        <con:responseContent><![CDATA[<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Account registration</title>
-		<meta name="description" content="SoapUI Sample content">
-	</head>
+        <con:responseContent>
+          <![CDATA[<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Account registration</title>
+    <meta name="description" content="SoapUI Sample content">
+  </head>
 
-	<body>
-  		<h1>Welcome!</h1>
-  		<form action="accountcreation" method="post" name="account_registration_form">
-  			<input type="text" name="username" placeholder="John Doe" />
-			<input type="password" name="password" />
-			<input type="submit" name="password" />
-		</form>
-  	</body>
-</html>]]></con:responseContent>
+  <body>
+      <h1>Welcome!</h1>
+      <form action="accountcreation" method="post" name="account_registration_form">
+        <input type="text" name="username" placeholder="John Doe" />
+      <input type="password" name="password" />
+      <input type="submit" name="password" />
+    </form>
+    </body>
+</html>]]>
+        </con:responseContent>
       </con:response>
     </con:restMockAction>
     <con:restMockAction name="accountcreation" method="POST" resourcePath="/accountcreation">
@@ -158,53 +162,65 @@
       <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
       <con:response name="Successful" httpResponseStatus="200" mediaType="text/html">
         <con:settings/>
-        <con:responseContent><![CDATA[<html>
-	<head>
-		<meta charset="utf-8"/>
-		<title>Account registration</title>
-		<meta name="description" content="SoapUI Sample content"/>
-	</head>
+        <con:responseContent>
+          <![CDATA[<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Account registration</title>
+    <meta name="description" content="SoapUI Sample content"/>
+  </head>
 
-	<body>
-  		<h1>Welcome!</h1>
-  		<p>You have successfully registered your account!</p>
-	</body>
-</html>]]></con:responseContent>
+  <body>
+      <h1>Welcome!</h1>
+      <p>You have successfully registered your account!</p>
+  </body>
+</html>]]>
+        </con:responseContent>
       </con:response>
       <con:response name="Already Existing User" httpResponseStatus="200" mediaType="text/html">
         <con:settings/>
-        <con:responseContent><![CDATA[<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Account registration</title>
-		<meta name="description" content="SoapUI Sample content">
-	</head>
+        <con:responseContent>
+          <![CDATA[<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Account registration</title>
+    <meta name="description" content="SoapUI Sample content">
+  </head>
 
-	<body>
-  		<h1>User already exists</h1>
-  		<p>A user has already registered with the selected username - try another.</p>
-	</body>
-</html>]]></con:responseContent>
+  <body>
+      <h1>User already exists</h1>
+      <p>A user has already registered with the selected username - try another.</p>
+  </body>
+</html>]]>
+        </con:responseContent>
       </con:response>
       <con:response name="Internal Server Error" httpResponseStatus="500" mediaType="text/html">
         <con:settings/>
-        <con:responseContent><![CDATA[<html>
-	<head>
-		<meta charset="utf-8"/>
-		<title>Internal Server Error</title>
-		<meta name="description" content="SoapUI Sample content"/>
-	</head>
+        <con:responseContent>
+          <![CDATA[<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Internal Server Error</title>
+    <meta name="description" content="SoapUI Sample content"/>
+  </head>
 
-	<body>
-  		<h1>The server was unable to serve your request</h1>
-  		<p>Due to some technical error the server was unable to complete the request, pleas come back later.</p>
-	</body>
-</html>]]></con:responseContent>
+  <body>
+      <h1>The server was unable to serve your request</h1>
+      <p>Due to some technical error the server was unable to complete the request, pleas come back later.</p>
+  </body>
+</html>]]>
+        </con:responseContent>
       </con:response>
     </con:restMockAction>
   </con:restMockService>
-  <con:requirements/><con:properties/>
+  <con:requirements/>
+  <con:properties/>
   <con:wssContainer/>
-  <con:databaseConnectionContainer/><con:oAuth2ProfileContainer/>
-  <con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:sensitiveInformation/>
+  <con:databaseConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:sensitiveInformation/>
 </con:soapui-project>

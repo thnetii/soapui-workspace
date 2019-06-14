@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="Microsoft MTPS Services" resourceRoot="${projectDir}" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" id="cf0ce0fc-feb1-4d67-9fde-809ba5d71334" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default" name="Microsoft MTPS Services" resourceRoot="${projectDir}" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" id="cf0ce0fc-feb1-4d67-9fde-809ba5d71334" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://services.mtps.microsoft.com" type="rest" id="433dcf83-5df8-4df7-9ec2-4e4be8a26cba" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>

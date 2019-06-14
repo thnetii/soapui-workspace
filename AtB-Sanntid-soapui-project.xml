@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="AtB Sanntid" resourceRoot="${projectDir}" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" id="19ad99d2-7e8b-44d9-970e-7b0036590f54" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default" name="AtB Sanntid" resourceRoot="${projectDir}" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" id="19ad99d2-7e8b-44d9-970e-7b0036590f54" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://atb.giantleap.no" type="rest" id="34d60369-30e5-48ee-b092-88488e384454" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -92,7 +92,7 @@
           <con:params/>
           <con:element>html</con:element>
         </con:representation>
-        <con:request name="LundÃ¥sen" mediaType="application/json" id="7c8161f0-21af-4148-b3a6-913db3988fe3">
+        <con:request name="Lundåsen" mediaType="application/json" id="7c8161f0-21af-4148-b3a6-913db3988fe3">
           <con:settings>
             <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
           </con:settings>

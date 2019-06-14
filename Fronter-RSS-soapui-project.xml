@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="Fronter RSS" resourceRoot="${projectDir}" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" id="e3c4edb0-f00f-43b6-abc4-e144dcc14269" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default" name="Fronter RSS" resourceRoot="${projectDir}" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" id="e3c4edb0-f00f-43b6-abc4-e144dcc14269" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://fronter.com" type="rest" id="785a3b95-5e1a-4faa-83c2-6f6ebe9b44ed" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -767,10 +767,12 @@
         <con:settings/>
         <con:config method="POST" xsi:type="con:HttpRequest" name="Search Contact Submit" postQueryString="true" mediaType="application/x-www-form-urlencoded" id="0047900e-0d61-4c56-9e26-cc056e8057f6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:settings>
-            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[
+              <xml-fragment xmlns:con="http://eviware.com/soapui/config">
   <con:entry key="Cookie" value="wcid=f34370f4ba68893b; session_userkey=9875b8e5d761b130eeac995cba5bff03"/>
   <con:entry key="Referer" value="https://fronter.com/uit/index.phtml?ssokey=c9ddff53f6e96611de30c98811d45dde&amp;saml_ses=_3baa57e8c8b4d9596e73a37f89d39f35&amp;default=default&amp;targeturl=http%3A%2F%2Ffronter.com%2Fuit%2F&amp;bool_redirect=0"/>
-</xml-fragment>]]></con:setting>
+</xml-fragment>
+            ]]></con:setting>
           </con:settings>
           <con:endpoint>https://fronter.com/uit/index.phtml</con:endpoint>
           <con:request/>

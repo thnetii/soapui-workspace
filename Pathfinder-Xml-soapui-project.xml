@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="Pathfinder-Xml" resourceRoot="${projectDir}" soapui-version="5.4.0" abortOnError="false" runType="PARALLELL" id="98806e88-07c6-4beb-a214-661a6bc6f24a" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default" name="Pathfinder-Xml" resourceRoot="${projectDir}" soapui-version="5.5.0" abortOnError="false" runType="PARALLELL" id="98806e88-07c6-4beb-a214-661a6bc6f24a" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="AirlineGetAirlinesSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/AirlineService.wsdl}AirlineGetAirlinesSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/AirlineService.wsdl" id="4cdb9771-f972-4abc-a7f2-c9a1c773ce65" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -7,6 +7,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirlineService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns:ns="http://pathfinder-xml/AirlineService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirlineService.xsd">
@@ -266,6 +267,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -283,6 +285,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirlineService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns:ns="http://pathfinder-xml/AirlineService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirlineService.xsd">
@@ -542,6 +545,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -557,7 +561,8 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirlineGetAirlineDetail</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirlineService.xsd">\r
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirlineService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <air:AirlineGetAirlineDetailRequest>\r
@@ -565,7 +570,8 @@
          <air:Airline ICAOCode="DLH"/>\r
       </air:AirlineGetAirlineDetailRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request>
+</soapenv:Envelope>
+        ]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -582,6 +588,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirlineService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns:ns="http://pathfinder-xml/AirlineService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirlineService.xsd">
@@ -841,6 +848,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -858,6 +866,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirlineService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns:ns="http://pathfinder-xml/AirlineService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirlineService.xsd">
@@ -1117,6 +1126,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -1132,7 +1142,8 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirlineGetAirline</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirlineService.xsd">\r
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirlineService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <air:AirlineGetAirlineRequest>\r
@@ -1140,7 +1151,8 @@
          <air:Airline ICAOCode="AMC"/>\r
       </air:AirlineGetAirlineRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request>
+</soapenv:Envelope>
+        ]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -1157,6 +1169,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirportService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns:ns="http://pathfinder-xml/AirportService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportService.xsd">
@@ -1735,6 +1748,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -1750,7 +1764,8 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirportGetNearestAirports</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirportService.xsd">\r
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirportService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <air:AirportGetNearestAirportsRequest>\r
@@ -1758,7 +1773,8 @@
          <air:City CountryCode="US" Name="Houston" Radius="100K" StateCode="TX"/>\r
       </air:AirportGetNearestAirportsRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request>
+</soapenv:Envelope>
+        ]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -1770,620 +1786,6 @@
     </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="AirportGetAirportDetailSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/AirportService.wsdl}AirportGetAirportDetailSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/AirportService.wsdl" id="e417d19e-ad57-4805-94b8-b6e9a21d54ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <con:settings/>
-    <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/AirportService.wsdl">
-      <con:part>
-        <con:url>http://pathfinder-xml.com/development/WSDL/AirportService.wsdl</con:url>
-        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns:ns="http://pathfinder-xml/AirportService.xsd">
-  <types>
-    <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportService.xsd">
-      <xsd:complexType name="AggregatedAirport">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="MetarReport" type="ns:MetarReport"/>
-          <xsd:element minOccurs="0" name="WeatherForecast" type="ns:WeatherForecast"/>
-          <xsd:element minOccurs="0" name="ClosedDelay" type="ns:ClosedDelay"/>
-          <xsd:element minOccurs="0" name="GeneralArrivalDelay" type="ns:GeneralArrivalDelay"/>
-          <xsd:element minOccurs="0" name="GeneralDepartureDelay" type="ns:GeneralDepartureDelay"/>
-          <xsd:element minOccurs="0" name="GroundDelay" type="ns:GroundDelay"/>
-          <xsd:element minOccurs="0" name="GroundStopDelay" type="ns:GroundStopDelay"/>
-        </xsd:sequence>
-        <xsd:attribute name="AirportCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="City" type="xsd:string" use="optional"/>
-        <xsd:attribute name="CountryCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="FAACode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="IATACode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="ICAOCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="IsMajorAirport" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="Latitude" type="xsd:float" use="optional"/>
-        <xsd:attribute name="Longitude" type="xsd:float" use="optional"/>
-        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
-        <xsd:attribute name="PostalCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="StateCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Street1" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Street2" type="xsd:string" use="optional"/>
-        <xsd:attribute name="WeatherStationCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="WeatherZone" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="Airport">
-        <xsd:attribute name="AirportCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="FAACode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="IATACode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="ICAOCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="AirportDetail">
-        <xsd:attribute name="AirportCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="City" type="xsd:string" use="optional"/>
-        <xsd:attribute name="CountryCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="FAACode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="IATACode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="ICAOCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="IsMajorAirport" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="Latitude" type="xsd:float" use="optional"/>
-        <xsd:attribute name="Longitude" type="xsd:float" use="optional"/>
-        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
-        <xsd:attribute name="PostalCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="StateCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Street1" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Street2" type="xsd:string" use="optional"/>
-        <xsd:attribute name="WeatherStationCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="WeatherZone" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="AirportGetAirportsInfo">
-        <xsd:sequence>
-          <xsd:element maxOccurs="1" minOccurs="0" name="Airport" type="ns:Airport"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="SpecificationMatching" type="ns:SpecificationMatching"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="SpecificationRegion" type="ns:SpecificationRegion"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="CriterionAirports" type="ns:CriterionAirports"/>
-          <xsd:element maxOccurs="1" minOccurs="0" name="AirportGetAirportsRequestedData" type="ns:AirportGetAirportsRequestedData"/>
-        </xsd:sequence>
-      </xsd:complexType>
-      <xsd:complexType name="AirportGetAirportsRequestedData">
-        <xsd:sequence>
-          <xsd:element maxOccurs="1" minOccurs="0" name="AirportGetAirportsSorting" type="ns:AirportGetAirportsSorting"/>
-        </xsd:sequence>
-        <xsd:attribute name="AggregatedAirports" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="AirportDetails" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="DesiredResults" type="xsd:int" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="AirportGetAirportsSorting">
-        <xsd:attribute name="SortPriorityAirportCityName" type="xsd:int" use="optional"/>
-        <xsd:attribute name="SortPriorityAirportClassification" type="xsd:int" use="optional"/>
-        <xsd:attribute name="SortPriorityAirportCode" type="xsd:int" use="optional"/>
-        <xsd:attribute name="SortPriorityAirportName" type="xsd:int" use="optional"/>
-        <xsd:attribute name="SortPriorityAirportsWithoutSchedules" type="xsd:int" use="optional"/>
-        <xsd:attribute name="SortPriorityCountryCode" type="xsd:int" use="optional"/>
-        <xsd:attribute name="SortPriorityElevation" type="xsd:int" use="optional"/>
-        <xsd:attribute name="SortPriorityFaaCode" type="xsd:int" use="optional"/>
-        <xsd:attribute name="SortPriorityIataCode" type="xsd:int" use="optional"/>
-        <xsd:attribute name="SortPriorityIcaoCode" type="xsd:int" use="optional"/>
-        <xsd:attribute name="SortPriorityLatitude" type="xsd:int" use="optional"/>
-        <xsd:attribute name="SortPriorityLongitude" type="xsd:int" use="optional"/>
-        <xsd:attribute name="SortPriorityMajorAirport" type="xsd:int" use="optional"/>
-        <xsd:attribute name="SortPriorityPostalCode" type="xsd:int" use="optional"/>
-        <xsd:attribute name="SortPriorityStateCode" type="xsd:int" use="optional"/>
-        <xsd:attribute name="SortPriorityWeatherStationCode" type="xsd:int" use="optional"/>
-        <xsd:attribute name="SortPriorityWeatherZone" type="xsd:int" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="AirportWithDistance">
-        <xsd:attribute name="AirportCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="DistanceK" type="xsd:float" use="optional"/>
-        <xsd:attribute name="DistanceM" type="xsd:float" use="optional"/>
-        <xsd:attribute name="FAACode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="IATACode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="ICAOCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="City">
-        <xsd:attribute name="CountryCode" type="xsd:string" use="required"/>
-        <xsd:attribute name="Name" type="xsd:string" use="required"/>
-        <xsd:attribute name="Radius" type="xsd:string" use="optional"/>
-        <xsd:attribute name="StateCode" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="ClosedDelay">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="Description" type="xsd:string"/>
-          <xsd:element minOccurs="0" name="Reason" type="xsd:string"/>
-        </xsd:sequence>
-        <xsd:attribute name="EndTime" type="xsd:dateTime" use="optional"/>
-        <xsd:attribute name="StartTime" type="xsd:dateTime" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="CriterionAirports">
-        <xsd:attribute name="ExcludeAirportsWithoutSchedules" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="MajorAirportsOnly" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="MinAirportClassification" type="xsd:int" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="DistanceFromOrigin">
-        <xsd:attribute name="AirportCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="DistanceK" type="xsd:float" use="optional"/>
-        <xsd:attribute name="DistanceM" type="xsd:float" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="Error">
-        <xsd:sequence>
-          <xsd:element maxOccurs="1" name="Message" type="xsd:string"/>
-          <xsd:element maxOccurs="1" name="StackTrace" type="xsd:string"/>
-        </xsd:sequence>
-        <xsd:attribute name="MajorCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="MinorCode" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="Estimate">
-        <xsd:attribute name="Date" type="xsd:string" use="required"/>
-        <xsd:attribute name="RainPercentage" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Temperature" type="xsd:string" use="required"/>
-      </xsd:complexType>
-      <xsd:complexType name="GeneralArrivalDelay">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="Description" type="xsd:string"/>
-          <xsd:element minOccurs="0" name="Reason" type="xsd:string"/>
-        </xsd:sequence>
-        <xsd:attribute name="MaxTime" type="xsd:long" use="optional"/>
-        <xsd:attribute name="MinTime" type="xsd:long" use="optional"/>
-        <xsd:attribute name="Trend" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="GeneralDepartureDelay">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="Description" type="xsd:string"/>
-          <xsd:element minOccurs="0" name="Reason" type="xsd:string"/>
-        </xsd:sequence>
-        <xsd:attribute name="MaxTime" type="xsd:long" use="optional"/>
-        <xsd:attribute name="MinTime" type="xsd:long" use="optional"/>
-        <xsd:attribute name="Trend" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="GroundDelay">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="Description" type="xsd:string"/>
-          <xsd:element minOccurs="0" name="Reason" type="xsd:string"/>
-        </xsd:sequence>
-        <xsd:attribute name="AverageTime" type="xsd:long" use="optional"/>
-        <xsd:attribute name="MaxTime" type="xsd:long" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="GroundStopDelay">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="Description" type="xsd:string"/>
-          <xsd:element minOccurs="0" name="Reason" type="xsd:string"/>
-        </xsd:sequence>
-        <xsd:attribute name="EndTime" type="xsd:dateTime" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="Login">
-        <xsd:attribute name="AccountId" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Guid" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Password" type="xsd:string" use="optional"/>
-        <xsd:attribute name="UserId" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="MetarReport">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="Remark" type="xsd:string"/>
-          <xsd:element name="OriginalReport" type="xsd:string"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="SkyCondition" type="xsd:string"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="PresentWeatherCondition" type="xsd:string"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="RunwayGroup" type="ns:RunwayGroup"/>
-        </xsd:sequence>
-        <xsd:attribute name="Altimeter" type="xsd:float" use="optional"/>
-        <xsd:attribute name="DewPoint" type="xsd:int" use="optional"/>
-        <xsd:attribute name="IsVisibilityLessThan" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="IsWindDirectionVariable" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="IssueDate" type="xsd:dateTime" use="required"/>
-        <xsd:attribute name="ReportModifier" type="xsd:string" use="optional"/>
-        <xsd:attribute name="SeaLevelPressure" type="xsd:float" use="optional"/>
-        <xsd:attribute name="StationType" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Station" type="xsd:string" use="required"/>
-        <xsd:attribute name="Temperature" type="xsd:int" use="optional"/>
-        <xsd:attribute name="VariableWindDirection" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Visibility" type="xsd:float" use="optional"/>
-        <xsd:attribute name="WindDirection" type="xsd:int" use="optional"/>
-        <xsd:attribute name="WindGusts" type="xsd:float" use="optional"/>
-        <xsd:attribute name="WindSpeed" type="xsd:float" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="Region">
-        <xsd:attribute name="Latitude" type="xsd:float" use="optional"/>
-        <xsd:attribute name="Longitude" type="xsd:float" use="optional"/>
-        <xsd:attribute name="PostalCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Radius" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="RunwayGroup">
-        <xsd:attribute name="ApproachDirection" type="xsd:string" use="required"/>
-        <xsd:attribute name="IsVarying" type="xsd:boolean" use="required"/>
-        <xsd:attribute name="MaxPrefix" type="xsd:string" use="optional"/>
-        <xsd:attribute name="MaxVisible" type="xsd:int" use="required"/>
-        <xsd:attribute name="MinPrefix" type="xsd:string" use="optional"/>
-        <xsd:attribute name="MinVisible" type="xsd:int" use="required"/>
-        <xsd:attribute name="RunwayNumber" type="xsd:int" use="required"/>
-      </xsd:complexType>
-      <xsd:complexType name="SpecificationAirport">
-        <xsd:attribute name="ExcludeAirportsWithoutSchedules" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="MinAirportClassification" type="xsd:int" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="SpecificationMatching">
-        <xsd:attribute name="MatchAirportCityName" type="xsd:string" use="optional"/>
-        <xsd:attribute name="MatchAirportCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="MatchAirportName" type="xsd:string" use="optional"/>
-        <xsd:attribute name="MatchCountryCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="MatchFaaCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="MatchIataCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="MatchIcaoCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="MatchStateCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="MatchString" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="SpecificationRegion">
-        <xsd:attribute name="CityName" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Latitude" type="xsd:float" use="optional"/>
-        <xsd:attribute name="Longitude" type="xsd:float" use="optional"/>
-        <xsd:attribute name="PostalCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="RadiusKMs" type="xsd:int" use="optional"/>
-        <xsd:attribute name="RadiusMiles" type="xsd:int" use="optional"/>
-        <xsd:attribute name="StateCode" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="Territory">
-        <xsd:attribute name="CountryCode" type="xsd:string" use="required"/>
-        <xsd:attribute name="StateCode" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="WeatherCityEstimate">
-        <xsd:sequence>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Estimate" type="ns:Estimate"/>
-        </xsd:sequence>
-        <xsd:attribute name="City" type="xsd:string" use="required"/>
-      </xsd:complexType>
-      <xsd:complexType name="WeatherDayForecast">
-        <xsd:sequence>
-          <xsd:element name="Forecast" type="xsd:string"/>
-        </xsd:sequence>
-        <xsd:attribute name="Day" type="xsd:string" use="required"/>
-        <xsd:attribute name="EndDate" type="xsd:dateTime" use="required"/>
-        <xsd:attribute name="StartDate" type="xsd:dateTime" use="required"/>
-      </xsd:complexType>
-      <xsd:complexType name="WeatherForecast">
-        <xsd:sequence>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="City" type="xsd:string"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="County" type="xsd:string"/>
-          <xsd:element maxOccurs="unbounded" name="WeatherDayForecast" type="ns:WeatherDayForecast"/>
-          <xsd:element maxOccurs="unbounded" name="WeatherCityEstimate" type="ns:WeatherCityEstimate"/>
-        </xsd:sequence>
-        <xsd:attribute name="Date" type="xsd:dateTime" use="required"/>
-        <xsd:attribute name="General" type="xsd:string" use="required"/>
-        <xsd:attribute name="Header" type="xsd:string" use="required"/>
-        <xsd:attribute name="Zone" type="xsd:string" use="required"/>
-      </xsd:complexType>
-      <xsd:element name="AirportGetAirportDetailRequest">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element name="Login" type="ns:Login"/>
-            <xsd:element name="Airport" type="ns:Airport"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="AirportGetAirportDetailResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
-            <xsd:element maxOccurs="unbounded" name="AirportDetail" type="ns:AirportDetail"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="AirportGetAirportRequest">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element name="Login" type="ns:Login"/>
-            <xsd:element name="Airport" type="ns:Airport"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="AirportGetAirportResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
-            <xsd:element maxOccurs="unbounded" name="Airport" type="ns:Airport"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="AirportGetAirportsInRegionRequest">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element name="Login" type="ns:Login"/>
-            <xsd:element name="Region" type="ns:Region"/>
-            <xsd:element maxOccurs="1" minOccurs="0" name="SpecificationAirport" type="ns:SpecificationAirport"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="AirportGetAirportsInRegionResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
-            <xsd:element maxOccurs="unbounded" name="AirportWithDistance" type="ns:AirportWithDistance"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="AirportGetAirportsInTerritoryRequest">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element name="Login" type="ns:Login"/>
-            <xsd:element name="Territory" type="ns:Territory"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="AirportGetAirportsInTerritoryResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
-            <xsd:element maxOccurs="unbounded" name="Airport" type="ns:Airport"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="AirportGetAirportsRequest">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element name="Login" type="ns:Login"/>
-            <xsd:element name="AirportGetAirportsInfo" type="ns:AirportGetAirportsInfo"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="AirportGetAirportsResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
-            <xsd:element maxOccurs="unbounded" name="Airport" type="ns:Airport"/>
-            <xsd:element maxOccurs="unbounded" name="AirportDetail" type="ns:AirportDetail"/>
-            <xsd:element maxOccurs="unbounded" name="AggregatedAirport" type="ns:AggregatedAirport"/>
-            <xsd:element maxOccurs="unbounded" name="DistanceFromOrigin" type="ns:DistanceFromOrigin"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="AirportGetAllAirportsRequest">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element name="Login" type="ns:Login"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="AirportGetAllAirportsResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
-            <xsd:element maxOccurs="unbounded" name="Airport" type="ns:Airport"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="AirportGetNearestAirportsRequest">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element name="Login" type="ns:Login"/>
-            <xsd:element name="City" type="ns:City"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="AirportGetNearestAirportsResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
-            <xsd:element maxOccurs="unbounded" name="AirportWithDistance" type="ns:AirportWithDistance"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-    </xsd:schema>
-  </types>
-  <message name="AirportGetAirportDetailRequest">
-    <part element="ns:AirportGetAirportDetailRequest" name="AirportGetAirportDetailRequest"/>
-  </message>
-  <message name="AirportGetAirportDetailResponse">
-    <part element="ns:AirportGetAirportDetailResponse" name="AirportGetAirportDetailResponse"/>
-  </message>
-  <message name="AirportGetAirportRequest">
-    <part element="ns:AirportGetAirportRequest" name="AirportGetAirportRequest"/>
-  </message>
-  <message name="AirportGetAirportResponse">
-    <part element="ns:AirportGetAirportResponse" name="AirportGetAirportResponse"/>
-  </message>
-  <message name="AirportGetAirportsInRegionRequest">
-    <part element="ns:AirportGetAirportsInRegionRequest" name="AirportGetAirportsInRegionRequest"/>
-  </message>
-  <message name="AirportGetAirportsInRegionResponse">
-    <part element="ns:AirportGetAirportsInRegionResponse" name="AirportGetAirportsInRegionResponse"/>
-  </message>
-  <message name="AirportGetAirportsInTerritoryRequest">
-    <part element="ns:AirportGetAirportsInTerritoryRequest" name="AirportGetAirportsInTerritoryRequest"/>
-  </message>
-  <message name="AirportGetAirportsInTerritoryResponse">
-    <part element="ns:AirportGetAirportsInTerritoryResponse" name="AirportGetAirportsInTerritoryResponse"/>
-  </message>
-  <message name="AirportGetAirportsRequest">
-    <part element="ns:AirportGetAirportsRequest" name="AirportGetAirportsRequest"/>
-  </message>
-  <message name="AirportGetAirportsResponse">
-    <part element="ns:AirportGetAirportsResponse" name="AirportGetAirportsResponse"/>
-  </message>
-  <message name="AirportGetAllAirportsRequest">
-    <part element="ns:AirportGetAllAirportsRequest" name="AirportGetAllAirportsRequest"/>
-  </message>
-  <message name="AirportGetAllAirportsResponse">
-    <part element="ns:AirportGetAllAirportsResponse" name="AirportGetAllAirportsResponse"/>
-  </message>
-  <message name="AirportGetNearestAirportsRequest">
-    <part element="ns:AirportGetNearestAirportsRequest" name="AirportGetNearestAirportsRequest"/>
-  </message>
-  <message name="AirportGetNearestAirportsResponse">
-    <part element="ns:AirportGetNearestAirportsResponse" name="AirportGetNearestAirportsResponse"/>
-  </message>
-  <portType name="AirportGetAirportDetailPort">
-    <operation name="AirportGetAirportDetailOperation">
-      <input message="tns:AirportGetAirportDetailRequest"/>
-      <output message="tns:AirportGetAirportDetailResponse"/>
-    </operation>
-  </portType>
-  <portType name="AirportGetAirportPort">
-    <operation name="AirportGetAirportOperation">
-      <input message="tns:AirportGetAirportRequest"/>
-      <output message="tns:AirportGetAirportResponse"/>
-    </operation>
-  </portType>
-  <portType name="AirportGetAirportsInRegionPort">
-    <operation name="AirportGetAirportsInRegionOperation">
-      <input message="tns:AirportGetAirportsInRegionRequest"/>
-      <output message="tns:AirportGetAirportsInRegionResponse"/>
-    </operation>
-  </portType>
-  <portType name="AirportGetAirportsInTerritoryPort">
-    <operation name="AirportGetAirportsInTerritoryOperation">
-      <input message="tns:AirportGetAirportsInTerritoryRequest"/>
-      <output message="tns:AirportGetAirportsInTerritoryResponse"/>
-    </operation>
-  </portType>
-  <portType name="AirportGetAirportsPort">
-    <operation name="AirportGetAirportsOperation">
-      <input message="tns:AirportGetAirportsRequest"/>
-      <output message="tns:AirportGetAirportsResponse"/>
-    </operation>
-  </portType>
-  <portType name="AirportGetAllAirportsPort">
-    <operation name="AirportGetAllAirportsOperation">
-      <input message="tns:AirportGetAllAirportsRequest"/>
-      <output message="tns:AirportGetAllAirportsResponse"/>
-    </operation>
-  </portType>
-  <portType name="AirportGetNearestAirportsPort">
-    <operation name="AirportGetNearestAirportsOperation">
-      <input message="tns:AirportGetNearestAirportsRequest"/>
-      <output message="tns:AirportGetNearestAirportsResponse"/>
-    </operation>
-  </portType>
-  <binding name="AirportGetAirportDetailSOAPBinding" type="tns:AirportGetAirportDetailPort">
-    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <operation name="AirportGetAirportDetailOperation">
-      <soap:operation/>
-      <input>
-        <soap:body use="literal"/>
-      </input>
-      <output>
-        <soap:body use="literal"/>
-      </output>
-    </operation>
-  </binding>
-  <binding name="AirportGetAirportSOAPBinding" type="tns:AirportGetAirportPort">
-    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <operation name="AirportGetAirportOperation">
-      <soap:operation/>
-      <input>
-        <soap:body use="literal"/>
-      </input>
-      <output>
-        <soap:body use="literal"/>
-      </output>
-    </operation>
-  </binding>
-  <binding name="AirportGetAirportsInRegionSOAPBinding" type="tns:AirportGetAirportsInRegionPort">
-    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <operation name="AirportGetAirportsInRegionOperation">
-      <soap:operation/>
-      <input>
-        <soap:body use="literal"/>
-      </input>
-      <output>
-        <soap:body use="literal"/>
-      </output>
-    </operation>
-  </binding>
-  <binding name="AirportGetAirportsInTerritorySOAPBinding" type="tns:AirportGetAirportsInTerritoryPort">
-    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <operation name="AirportGetAirportsInTerritoryOperation">
-      <soap:operation/>
-      <input>
-        <soap:body use="literal"/>
-      </input>
-      <output>
-        <soap:body use="literal"/>
-      </output>
-    </operation>
-  </binding>
-  <binding name="AirportGetAirportsSOAPBinding" type="tns:AirportGetAirportsPort">
-    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <operation name="AirportGetAirportsOperation">
-      <soap:operation/>
-      <input>
-        <soap:body use="literal"/>
-      </input>
-      <output>
-        <soap:body use="literal"/>
-      </output>
-    </operation>
-  </binding>
-  <binding name="AirportGetAllAirportsSOAPBinding" type="tns:AirportGetAllAirportsPort">
-    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <operation name="AirportGetAllAirportsOperation">
-      <soap:operation/>
-      <input>
-        <soap:body use="literal"/>
-      </input>
-      <output>
-        <soap:body use="literal"/>
-      </output>
-    </operation>
-  </binding>
-  <binding name="AirportGetNearestAirportsSOAPBinding" type="tns:AirportGetNearestAirportsPort">
-    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <operation name="AirportGetNearestAirportsOperation">
-      <soap:operation/>
-      <input>
-        <soap:body use="literal"/>
-      </input>
-      <output>
-        <soap:body use="literal"/>
-      </output>
-    </operation>
-  </binding>
-  <service name="AirportService">
-    <port binding="tns:AirportGetAirportDetailSOAPBinding" name="AirportGetAirportDetailService">
-      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetAirportDetail"/>
-    </port>
-    <port binding="tns:AirportGetAirportSOAPBinding" name="AirportGetAirportService">
-      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetAirport"/>
-    </port>
-    <port binding="tns:AirportGetAirportsInRegionSOAPBinding" name="AirportGetAirportsInRegionService">
-      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetAirportsInRegion"/>
-    </port>
-    <port binding="tns:AirportGetAirportsInTerritorySOAPBinding" name="AirportGetAirportsInTerritoryService">
-      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetAirportsInTerritory"/>
-    </port>
-    <port binding="tns:AirportGetAirportsSOAPBinding" name="AirportGetAirportsService">
-      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetAirports"/>
-    </port>
-    <port binding="tns:AirportGetAllAirportsSOAPBinding" name="AirportGetAllAirportsService">
-      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetAllAirports"/>
-    </port>
-    <port binding="tns:AirportGetNearestAirportsSOAPBinding" name="AirportGetNearestAirportsService">
-      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetNearestAirports"/>
-    </port>
-  </service>
-</definitions>]]></con:content>
-        <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
-      </con:part>
-    </con:definitionCache>
-    <con:endpoints>
-      <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirportGetAirportDetail</con:endpoint>
-    </con:endpoints>
-    <con:operation isOneWay="false" action="" name="AirportGetAirportDetailOperation" bindingOperationName="AirportGetAirportDetailOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="65d42ca0-6d12-42e2-b497-8e7cf9d8bd15" anonymous="optional">
-      <con:settings/>
-      <con:call id="21404b6d-4529-46e9-8f10-3d44b004cdab" name="Request">
-        <con:settings>
-          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-        </con:settings>
-        <con:encoding>UTF-8</con:encoding>
-        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirportGetAirportDetail</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirportService.xsd">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <air:AirportGetAirportDetailRequest>\r
-	 </air:AirportGetAirportDetailRequest>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request>
-        <con:credentials>
-          <con:authType>No Authorization</con:authType>
-        </con:credentials>
-        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-        <con:jmsPropertyConfig/>
-        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/AirportService.wsdl/AirportGetAirportDetailPort/AirportGetAirportDetailOperationRequest"/>
-        <con:wsrmConfig version="1.2"/>
-      </con:call>
-    </con:operation>
-  </con:interface>
-  <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="AirportGetAllAirportsSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/AirportService.wsdl}AirportGetAllAirportsSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/AirportService.wsdl" id="d3da3ea2-42e1-4e36-a828-35ab88dc7393" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/AirportService.wsdl">
       <con:part>
@@ -2967,6 +2369,626 @@
     </port>
   </service>
 </definitions>
+        ]]></con:content>
+        <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
+      </con:part>
+    </con:definitionCache>
+    <con:endpoints>
+      <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirportGetAirportDetail</con:endpoint>
+    </con:endpoints>
+    <con:operation isOneWay="false" action="" name="AirportGetAirportDetailOperation" bindingOperationName="AirportGetAirportDetailOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="65d42ca0-6d12-42e2-b497-8e7cf9d8bd15" anonymous="optional">
+      <con:settings/>
+      <con:call id="21404b6d-4529-46e9-8f10-3d44b004cdab" name="Request">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirportGetAirportDetail</con:endpoint>
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirportService.xsd">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <air:AirportGetAirportDetailRequest>\r
+   </air:AirportGetAirportDetailRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>
+        ]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/AirportService.wsdl/AirportGetAirportDetailPort/AirportGetAirportDetailOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
+  </con:interface>
+  <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="AirportGetAllAirportsSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/AirportService.wsdl}AirportGetAllAirportsSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/AirportService.wsdl" id="d3da3ea2-42e1-4e36-a828-35ab88dc7393" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/AirportService.wsdl">
+      <con:part>
+        <con:url>http://pathfinder-xml.com/development/WSDL/AirportService.wsdl</con:url>
+        <con:content><![CDATA[
+          
+          <definitions targetNamespace="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns:ns="http://pathfinder-xml/AirportService.xsd">
+  <types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportService.xsd">
+      <xsd:complexType name="AggregatedAirport">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="MetarReport" type="ns:MetarReport"/>
+          <xsd:element minOccurs="0" name="WeatherForecast" type="ns:WeatherForecast"/>
+          <xsd:element minOccurs="0" name="ClosedDelay" type="ns:ClosedDelay"/>
+          <xsd:element minOccurs="0" name="GeneralArrivalDelay" type="ns:GeneralArrivalDelay"/>
+          <xsd:element minOccurs="0" name="GeneralDepartureDelay" type="ns:GeneralDepartureDelay"/>
+          <xsd:element minOccurs="0" name="GroundDelay" type="ns:GroundDelay"/>
+          <xsd:element minOccurs="0" name="GroundStopDelay" type="ns:GroundStopDelay"/>
+        </xsd:sequence>
+        <xsd:attribute name="AirportCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="City" type="xsd:string" use="optional"/>
+        <xsd:attribute name="CountryCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="FAACode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="IATACode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="ICAOCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="IsMajorAirport" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="Latitude" type="xsd:float" use="optional"/>
+        <xsd:attribute name="Longitude" type="xsd:float" use="optional"/>
+        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
+        <xsd:attribute name="PostalCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="StateCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Street1" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Street2" type="xsd:string" use="optional"/>
+        <xsd:attribute name="WeatherStationCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="WeatherZone" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="Airport">
+        <xsd:attribute name="AirportCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="FAACode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="IATACode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="ICAOCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="AirportDetail">
+        <xsd:attribute name="AirportCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="City" type="xsd:string" use="optional"/>
+        <xsd:attribute name="CountryCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="FAACode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="IATACode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="ICAOCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="IsMajorAirport" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="Latitude" type="xsd:float" use="optional"/>
+        <xsd:attribute name="Longitude" type="xsd:float" use="optional"/>
+        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
+        <xsd:attribute name="PostalCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="StateCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Street1" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Street2" type="xsd:string" use="optional"/>
+        <xsd:attribute name="WeatherStationCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="WeatherZone" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="AirportGetAirportsInfo">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="Airport" type="ns:Airport"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="SpecificationMatching" type="ns:SpecificationMatching"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="SpecificationRegion" type="ns:SpecificationRegion"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="CriterionAirports" type="ns:CriterionAirports"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="AirportGetAirportsRequestedData" type="ns:AirportGetAirportsRequestedData"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="AirportGetAirportsRequestedData">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="AirportGetAirportsSorting" type="ns:AirportGetAirportsSorting"/>
+        </xsd:sequence>
+        <xsd:attribute name="AggregatedAirports" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="AirportDetails" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="DesiredResults" type="xsd:int" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="AirportGetAirportsSorting">
+        <xsd:attribute name="SortPriorityAirportCityName" type="xsd:int" use="optional"/>
+        <xsd:attribute name="SortPriorityAirportClassification" type="xsd:int" use="optional"/>
+        <xsd:attribute name="SortPriorityAirportCode" type="xsd:int" use="optional"/>
+        <xsd:attribute name="SortPriorityAirportName" type="xsd:int" use="optional"/>
+        <xsd:attribute name="SortPriorityAirportsWithoutSchedules" type="xsd:int" use="optional"/>
+        <xsd:attribute name="SortPriorityCountryCode" type="xsd:int" use="optional"/>
+        <xsd:attribute name="SortPriorityElevation" type="xsd:int" use="optional"/>
+        <xsd:attribute name="SortPriorityFaaCode" type="xsd:int" use="optional"/>
+        <xsd:attribute name="SortPriorityIataCode" type="xsd:int" use="optional"/>
+        <xsd:attribute name="SortPriorityIcaoCode" type="xsd:int" use="optional"/>
+        <xsd:attribute name="SortPriorityLatitude" type="xsd:int" use="optional"/>
+        <xsd:attribute name="SortPriorityLongitude" type="xsd:int" use="optional"/>
+        <xsd:attribute name="SortPriorityMajorAirport" type="xsd:int" use="optional"/>
+        <xsd:attribute name="SortPriorityPostalCode" type="xsd:int" use="optional"/>
+        <xsd:attribute name="SortPriorityStateCode" type="xsd:int" use="optional"/>
+        <xsd:attribute name="SortPriorityWeatherStationCode" type="xsd:int" use="optional"/>
+        <xsd:attribute name="SortPriorityWeatherZone" type="xsd:int" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="AirportWithDistance">
+        <xsd:attribute name="AirportCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="DistanceK" type="xsd:float" use="optional"/>
+        <xsd:attribute name="DistanceM" type="xsd:float" use="optional"/>
+        <xsd:attribute name="FAACode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="IATACode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="ICAOCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="City">
+        <xsd:attribute name="CountryCode" type="xsd:string" use="required"/>
+        <xsd:attribute name="Name" type="xsd:string" use="required"/>
+        <xsd:attribute name="Radius" type="xsd:string" use="optional"/>
+        <xsd:attribute name="StateCode" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="ClosedDelay">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Description" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Reason" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="EndTime" type="xsd:dateTime" use="optional"/>
+        <xsd:attribute name="StartTime" type="xsd:dateTime" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="CriterionAirports">
+        <xsd:attribute name="ExcludeAirportsWithoutSchedules" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="MajorAirportsOnly" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="MinAirportClassification" type="xsd:int" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="DistanceFromOrigin">
+        <xsd:attribute name="AirportCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="DistanceK" type="xsd:float" use="optional"/>
+        <xsd:attribute name="DistanceM" type="xsd:float" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="Error">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" name="Message" type="xsd:string"/>
+          <xsd:element maxOccurs="1" name="StackTrace" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="MajorCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="MinorCode" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="Estimate">
+        <xsd:attribute name="Date" type="xsd:string" use="required"/>
+        <xsd:attribute name="RainPercentage" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Temperature" type="xsd:string" use="required"/>
+      </xsd:complexType>
+      <xsd:complexType name="GeneralArrivalDelay">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Description" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Reason" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="MaxTime" type="xsd:long" use="optional"/>
+        <xsd:attribute name="MinTime" type="xsd:long" use="optional"/>
+        <xsd:attribute name="Trend" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="GeneralDepartureDelay">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Description" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Reason" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="MaxTime" type="xsd:long" use="optional"/>
+        <xsd:attribute name="MinTime" type="xsd:long" use="optional"/>
+        <xsd:attribute name="Trend" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="GroundDelay">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Description" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Reason" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="AverageTime" type="xsd:long" use="optional"/>
+        <xsd:attribute name="MaxTime" type="xsd:long" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="GroundStopDelay">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Description" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Reason" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="EndTime" type="xsd:dateTime" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="Login">
+        <xsd:attribute name="AccountId" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Guid" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Password" type="xsd:string" use="optional"/>
+        <xsd:attribute name="UserId" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="MetarReport">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Remark" type="xsd:string"/>
+          <xsd:element name="OriginalReport" type="xsd:string"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="SkyCondition" type="xsd:string"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="PresentWeatherCondition" type="xsd:string"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="RunwayGroup" type="ns:RunwayGroup"/>
+        </xsd:sequence>
+        <xsd:attribute name="Altimeter" type="xsd:float" use="optional"/>
+        <xsd:attribute name="DewPoint" type="xsd:int" use="optional"/>
+        <xsd:attribute name="IsVisibilityLessThan" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="IsWindDirectionVariable" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="IssueDate" type="xsd:dateTime" use="required"/>
+        <xsd:attribute name="ReportModifier" type="xsd:string" use="optional"/>
+        <xsd:attribute name="SeaLevelPressure" type="xsd:float" use="optional"/>
+        <xsd:attribute name="StationType" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Station" type="xsd:string" use="required"/>
+        <xsd:attribute name="Temperature" type="xsd:int" use="optional"/>
+        <xsd:attribute name="VariableWindDirection" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Visibility" type="xsd:float" use="optional"/>
+        <xsd:attribute name="WindDirection" type="xsd:int" use="optional"/>
+        <xsd:attribute name="WindGusts" type="xsd:float" use="optional"/>
+        <xsd:attribute name="WindSpeed" type="xsd:float" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="Region">
+        <xsd:attribute name="Latitude" type="xsd:float" use="optional"/>
+        <xsd:attribute name="Longitude" type="xsd:float" use="optional"/>
+        <xsd:attribute name="PostalCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Radius" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="RunwayGroup">
+        <xsd:attribute name="ApproachDirection" type="xsd:string" use="required"/>
+        <xsd:attribute name="IsVarying" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="MaxPrefix" type="xsd:string" use="optional"/>
+        <xsd:attribute name="MaxVisible" type="xsd:int" use="required"/>
+        <xsd:attribute name="MinPrefix" type="xsd:string" use="optional"/>
+        <xsd:attribute name="MinVisible" type="xsd:int" use="required"/>
+        <xsd:attribute name="RunwayNumber" type="xsd:int" use="required"/>
+      </xsd:complexType>
+      <xsd:complexType name="SpecificationAirport">
+        <xsd:attribute name="ExcludeAirportsWithoutSchedules" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="MinAirportClassification" type="xsd:int" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="SpecificationMatching">
+        <xsd:attribute name="MatchAirportCityName" type="xsd:string" use="optional"/>
+        <xsd:attribute name="MatchAirportCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="MatchAirportName" type="xsd:string" use="optional"/>
+        <xsd:attribute name="MatchCountryCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="MatchFaaCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="MatchIataCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="MatchIcaoCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="MatchStateCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="MatchString" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="SpecificationRegion">
+        <xsd:attribute name="CityName" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Latitude" type="xsd:float" use="optional"/>
+        <xsd:attribute name="Longitude" type="xsd:float" use="optional"/>
+        <xsd:attribute name="PostalCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="RadiusKMs" type="xsd:int" use="optional"/>
+        <xsd:attribute name="RadiusMiles" type="xsd:int" use="optional"/>
+        <xsd:attribute name="StateCode" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="Territory">
+        <xsd:attribute name="CountryCode" type="xsd:string" use="required"/>
+        <xsd:attribute name="StateCode" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="WeatherCityEstimate">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Estimate" type="ns:Estimate"/>
+        </xsd:sequence>
+        <xsd:attribute name="City" type="xsd:string" use="required"/>
+      </xsd:complexType>
+      <xsd:complexType name="WeatherDayForecast">
+        <xsd:sequence>
+          <xsd:element name="Forecast" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="Day" type="xsd:string" use="required"/>
+        <xsd:attribute name="EndDate" type="xsd:dateTime" use="required"/>
+        <xsd:attribute name="StartDate" type="xsd:dateTime" use="required"/>
+      </xsd:complexType>
+      <xsd:complexType name="WeatherForecast">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="City" type="xsd:string"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="County" type="xsd:string"/>
+          <xsd:element maxOccurs="unbounded" name="WeatherDayForecast" type="ns:WeatherDayForecast"/>
+          <xsd:element maxOccurs="unbounded" name="WeatherCityEstimate" type="ns:WeatherCityEstimate"/>
+        </xsd:sequence>
+        <xsd:attribute name="Date" type="xsd:dateTime" use="required"/>
+        <xsd:attribute name="General" type="xsd:string" use="required"/>
+        <xsd:attribute name="Header" type="xsd:string" use="required"/>
+        <xsd:attribute name="Zone" type="xsd:string" use="required"/>
+      </xsd:complexType>
+      <xsd:element name="AirportGetAirportDetailRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Login" type="ns:Login"/>
+            <xsd:element name="Airport" type="ns:Airport"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AirportGetAirportDetailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
+            <xsd:element maxOccurs="unbounded" name="AirportDetail" type="ns:AirportDetail"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AirportGetAirportRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Login" type="ns:Login"/>
+            <xsd:element name="Airport" type="ns:Airport"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AirportGetAirportResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
+            <xsd:element maxOccurs="unbounded" name="Airport" type="ns:Airport"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AirportGetAirportsInRegionRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Login" type="ns:Login"/>
+            <xsd:element name="Region" type="ns:Region"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="SpecificationAirport" type="ns:SpecificationAirport"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AirportGetAirportsInRegionResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
+            <xsd:element maxOccurs="unbounded" name="AirportWithDistance" type="ns:AirportWithDistance"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AirportGetAirportsInTerritoryRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Login" type="ns:Login"/>
+            <xsd:element name="Territory" type="ns:Territory"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AirportGetAirportsInTerritoryResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
+            <xsd:element maxOccurs="unbounded" name="Airport" type="ns:Airport"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AirportGetAirportsRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Login" type="ns:Login"/>
+            <xsd:element name="AirportGetAirportsInfo" type="ns:AirportGetAirportsInfo"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AirportGetAirportsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
+            <xsd:element maxOccurs="unbounded" name="Airport" type="ns:Airport"/>
+            <xsd:element maxOccurs="unbounded" name="AirportDetail" type="ns:AirportDetail"/>
+            <xsd:element maxOccurs="unbounded" name="AggregatedAirport" type="ns:AggregatedAirport"/>
+            <xsd:element maxOccurs="unbounded" name="DistanceFromOrigin" type="ns:DistanceFromOrigin"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AirportGetAllAirportsRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Login" type="ns:Login"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AirportGetAllAirportsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
+            <xsd:element maxOccurs="unbounded" name="Airport" type="ns:Airport"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AirportGetNearestAirportsRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Login" type="ns:Login"/>
+            <xsd:element name="City" type="ns:City"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AirportGetNearestAirportsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
+            <xsd:element maxOccurs="unbounded" name="AirportWithDistance" type="ns:AirportWithDistance"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="AirportGetAirportDetailRequest">
+    <part element="ns:AirportGetAirportDetailRequest" name="AirportGetAirportDetailRequest"/>
+  </message>
+  <message name="AirportGetAirportDetailResponse">
+    <part element="ns:AirportGetAirportDetailResponse" name="AirportGetAirportDetailResponse"/>
+  </message>
+  <message name="AirportGetAirportRequest">
+    <part element="ns:AirportGetAirportRequest" name="AirportGetAirportRequest"/>
+  </message>
+  <message name="AirportGetAirportResponse">
+    <part element="ns:AirportGetAirportResponse" name="AirportGetAirportResponse"/>
+  </message>
+  <message name="AirportGetAirportsInRegionRequest">
+    <part element="ns:AirportGetAirportsInRegionRequest" name="AirportGetAirportsInRegionRequest"/>
+  </message>
+  <message name="AirportGetAirportsInRegionResponse">
+    <part element="ns:AirportGetAirportsInRegionResponse" name="AirportGetAirportsInRegionResponse"/>
+  </message>
+  <message name="AirportGetAirportsInTerritoryRequest">
+    <part element="ns:AirportGetAirportsInTerritoryRequest" name="AirportGetAirportsInTerritoryRequest"/>
+  </message>
+  <message name="AirportGetAirportsInTerritoryResponse">
+    <part element="ns:AirportGetAirportsInTerritoryResponse" name="AirportGetAirportsInTerritoryResponse"/>
+  </message>
+  <message name="AirportGetAirportsRequest">
+    <part element="ns:AirportGetAirportsRequest" name="AirportGetAirportsRequest"/>
+  </message>
+  <message name="AirportGetAirportsResponse">
+    <part element="ns:AirportGetAirportsResponse" name="AirportGetAirportsResponse"/>
+  </message>
+  <message name="AirportGetAllAirportsRequest">
+    <part element="ns:AirportGetAllAirportsRequest" name="AirportGetAllAirportsRequest"/>
+  </message>
+  <message name="AirportGetAllAirportsResponse">
+    <part element="ns:AirportGetAllAirportsResponse" name="AirportGetAllAirportsResponse"/>
+  </message>
+  <message name="AirportGetNearestAirportsRequest">
+    <part element="ns:AirportGetNearestAirportsRequest" name="AirportGetNearestAirportsRequest"/>
+  </message>
+  <message name="AirportGetNearestAirportsResponse">
+    <part element="ns:AirportGetNearestAirportsResponse" name="AirportGetNearestAirportsResponse"/>
+  </message>
+  <portType name="AirportGetAirportDetailPort">
+    <operation name="AirportGetAirportDetailOperation">
+      <input message="tns:AirportGetAirportDetailRequest"/>
+      <output message="tns:AirportGetAirportDetailResponse"/>
+    </operation>
+  </portType>
+  <portType name="AirportGetAirportPort">
+    <operation name="AirportGetAirportOperation">
+      <input message="tns:AirportGetAirportRequest"/>
+      <output message="tns:AirportGetAirportResponse"/>
+    </operation>
+  </portType>
+  <portType name="AirportGetAirportsInRegionPort">
+    <operation name="AirportGetAirportsInRegionOperation">
+      <input message="tns:AirportGetAirportsInRegionRequest"/>
+      <output message="tns:AirportGetAirportsInRegionResponse"/>
+    </operation>
+  </portType>
+  <portType name="AirportGetAirportsInTerritoryPort">
+    <operation name="AirportGetAirportsInTerritoryOperation">
+      <input message="tns:AirportGetAirportsInTerritoryRequest"/>
+      <output message="tns:AirportGetAirportsInTerritoryResponse"/>
+    </operation>
+  </portType>
+  <portType name="AirportGetAirportsPort">
+    <operation name="AirportGetAirportsOperation">
+      <input message="tns:AirportGetAirportsRequest"/>
+      <output message="tns:AirportGetAirportsResponse"/>
+    </operation>
+  </portType>
+  <portType name="AirportGetAllAirportsPort">
+    <operation name="AirportGetAllAirportsOperation">
+      <input message="tns:AirportGetAllAirportsRequest"/>
+      <output message="tns:AirportGetAllAirportsResponse"/>
+    </operation>
+  </portType>
+  <portType name="AirportGetNearestAirportsPort">
+    <operation name="AirportGetNearestAirportsOperation">
+      <input message="tns:AirportGetNearestAirportsRequest"/>
+      <output message="tns:AirportGetNearestAirportsResponse"/>
+    </operation>
+  </portType>
+  <binding name="AirportGetAirportDetailSOAPBinding" type="tns:AirportGetAirportDetailPort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="AirportGetAirportDetailOperation">
+      <soap:operation/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <binding name="AirportGetAirportSOAPBinding" type="tns:AirportGetAirportPort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="AirportGetAirportOperation">
+      <soap:operation/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <binding name="AirportGetAirportsInRegionSOAPBinding" type="tns:AirportGetAirportsInRegionPort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="AirportGetAirportsInRegionOperation">
+      <soap:operation/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <binding name="AirportGetAirportsInTerritorySOAPBinding" type="tns:AirportGetAirportsInTerritoryPort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="AirportGetAirportsInTerritoryOperation">
+      <soap:operation/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <binding name="AirportGetAirportsSOAPBinding" type="tns:AirportGetAirportsPort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="AirportGetAirportsOperation">
+      <soap:operation/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <binding name="AirportGetAllAirportsSOAPBinding" type="tns:AirportGetAllAirportsPort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="AirportGetAllAirportsOperation">
+      <soap:operation/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <binding name="AirportGetNearestAirportsSOAPBinding" type="tns:AirportGetNearestAirportsPort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="AirportGetNearestAirportsOperation">
+      <soap:operation/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="AirportService">
+    <port binding="tns:AirportGetAirportDetailSOAPBinding" name="AirportGetAirportDetailService">
+      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetAirportDetail"/>
+    </port>
+    <port binding="tns:AirportGetAirportSOAPBinding" name="AirportGetAirportService">
+      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetAirport"/>
+    </port>
+    <port binding="tns:AirportGetAirportsInRegionSOAPBinding" name="AirportGetAirportsInRegionService">
+      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetAirportsInRegion"/>
+    </port>
+    <port binding="tns:AirportGetAirportsInTerritorySOAPBinding" name="AirportGetAirportsInTerritoryService">
+      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetAirportsInTerritory"/>
+    </port>
+    <port binding="tns:AirportGetAirportsSOAPBinding" name="AirportGetAirportsService">
+      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetAirports"/>
+    </port>
+    <port binding="tns:AirportGetAllAirportsSOAPBinding" name="AirportGetAllAirportsService">
+      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetAllAirports"/>
+    </port>
+    <port binding="tns:AirportGetNearestAirportsSOAPBinding" name="AirportGetNearestAirportsService">
+      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetNearestAirports"/>
+    </port>
+  </service>
+</definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -3014,6 +3036,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirportService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns:ns="http://pathfinder-xml/AirportService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportService.xsd">
@@ -3592,6 +3615,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -3609,6 +3633,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirportAggregatorService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/AirportAggregatorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportAggregatorService.wsdl" xmlns:ns="http://pathfinder-xml/AirportAggregatorService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportAggregatorService.xsd">
@@ -3813,6 +3838,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -3830,6 +3856,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirportDelayService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/AirportDelayService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportDelayService.wsdl" xmlns:ns="http://pathfinder-xml/AirportDelayService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportDelayService.xsd">
@@ -4041,6 +4068,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -4068,6 +4096,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirportDelayService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/AirportDelayService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportDelayService.wsdl" xmlns:ns="http://pathfinder-xml/AirportDelayService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportDelayService.xsd">
@@ -4279,6 +4308,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -4296,6 +4326,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/MetarService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/MetarService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/MetarService.wsdl" xmlns:ns="http://pathfinder-xml/MetarService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/MetarService.xsd">
@@ -4397,6 +4428,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -4412,7 +4444,8 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/MetarGetCurrentConditionsForWeatherStation</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:met="http://pathfinder-xml/MetarService.xsd">\r
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:met="http://pathfinder-xml/MetarService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <met:MetarGetCurrentConditionsForWeatherStationRequest>\r
@@ -4420,7 +4453,8 @@
          <met:WeatherStation ICAOCode="ENTC"/>\r
       </met:MetarGetCurrentConditionsForWeatherStationRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request>
+</soapenv:Envelope>
+        ]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -4437,6 +4471,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/WeatherForecastService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/WeatherForecastService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/WeatherForecastService.wsdl" xmlns:ns="http://pathfinder-xml/WeatherForecastService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/WeatherForecastService.xsd">
@@ -4580,6 +4615,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -4597,6 +4633,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/WeatherForecastService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/WeatherForecastService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/WeatherForecastService.wsdl" xmlns:ns="http://pathfinder-xml/WeatherForecastService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/WeatherForecastService.xsd">
@@ -4740,6 +4777,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -4757,6 +4795,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/WeatherStationService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/WeatherStationService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/WeatherStationService.wsdl" xmlns:ns="http://pathfinder-xml/WeatherStationService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/WeatherStationService.xsd">
@@ -4826,6 +4865,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -4843,6 +4883,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/FlightRouteService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/FlightRouteService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightRouteService.wsdl" xmlns:ns="http://pathfinder-xml/FlightRouteService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightRouteService.xsd">
@@ -5308,6 +5349,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -5325,6 +5367,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/FlightRouteService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/FlightRouteService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightRouteService.wsdl" xmlns:ns="http://pathfinder-xml/FlightRouteService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightRouteService.xsd">
@@ -5790,6 +5833,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -5807,6 +5851,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/FlightRouteAggregatorService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/FlightRouteAggregatorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightRouteAggregatorService.wsdl" xmlns:ns="http://pathfinder-xml/FlightRouteAggregatorService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightRouteAggregatorService.xsd">
@@ -6198,6 +6243,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -6215,6 +6261,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/FlightScheduleService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/FlightScheduleService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightScheduleService.wsdl" xmlns:ns="http://pathfinder-xml/FlightScheduleService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightScheduleService.xsd">
@@ -6650,6 +6697,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -6665,7 +6713,8 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightScheduleGetFlights</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleService.xsd">
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleService.xsd">
    <soapenv:Header/>
    <soapenv:Body>
       <flig:FlightScheduleGetFlightsRequest>
@@ -6684,7 +6733,8 @@
          </flig:FlightScheduleGetFlightsInfo>
       </flig:FlightScheduleGetFlightsRequest>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request>
+</soapenv:Envelope>
+        ]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -6701,6 +6751,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/FlightScheduleService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/FlightScheduleService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightScheduleService.wsdl" xmlns:ns="http://pathfinder-xml/FlightScheduleService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightScheduleService.xsd">
@@ -7136,6 +7187,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -7151,7 +7203,8 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightScheduleGetFlightsDecoded</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleService.xsd">\r
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <flig:FlightScheduleGetFlightsDecodedRequest>\r
@@ -7169,7 +7222,8 @@
          </flig:FlightScheduleGetFlightsInfo>\r
       </flig:FlightScheduleGetFlightsDecodedRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request>
+</soapenv:Envelope>
+        ]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -7186,6 +7240,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/FlightScheduleAggregatorService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/FlightScheduleAggregatorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightScheduleAggregatorService.wsdl" xmlns:ns="http://pathfinder-xml/FlightScheduleAggregatorService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightScheduleAggregatorService.xsd">
@@ -7525,6 +7580,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -7540,7 +7596,8 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightScheduleAggregatorGetFlights</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleAggregatorService.xsd">
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleAggregatorService.xsd">
    <soapenv:Header/>
    <soapenv:Body>
       <flig:FlightScheduleAggregatorGetFlightsRequest>
@@ -7604,7 +7661,8 @@
          </flig:FlightScheduleGetFlightsInfo>
       </flig:FlightScheduleAggregatorGetFlightsRequest>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request>
+</soapenv:Envelope>
+        ]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -7621,6 +7679,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/RatingService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/RatingService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/RatingService.wsdl" xmlns:ns="http://pathfinder-xml/RatingService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/RatingService.xsd">
@@ -7837,6 +7896,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -7854,6 +7914,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/RatingService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/RatingService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/RatingService.wsdl" xmlns:ns="http://pathfinder-xml/RatingService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/RatingService.xsd">
@@ -8070,6 +8131,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -8087,6 +8149,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/FlightHistoryService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/FlightHistoryService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightHistoryService.wsdl" xmlns:ns="http://pathfinder-xml/FlightHistoryService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightHistoryService.xsd">
@@ -8843,6 +8906,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -8858,7 +8922,8 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightHistoryGetRecords</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightHistoryService.xsd">
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightHistoryService.xsd">
    <soapenv:Header/>
    <soapenv:Body>
       <flig:FlightHistoryGetRecordsRequest>
@@ -8875,7 +8940,8 @@
          </flig:FlightHistoryGetRecordsInfo>
       </flig:FlightHistoryGetRecordsRequest>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request>
+</soapenv:Envelope>
+        ]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -8892,6 +8958,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/FlightHistoryService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/FlightHistoryService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightHistoryService.wsdl" xmlns:ns="http://pathfinder-xml/FlightHistoryService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightHistoryService.xsd">
@@ -9648,6 +9715,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -9663,7 +9731,8 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightHistoryGetHistory</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightHistoryService.xsd">
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightHistoryService.xsd">
    <soapenv:Header/>
    <soapenv:Body>
       <flig:FlightHistoryGetHistoryRequest>
@@ -9676,27 +9745,28 @@
             </flig:SpecificationFlight>
             <!--Optional:-->
             <flig:SpecificationDateRange 
-            	DepartureDateTimeMax="2015-04-09T00:00:00+02:00" 
-            	DepartureDateTimeMin="2015-04-08T00:00:00+02:00"
-            	/>
+              DepartureDateTimeMax="2015-04-09T00:00:00+02:00" 
+              DepartureDateTimeMin="2015-04-08T00:00:00+02:00"
+              />
             <!--Optional:-->
             <flig:FlightHistoryGetHistoryRequestedData 
-            	ActualAirportDelays="false" 
-            	AggregatedAirports="false" 
-            	AirlineDetails="false" 
-            	AirlineHistory="false" 
-            	AirportObservations="false" 
-            	Codeshares="true" 
-            	Events="true" 
-            	FlightRecords="true" 
-            	LennocFlightHistories="true" 
-            	MaxPositionalUpdates="150"
-            	ScheduleEntries="true"
-            	/>
+              ActualAirportDelays="false" 
+              AggregatedAirports="false" 
+              AirlineDetails="false" 
+              AirlineHistory="false" 
+              AirportObservations="false" 
+              Codeshares="true" 
+              Events="true" 
+              FlightRecords="true" 
+              LennocFlightHistories="true" 
+              MaxPositionalUpdates="150"
+              ScheduleEntries="true"
+              />
          </flig:FlightHistoryGetHistoryInfo>
       </flig:FlightHistoryGetHistoryRequest>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request>
+</soapenv:Envelope>
+        ]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -9709,6 +9779,453 @@
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="EMSFlightMonitorVerifySOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl}EMSFlightMonitorVerifySOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl" id="f15a6975-4183-4eb2-80d6-83d932692191" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
+    <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl">
+      <con:part>
+        <con:url>http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl</con:url>
+        <con:content><![CDATA[
+          
+          <definitions targetNamespace="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns:ns="http://pathfinder-xml/EMSFlightMonitorService.xsd">
+  <types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/EMSFlightMonitorService.xsd">
+      <xsd:complexType name="Airline">
+        <xsd:attribute name="AirlineCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="IATACode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="ICAOCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="Airport">
+        <xsd:attribute name="AirportCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="FAACode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="IATACode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="ICAOCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="EMSDeliveryDestination">
+        <xsd:attribute name="EndTime" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Friday" type="xsd:boolean"/>
+        <xsd:attribute name="Id" type="xsd:int" use="optional"/>
+        <xsd:attribute name="Monday" type="xsd:boolean"/>
+        <xsd:attribute name="Name" type="xsd:string"/>
+        <xsd:attribute name="RuleSpecific" type="xsd:boolean"/>
+        <xsd:attribute name="Saturday" type="xsd:boolean"/>
+        <xsd:attribute name="StartTime" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Sunday" type="xsd:boolean"/>
+        <xsd:attribute name="Thursday" type="xsd:boolean"/>
+        <xsd:attribute name="Tuesday" type="xsd:boolean"/>
+        <xsd:attribute name="Type" type="xsd:string"/>
+        <xsd:attribute name="UserId" type="xsd:long" use="optional"/>
+        <xsd:attribute name="Value" type="xsd:string"/>
+        <xsd:attribute name="Wednesday" type="xsd:boolean"/>
+      </xsd:complexType>
+      <xsd:complexType name="EMSFlightDelayAndGateEvents">
+        <xsd:attribute name="ArrivalDelayAllowRunwayTimes" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="ArrivalDelayDelta" type="xsd:int" use="optional"/>
+        <xsd:attribute name="ArrivalDelayEvent" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="ArrivalDelayThreshold" type="xsd:int" use="optional"/>
+        <xsd:attribute name="ArrivalDelayWindowStart" type="xsd:int" use="optional"/>
+        <xsd:attribute name="ArrivalGateChange" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="ArrivalGateWindowStart" type="xsd:int" use="optional"/>
+        <xsd:attribute name="BaggageChangeWindowStart" type="xsd:int" use="optional"/>
+        <xsd:attribute name="BaggageChange" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="DepartureDelayAllowRunwayTimes" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="DepartureDelayDelta" type="xsd:int" use="optional"/>
+        <xsd:attribute name="DepartureDelayEvent" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="DepartureDelayThreshold" type="xsd:int" use="optional"/>
+        <xsd:attribute name="DepartureDelayWindowStart" type="xsd:int" use="optional"/>
+        <xsd:attribute name="DepartureGateChange" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="DepartureGateWindowStart" type="xsd:int" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="EMSFlightMonitorAddRulesInfo">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" name="EMSFlightRule" type="ns:EMSFlightRule"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="EMSFlightRule">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Airline" type="ns:Airline"/>
+          <xsd:element minOccurs="0" name="DepartureAirport" type="ns:Airport"/>
+          <xsd:element minOccurs="0" name="ArrivalAirport" type="ns:Airport"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="EMSFlightRuleEvents" type="ns:EMSFlightRuleEvents"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="EMSRuleNameValue" type="ns:EMSRuleNameValue"/>
+        </xsd:sequence>
+        <xsd:attribute name="Active" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="ArrivalDate" type="xsd:dateTime" use="optional"/>
+        <xsd:attribute name="DepartureDate" type="xsd:dateTime" use="optional"/>
+        <xsd:attribute name="Description" type="xsd:string" use="optional"/>
+        <xsd:attribute name="FlightNumber" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Id" type="xsd:int" use="optional"/>
+        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
+        <xsd:attribute name="UserId" type="xsd:long" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="EMSFlightRuleEvents">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="EMSFlightDelayAndGateEvents" type="ns:EMSFlightDelayAndGateEvents"/>
+          <xsd:element maxOccurs="unbounded" name="EMSDeliveryDestination" type="ns:EMSDeliveryDestination"/>
+        </xsd:sequence>
+        <xsd:attribute name="AllEvents" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="Arrived" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="Cancelled" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="Departed" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="Diverted" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="EMSRuleId" type="xsd:int" use="optional"/>
+        <xsd:attribute name="FlightArrivedLateThreshold" type="xsd:int" use="optional"/>
+        <xsd:attribute name="FlightArrivedLate" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="FlightDepartedLateThreshold" type="xsd:int" use="optional"/>
+        <xsd:attribute name="FlightDepartedLate" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="Id" type="xsd:int" use="optional"/>
+        <xsd:attribute name="StatusBeforeArrivalMinutes" type="xsd:int" use="optional"/>
+        <xsd:attribute name="StatusBeforeArrival" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="StatusBeforeDeparture1Minutes" type="xsd:int" use="optional"/>
+        <xsd:attribute name="StatusBeforeDeparture1" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="StatusBeforeDeparture2Minutes" type="xsd:int" use="optional"/>
+        <xsd:attribute name="StatusBeforeDeparture2" type="xsd:boolean" use="required"/>
+        <xsd:attribute name="StatusBeforeDeparture3Minutes" type="xsd:int" use="optional"/>
+        <xsd:attribute name="StatusBeforeDeparture3" type="xsd:boolean" use="required"/>
+      </xsd:complexType>
+      <xsd:complexType name="EMSFlightRuleVerifyInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Airline" type="ns:Airline"/>
+          <xsd:element minOccurs="0" name="ArrivalAirport" type="ns:Airport"/>
+          <xsd:element minOccurs="0" name="DepartureAirport" type="ns:Airport"/>
+        </xsd:sequence>
+        <xsd:attribute name="ArrivalDate" type="xsd:dateTime" use="optional"/>
+        <xsd:attribute name="DepartureDate" type="xsd:dateTime" use="optional"/>
+        <xsd:attribute name="FlightNumber" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="EMSFlightRuleVerifyResult">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Airline" type="ns:Airline"/>
+          <xsd:element minOccurs="0" name="ArrivalAirport" type="ns:Airport"/>
+          <xsd:element minOccurs="0" name="DepartureAirport" type="ns:Airport"/>
+        </xsd:sequence>
+        <xsd:attribute name="ArrivalDate" type="xsd:dateTime" use="optional"/>
+        <xsd:attribute name="DepartureDate" type="xsd:dateTime" use="optional"/>
+        <xsd:attribute name="FlightNumber" type="xsd:string" use="optional"/>
+        <xsd:attribute name="SupportsArrivalGateAssignment" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="SupportsBaggageClaim" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="SupportsDepartureGateAssignment" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="SupportsGateArrivalTime" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="SupportsGateDepartureTime" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="SupportsRunwayArrivalTime" type="xsd:boolean" use="optional"/>
+        <xsd:attribute name="SupportsRunwayDepartureTime" type="xsd:boolean" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="EMSRuleNameValue">
+        <xsd:attribute name="EMSRuleId" type="xsd:int" use="optional"/>
+        <xsd:attribute name="Id" type="xsd:int" use="optional"/>
+        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Value" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="Error">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" name="Message" type="xsd:string"/>
+          <xsd:element maxOccurs="1" name="StackTrace" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="MajorCode" type="xsd:string" use="optional"/>
+        <xsd:attribute name="MinorCode" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:complexType name="Login">
+        <xsd:attribute name="AccountId" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Guid" type="xsd:string" use="optional"/>
+        <xsd:attribute name="Password" type="xsd:string" use="optional"/>
+        <xsd:attribute name="UserId" type="xsd:string" use="optional"/>
+      </xsd:complexType>
+      <xsd:element name="EMSFlightMonitorAddRulesRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Login" type="ns:Login"/>
+            <xsd:element name="EMSFlightMonitorAddRulesInfo" type="ns:EMSFlightMonitorAddRulesInfo"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="EMSFlightMonitorAddRulesResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="EMSFlightRule" type="ns:EMSFlightRule"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="EMSFlightMonitorDeleteRulesRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Login" type="ns:Login"/>
+            <xsd:element name="EMSFlightRule" type="ns:EMSFlightRule"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="EMSFlightMonitorDeleteRulesResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="EMSFlightMonitorGetRulesRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Login" type="ns:Login"/>
+            <xsd:element maxOccurs="unbounded" name="EMSFlightRule" type="ns:EMSFlightRule"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="EMSFlightMonitorGetRulesResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="EMSFlightRule" type="ns:EMSFlightRule"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="EMSFlightMonitorUpdateRuleRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Login" type="ns:Login"/>
+            <xsd:element name="EMSFlightRule" type="ns:EMSFlightRule"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="EMSFlightMonitorUpdateRuleResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
+            <xsd:element minOccurs="0" name="EMSFlightRule" type="ns:EMSFlightRule"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="EMSFlightMonitorVerifyRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Login" type="ns:Login"/>
+            <xsd:element name="VerifyInfo" type="ns:EMSFlightRuleVerifyInfo"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="EMSFlightMonitorVerifyResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="VerificationResult" type="ns:EMSFlightRuleVerifyResult"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="EMSFlightMonitorAddRulesRequest">
+    <part element="ns:EMSFlightMonitorAddRulesRequest" name="EMSFlightMonitorAddRulesRequest"/>
+  </message>
+  <message name="EMSFlightMonitorAddRulesResponse">
+    <part element="ns:EMSFlightMonitorAddRulesResponse" name="EMSFlightMonitorAddRulesResponse"/>
+  </message>
+  <message name="EMSFlightMonitorDeleteRulesRequest">
+    <part element="ns:EMSFlightMonitorDeleteRulesRequest" name="EMSFlightMonitorDeleteRulesRequest"/>
+  </message>
+  <message name="EMSFlightMonitorDeleteRulesResponse">
+    <part element="ns:EMSFlightMonitorDeleteRulesResponse" name="EMSFlightMonitorDeleteRulesResponse"/>
+  </message>
+  <message name="EMSFlightMonitorGetRulesRequest">
+    <part element="ns:EMSFlightMonitorGetRulesRequest" name="EMSFlightMonitorGetRulesRequest"/>
+  </message>
+  <message name="EMSFlightMonitorGetRulesResponse">
+    <part element="ns:EMSFlightMonitorGetRulesResponse" name="EMSFlightMonitorGetRulesResponse"/>
+  </message>
+  <message name="EMSFlightMonitorUpdateRuleRequest">
+    <part element="ns:EMSFlightMonitorUpdateRuleRequest" name="EMSFlightMonitorUpdateRuleRequest"/>
+  </message>
+  <message name="EMSFlightMonitorUpdateRuleResponse">
+    <part element="ns:EMSFlightMonitorUpdateRuleResponse" name="EMSFlightMonitorUpdateRuleResponse"/>
+  </message>
+  <message name="EMSFlightMonitorVerifyRequest">
+    <part element="ns:EMSFlightMonitorVerifyRequest" name="EMSFlightMonitorVerifyRequest"/>
+  </message>
+  <message name="EMSFlightMonitorVerifyResponse">
+    <part element="ns:EMSFlightMonitorVerifyResponse" name="EMSFlightMonitorVerifyResponse"/>
+  </message>
+  <portType name="EMSFlightMonitorAddRulesPort">
+    <operation name="EMSFlightMonitorAddRulesOperation">
+      <input message="tns:EMSFlightMonitorAddRulesRequest"/>
+      <output message="tns:EMSFlightMonitorAddRulesResponse"/>
+    </operation>
+  </portType>
+  <portType name="EMSFlightMonitorDeleteRulesPort">
+    <operation name="EMSFlightMonitorDeleteRulesOperation">
+      <input message="tns:EMSFlightMonitorDeleteRulesRequest"/>
+      <output message="tns:EMSFlightMonitorDeleteRulesResponse"/>
+    </operation>
+  </portType>
+  <portType name="EMSFlightMonitorGetRulesPort">
+    <operation name="EMSFlightMonitorGetRulesOperation">
+      <input message="tns:EMSFlightMonitorGetRulesRequest"/>
+      <output message="tns:EMSFlightMonitorGetRulesResponse"/>
+    </operation>
+  </portType>
+  <portType name="EMSFlightMonitorUpdateRulePort">
+    <operation name="EMSFlightMonitorUpdateRuleOperation">
+      <input message="tns:EMSFlightMonitorUpdateRuleRequest"/>
+      <output message="tns:EMSFlightMonitorUpdateRuleResponse"/>
+    </operation>
+  </portType>
+  <portType name="EMSFlightMonitorVerifyPort">
+    <operation name="EMSFlightMonitorVerifyOperation">
+      <input message="tns:EMSFlightMonitorVerifyRequest"/>
+      <output message="tns:EMSFlightMonitorVerifyResponse"/>
+    </operation>
+  </portType>
+  <binding name="EMSFlightMonitorAddRulesSOAPBinding" type="tns:EMSFlightMonitorAddRulesPort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="EMSFlightMonitorAddRulesOperation">
+      <soap:operation/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <binding name="EMSFlightMonitorDeleteRulesSOAPBinding" type="tns:EMSFlightMonitorDeleteRulesPort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="EMSFlightMonitorDeleteRulesOperation">
+      <soap:operation/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <binding name="EMSFlightMonitorGetRulesSOAPBinding" type="tns:EMSFlightMonitorGetRulesPort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="EMSFlightMonitorGetRulesOperation">
+      <soap:operation/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <binding name="EMSFlightMonitorUpdateRuleSOAPBinding" type="tns:EMSFlightMonitorUpdateRulePort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="EMSFlightMonitorUpdateRuleOperation">
+      <soap:operation/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <binding name="EMSFlightMonitorVerifySOAPBinding" type="tns:EMSFlightMonitorVerifyPort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="EMSFlightMonitorVerifyOperation">
+      <soap:operation/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="EMSFlightMonitorService">
+    <port binding="tns:EMSFlightMonitorAddRulesSOAPBinding" name="EMSFlightMonitorAddRulesService">
+      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorAddRules"/>
+    </port>
+    <port binding="tns:EMSFlightMonitorDeleteRulesSOAPBinding" name="EMSFlightMonitorDeleteRulesService">
+      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorDeleteRules"/>
+    </port>
+    <port binding="tns:EMSFlightMonitorGetRulesSOAPBinding" name="EMSFlightMonitorGetRulesService">
+      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorGetRules"/>
+    </port>
+    <port binding="tns:EMSFlightMonitorUpdateRuleSOAPBinding" name="EMSFlightMonitorUpdateRuleService">
+      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorUpdateRule"/>
+    </port>
+    <port binding="tns:EMSFlightMonitorVerifySOAPBinding" name="EMSFlightMonitorVerifyService">
+      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorVerify"/>
+    </port>
+  </service>
+</definitions>
+        
+        ]]></con:content>
+        <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
+      </con:part>
+    </con:definitionCache>
+    <con:endpoints>
+      <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorVerify</con:endpoint>
+    </con:endpoints>
+    <con:operation isOneWay="false" action="" name="EMSFlightMonitorVerifyOperation" bindingOperationName="EMSFlightMonitorVerifyOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="8752c413-7529-42db-934e-bde8977f0377" anonymous="optional">
+      <con:settings/>
+      <con:call id="69d0e598-47dc-4e44-b6e9-6cf2a0955f12" name="Request">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorVerify</con:endpoint>
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ems:EMSFlightMonitorVerifyRequest>\r
+         <ems:Login Guid="${#Project#GUID}" />\r
+         <ems:VerifyInfo DepartureDate="2015-07-15T16:30:00+02:00" FlightNumber="818">\r
+            <!--Optional:-->\r
+            <ems:Airline IATACode="SK" />\r            
+         </ems:VerifyInfo>\r
+      </ems:EMSFlightMonitorVerifyRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>
+        ]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorVerifyPort/EMSFlightMonitorVerifyOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
+  </con:interface>
+  <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="EMSFlightMonitorDeleteRulesSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl}EMSFlightMonitorDeleteRulesSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl" id="14537ad9-8c83-433b-afcc-23d4faba84f5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints>
+      <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorDeleteRules</con:endpoint>
+    </con:endpoints>
+    <con:operation isOneWay="false" action="" name="EMSFlightMonitorDeleteRulesOperation" bindingOperationName="EMSFlightMonitorDeleteRulesOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="deee83ab-f4fa-49d4-a026-f40e419e9b16" anonymous="optional">
+      <con:settings/>
+      <con:call id="70cede2c-0ed2-4816-8e77-3c8b5075e909" name="Request">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorDeleteRules</con:endpoint>
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ems:EMSFlightMonitorDeleteRulesRequest>\r
+         <ems:Login Guid="${#Project#GUID}" />\r
+         <ems:EMSFlightRule Id="696338594" />
+      </ems:EMSFlightMonitorDeleteRulesRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>
+        ]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorDeleteRulesPort/EMSFlightMonitorDeleteRulesOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
+  </con:interface>
+  <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="EMSFlightMonitorAddRulesSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl}EMSFlightMonitorAddRulesSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl" id="4c147043-795d-4a4f-b8f1-4fba26930988" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl</con:url>
@@ -10082,438 +10599,6 @@
       </con:part>
     </con:definitionCache>
     <con:endpoints>
-      <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorVerify</con:endpoint>
-    </con:endpoints>
-    <con:operation isOneWay="false" action="" name="EMSFlightMonitorVerifyOperation" bindingOperationName="EMSFlightMonitorVerifyOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="8752c413-7529-42db-934e-bde8977f0377" anonymous="optional">
-      <con:settings/>
-      <con:call id="69d0e598-47dc-4e44-b6e9-6cf2a0955f12" name="Request">
-        <con:settings>
-          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-        </con:settings>
-        <con:encoding>UTF-8</con:encoding>
-        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorVerify</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <ems:EMSFlightMonitorVerifyRequest>\r
-         <ems:Login Guid="${#Project#GUID}" />\r
-         <ems:VerifyInfo DepartureDate="2015-07-15T16:30:00+02:00" FlightNumber="818">\r
-            <!--Optional:-->\r
-            <ems:Airline IATACode="SK" />\r            
-         </ems:VerifyInfo>\r
-      </ems:EMSFlightMonitorVerifyRequest>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request>
-        <con:credentials>
-          <con:authType>No Authorization</con:authType>
-        </con:credentials>
-        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-        <con:jmsPropertyConfig/>
-        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorVerifyPort/EMSFlightMonitorVerifyOperationRequest"/>
-        <con:wsrmConfig version="1.2"/>
-      </con:call>
-    </con:operation>
-  </con:interface>
-  <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="EMSFlightMonitorDeleteRulesSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl}EMSFlightMonitorDeleteRulesSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl" id="14537ad9-8c83-433b-afcc-23d4faba84f5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <con:settings/>
-    <con:definitionCache/>
-    <con:endpoints>
-      <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorDeleteRules</con:endpoint>
-    </con:endpoints>
-    <con:operation isOneWay="false" action="" name="EMSFlightMonitorDeleteRulesOperation" bindingOperationName="EMSFlightMonitorDeleteRulesOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="deee83ab-f4fa-49d4-a026-f40e419e9b16" anonymous="optional">
-      <con:settings/>
-      <con:call id="70cede2c-0ed2-4816-8e77-3c8b5075e909" name="Request">
-        <con:settings>
-          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-        </con:settings>
-        <con:encoding>UTF-8</con:encoding>
-        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorDeleteRules</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <ems:EMSFlightMonitorDeleteRulesRequest>\r
-         <ems:Login Guid="${#Project#GUID}" />\r
-         <ems:EMSFlightRule Id="696338594" />
-      </ems:EMSFlightMonitorDeleteRulesRequest>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request>
-        <con:credentials>
-          <con:authType>No Authorization</con:authType>
-        </con:credentials>
-        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-        <con:jmsPropertyConfig/>
-        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorDeleteRulesPort/EMSFlightMonitorDeleteRulesOperationRequest"/>
-        <con:wsrmConfig version="1.2"/>
-      </con:call>
-    </con:operation>
-  </con:interface>
-  <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="EMSFlightMonitorAddRulesSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl}EMSFlightMonitorAddRulesSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl" id="4c147043-795d-4a4f-b8f1-4fba26930988" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl"><con:part><con:url>http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl</con:url><con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns:ns="http://pathfinder-xml/EMSFlightMonitorService.xsd">
-  <types>
-    <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/EMSFlightMonitorService.xsd">
-      <xsd:complexType name="Airline">
-        <xsd:attribute name="AirlineCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="IATACode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="ICAOCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="Airport">
-        <xsd:attribute name="AirportCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="FAACode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="IATACode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="ICAOCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="EMSDeliveryDestination">
-        <xsd:attribute name="EndTime" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Friday" type="xsd:boolean"/>
-        <xsd:attribute name="Id" type="xsd:int" use="optional"/>
-        <xsd:attribute name="Monday" type="xsd:boolean"/>
-        <xsd:attribute name="Name" type="xsd:string"/>
-        <xsd:attribute name="RuleSpecific" type="xsd:boolean"/>
-        <xsd:attribute name="Saturday" type="xsd:boolean"/>
-        <xsd:attribute name="StartTime" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Sunday" type="xsd:boolean"/>
-        <xsd:attribute name="Thursday" type="xsd:boolean"/>
-        <xsd:attribute name="Tuesday" type="xsd:boolean"/>
-        <xsd:attribute name="Type" type="xsd:string"/>
-        <xsd:attribute name="UserId" type="xsd:long" use="optional"/>
-        <xsd:attribute name="Value" type="xsd:string"/>
-        <xsd:attribute name="Wednesday" type="xsd:boolean"/>
-      </xsd:complexType>
-      <xsd:complexType name="EMSFlightDelayAndGateEvents">
-        <xsd:attribute name="ArrivalDelayAllowRunwayTimes" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="ArrivalDelayDelta" type="xsd:int" use="optional"/>
-        <xsd:attribute name="ArrivalDelayEvent" type="xsd:boolean" use="required"/>
-        <xsd:attribute name="ArrivalDelayThreshold" type="xsd:int" use="optional"/>
-        <xsd:attribute name="ArrivalDelayWindowStart" type="xsd:int" use="optional"/>
-        <xsd:attribute name="ArrivalGateChange" type="xsd:boolean" use="required"/>
-        <xsd:attribute name="ArrivalGateWindowStart" type="xsd:int" use="optional"/>
-        <xsd:attribute name="BaggageChangeWindowStart" type="xsd:int" use="optional"/>
-        <xsd:attribute name="BaggageChange" type="xsd:boolean" use="required"/>
-        <xsd:attribute name="DepartureDelayAllowRunwayTimes" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="DepartureDelayDelta" type="xsd:int" use="optional"/>
-        <xsd:attribute name="DepartureDelayEvent" type="xsd:boolean" use="required"/>
-        <xsd:attribute name="DepartureDelayThreshold" type="xsd:int" use="optional"/>
-        <xsd:attribute name="DepartureDelayWindowStart" type="xsd:int" use="optional"/>
-        <xsd:attribute name="DepartureGateChange" type="xsd:boolean" use="required"/>
-        <xsd:attribute name="DepartureGateWindowStart" type="xsd:int" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="EMSFlightMonitorAddRulesInfo">
-        <xsd:sequence>
-          <xsd:element maxOccurs="unbounded" name="EMSFlightRule" type="ns:EMSFlightRule"/>
-        </xsd:sequence>
-      </xsd:complexType>
-      <xsd:complexType name="EMSFlightRule">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="Airline" type="ns:Airline"/>
-          <xsd:element minOccurs="0" name="DepartureAirport" type="ns:Airport"/>
-          <xsd:element minOccurs="0" name="ArrivalAirport" type="ns:Airport"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="EMSFlightRuleEvents" type="ns:EMSFlightRuleEvents"/>
-          <xsd:element maxOccurs="unbounded" minOccurs="0" name="EMSRuleNameValue" type="ns:EMSRuleNameValue"/>
-        </xsd:sequence>
-        <xsd:attribute name="Active" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="ArrivalDate" type="xsd:dateTime" use="optional"/>
-        <xsd:attribute name="DepartureDate" type="xsd:dateTime" use="optional"/>
-        <xsd:attribute name="Description" type="xsd:string" use="optional"/>
-        <xsd:attribute name="FlightNumber" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Id" type="xsd:int" use="optional"/>
-        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
-        <xsd:attribute name="UserId" type="xsd:long" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="EMSFlightRuleEvents">
-        <xsd:sequence>
-          <xsd:element maxOccurs="1" minOccurs="0" name="EMSFlightDelayAndGateEvents" type="ns:EMSFlightDelayAndGateEvents"/>
-          <xsd:element maxOccurs="unbounded" name="EMSDeliveryDestination" type="ns:EMSDeliveryDestination"/>
-        </xsd:sequence>
-        <xsd:attribute name="AllEvents" type="xsd:boolean" use="required"/>
-        <xsd:attribute name="Arrived" type="xsd:boolean" use="required"/>
-        <xsd:attribute name="Cancelled" type="xsd:boolean" use="required"/>
-        <xsd:attribute name="Departed" type="xsd:boolean" use="required"/>
-        <xsd:attribute name="Diverted" type="xsd:boolean" use="required"/>
-        <xsd:attribute name="EMSRuleId" type="xsd:int" use="optional"/>
-        <xsd:attribute name="FlightArrivedLateThreshold" type="xsd:int" use="optional"/>
-        <xsd:attribute name="FlightArrivedLate" type="xsd:boolean" use="required"/>
-        <xsd:attribute name="FlightDepartedLateThreshold" type="xsd:int" use="optional"/>
-        <xsd:attribute name="FlightDepartedLate" type="xsd:boolean" use="required"/>
-        <xsd:attribute name="Id" type="xsd:int" use="optional"/>
-        <xsd:attribute name="StatusBeforeArrivalMinutes" type="xsd:int" use="optional"/>
-        <xsd:attribute name="StatusBeforeArrival" type="xsd:boolean" use="required"/>
-        <xsd:attribute name="StatusBeforeDeparture1Minutes" type="xsd:int" use="optional"/>
-        <xsd:attribute name="StatusBeforeDeparture1" type="xsd:boolean" use="required"/>
-        <xsd:attribute name="StatusBeforeDeparture2Minutes" type="xsd:int" use="optional"/>
-        <xsd:attribute name="StatusBeforeDeparture2" type="xsd:boolean" use="required"/>
-        <xsd:attribute name="StatusBeforeDeparture3Minutes" type="xsd:int" use="optional"/>
-        <xsd:attribute name="StatusBeforeDeparture3" type="xsd:boolean" use="required"/>
-      </xsd:complexType>
-      <xsd:complexType name="EMSFlightRuleVerifyInfo">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="Airline" type="ns:Airline"/>
-          <xsd:element minOccurs="0" name="ArrivalAirport" type="ns:Airport"/>
-          <xsd:element minOccurs="0" name="DepartureAirport" type="ns:Airport"/>
-        </xsd:sequence>
-        <xsd:attribute name="ArrivalDate" type="xsd:dateTime" use="optional"/>
-        <xsd:attribute name="DepartureDate" type="xsd:dateTime" use="optional"/>
-        <xsd:attribute name="FlightNumber" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="EMSFlightRuleVerifyResult">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="Airline" type="ns:Airline"/>
-          <xsd:element minOccurs="0" name="ArrivalAirport" type="ns:Airport"/>
-          <xsd:element minOccurs="0" name="DepartureAirport" type="ns:Airport"/>
-        </xsd:sequence>
-        <xsd:attribute name="ArrivalDate" type="xsd:dateTime" use="optional"/>
-        <xsd:attribute name="DepartureDate" type="xsd:dateTime" use="optional"/>
-        <xsd:attribute name="FlightNumber" type="xsd:string" use="optional"/>
-        <xsd:attribute name="SupportsArrivalGateAssignment" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="SupportsBaggageClaim" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="SupportsDepartureGateAssignment" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="SupportsGateArrivalTime" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="SupportsGateDepartureTime" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="SupportsRunwayArrivalTime" type="xsd:boolean" use="optional"/>
-        <xsd:attribute name="SupportsRunwayDepartureTime" type="xsd:boolean" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="EMSRuleNameValue">
-        <xsd:attribute name="EMSRuleId" type="xsd:int" use="optional"/>
-        <xsd:attribute name="Id" type="xsd:int" use="optional"/>
-        <xsd:attribute name="Name" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Value" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="Error">
-        <xsd:sequence>
-          <xsd:element maxOccurs="1" name="Message" type="xsd:string"/>
-          <xsd:element maxOccurs="1" name="StackTrace" type="xsd:string"/>
-        </xsd:sequence>
-        <xsd:attribute name="MajorCode" type="xsd:string" use="optional"/>
-        <xsd:attribute name="MinorCode" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:complexType name="Login">
-        <xsd:attribute name="AccountId" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Guid" type="xsd:string" use="optional"/>
-        <xsd:attribute name="Password" type="xsd:string" use="optional"/>
-        <xsd:attribute name="UserId" type="xsd:string" use="optional"/>
-      </xsd:complexType>
-      <xsd:element name="EMSFlightMonitorAddRulesRequest">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element name="Login" type="ns:Login"/>
-            <xsd:element name="EMSFlightMonitorAddRulesInfo" type="ns:EMSFlightMonitorAddRulesInfo"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="EMSFlightMonitorAddRulesResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
-            <xsd:element maxOccurs="unbounded" minOccurs="0" name="EMSFlightRule" type="ns:EMSFlightRule"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="EMSFlightMonitorDeleteRulesRequest">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element name="Login" type="ns:Login"/>
-            <xsd:element name="EMSFlightRule" type="ns:EMSFlightRule"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="EMSFlightMonitorDeleteRulesResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="EMSFlightMonitorGetRulesRequest">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element name="Login" type="ns:Login"/>
-            <xsd:element maxOccurs="unbounded" name="EMSFlightRule" type="ns:EMSFlightRule"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="EMSFlightMonitorGetRulesResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
-            <xsd:element maxOccurs="unbounded" minOccurs="0" name="EMSFlightRule" type="ns:EMSFlightRule"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="EMSFlightMonitorUpdateRuleRequest">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element name="Login" type="ns:Login"/>
-            <xsd:element name="EMSFlightRule" type="ns:EMSFlightRule"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="EMSFlightMonitorUpdateRuleResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
-            <xsd:element minOccurs="0" name="EMSFlightRule" type="ns:EMSFlightRule"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="EMSFlightMonitorVerifyRequest">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element name="Login" type="ns:Login"/>
-            <xsd:element name="VerifyInfo" type="ns:EMSFlightRuleVerifyInfo"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="EMSFlightMonitorVerifyResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element maxOccurs="1" minOccurs="0" name="Error" type="ns:Error"/>
-            <xsd:element maxOccurs="unbounded" minOccurs="0" name="VerificationResult" type="ns:EMSFlightRuleVerifyResult"/>
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-    </xsd:schema>
-  </types>
-  <message name="EMSFlightMonitorAddRulesRequest">
-    <part element="ns:EMSFlightMonitorAddRulesRequest" name="EMSFlightMonitorAddRulesRequest"/>
-  </message>
-  <message name="EMSFlightMonitorAddRulesResponse">
-    <part element="ns:EMSFlightMonitorAddRulesResponse" name="EMSFlightMonitorAddRulesResponse"/>
-  </message>
-  <message name="EMSFlightMonitorDeleteRulesRequest">
-    <part element="ns:EMSFlightMonitorDeleteRulesRequest" name="EMSFlightMonitorDeleteRulesRequest"/>
-  </message>
-  <message name="EMSFlightMonitorDeleteRulesResponse">
-    <part element="ns:EMSFlightMonitorDeleteRulesResponse" name="EMSFlightMonitorDeleteRulesResponse"/>
-  </message>
-  <message name="EMSFlightMonitorGetRulesRequest">
-    <part element="ns:EMSFlightMonitorGetRulesRequest" name="EMSFlightMonitorGetRulesRequest"/>
-  </message>
-  <message name="EMSFlightMonitorGetRulesResponse">
-    <part element="ns:EMSFlightMonitorGetRulesResponse" name="EMSFlightMonitorGetRulesResponse"/>
-  </message>
-  <message name="EMSFlightMonitorUpdateRuleRequest">
-    <part element="ns:EMSFlightMonitorUpdateRuleRequest" name="EMSFlightMonitorUpdateRuleRequest"/>
-  </message>
-  <message name="EMSFlightMonitorUpdateRuleResponse">
-    <part element="ns:EMSFlightMonitorUpdateRuleResponse" name="EMSFlightMonitorUpdateRuleResponse"/>
-  </message>
-  <message name="EMSFlightMonitorVerifyRequest">
-    <part element="ns:EMSFlightMonitorVerifyRequest" name="EMSFlightMonitorVerifyRequest"/>
-  </message>
-  <message name="EMSFlightMonitorVerifyResponse">
-    <part element="ns:EMSFlightMonitorVerifyResponse" name="EMSFlightMonitorVerifyResponse"/>
-  </message>
-  <portType name="EMSFlightMonitorAddRulesPort">
-    <operation name="EMSFlightMonitorAddRulesOperation">
-      <input message="tns:EMSFlightMonitorAddRulesRequest"/>
-      <output message="tns:EMSFlightMonitorAddRulesResponse"/>
-    </operation>
-  </portType>
-  <portType name="EMSFlightMonitorDeleteRulesPort">
-    <operation name="EMSFlightMonitorDeleteRulesOperation">
-      <input message="tns:EMSFlightMonitorDeleteRulesRequest"/>
-      <output message="tns:EMSFlightMonitorDeleteRulesResponse"/>
-    </operation>
-  </portType>
-  <portType name="EMSFlightMonitorGetRulesPort">
-    <operation name="EMSFlightMonitorGetRulesOperation">
-      <input message="tns:EMSFlightMonitorGetRulesRequest"/>
-      <output message="tns:EMSFlightMonitorGetRulesResponse"/>
-    </operation>
-  </portType>
-  <portType name="EMSFlightMonitorUpdateRulePort">
-    <operation name="EMSFlightMonitorUpdateRuleOperation">
-      <input message="tns:EMSFlightMonitorUpdateRuleRequest"/>
-      <output message="tns:EMSFlightMonitorUpdateRuleResponse"/>
-    </operation>
-  </portType>
-  <portType name="EMSFlightMonitorVerifyPort">
-    <operation name="EMSFlightMonitorVerifyOperation">
-      <input message="tns:EMSFlightMonitorVerifyRequest"/>
-      <output message="tns:EMSFlightMonitorVerifyResponse"/>
-    </operation>
-  </portType>
-  <binding name="EMSFlightMonitorAddRulesSOAPBinding" type="tns:EMSFlightMonitorAddRulesPort">
-    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <operation name="EMSFlightMonitorAddRulesOperation">
-      <soap:operation/>
-      <input>
-        <soap:body use="literal"/>
-      </input>
-      <output>
-        <soap:body use="literal"/>
-      </output>
-    </operation>
-  </binding>
-  <binding name="EMSFlightMonitorDeleteRulesSOAPBinding" type="tns:EMSFlightMonitorDeleteRulesPort">
-    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <operation name="EMSFlightMonitorDeleteRulesOperation">
-      <soap:operation/>
-      <input>
-        <soap:body use="literal"/>
-      </input>
-      <output>
-        <soap:body use="literal"/>
-      </output>
-    </operation>
-  </binding>
-  <binding name="EMSFlightMonitorGetRulesSOAPBinding" type="tns:EMSFlightMonitorGetRulesPort">
-    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <operation name="EMSFlightMonitorGetRulesOperation">
-      <soap:operation/>
-      <input>
-        <soap:body use="literal"/>
-      </input>
-      <output>
-        <soap:body use="literal"/>
-      </output>
-    </operation>
-  </binding>
-  <binding name="EMSFlightMonitorUpdateRuleSOAPBinding" type="tns:EMSFlightMonitorUpdateRulePort">
-    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <operation name="EMSFlightMonitorUpdateRuleOperation">
-      <soap:operation/>
-      <input>
-        <soap:body use="literal"/>
-      </input>
-      <output>
-        <soap:body use="literal"/>
-      </output>
-    </operation>
-  </binding>
-  <binding name="EMSFlightMonitorVerifySOAPBinding" type="tns:EMSFlightMonitorVerifyPort">
-    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <operation name="EMSFlightMonitorVerifyOperation">
-      <soap:operation/>
-      <input>
-        <soap:body use="literal"/>
-      </input>
-      <output>
-        <soap:body use="literal"/>
-      </output>
-    </operation>
-  </binding>
-  <service name="EMSFlightMonitorService">
-    <port binding="tns:EMSFlightMonitorAddRulesSOAPBinding" name="EMSFlightMonitorAddRulesService">
-      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorAddRules"/>
-    </port>
-    <port binding="tns:EMSFlightMonitorDeleteRulesSOAPBinding" name="EMSFlightMonitorDeleteRulesService">
-      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorDeleteRules"/>
-    </port>
-    <port binding="tns:EMSFlightMonitorGetRulesSOAPBinding" name="EMSFlightMonitorGetRulesService">
-      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorGetRules"/>
-    </port>
-    <port binding="tns:EMSFlightMonitorUpdateRuleSOAPBinding" name="EMSFlightMonitorUpdateRuleService">
-      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorUpdateRule"/>
-    </port>
-    <port binding="tns:EMSFlightMonitorVerifySOAPBinding" name="EMSFlightMonitorVerifyService">
-      <soap:address location="http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorVerify"/>
-    </port>
-  </service>
-</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints>
       <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorAddRules</con:endpoint>
     </con:endpoints>
     <con:operation isOneWay="false" action="" name="EMSFlightMonitorAddRulesOperation" bindingOperationName="EMSFlightMonitorAddRulesOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" id="33ff0f11-1d76-49bc-88de-05efb92f4964" anonymous="optional">
@@ -10524,7 +10609,8 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorAddRules</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ems:EMSFlightMonitorAddRulesRequest>\r
@@ -10532,18 +10618,18 @@
          <ems:EMSFlightMonitorAddRulesInfo>\r
             <!--1 or more repetitions:-->\r
             <ems:EMSFlightRule Active="true" 
-            				 DepartureDate="2018-12-20T12:50:00+01:00" 
-            				 FlightNumber="2198" Name="LH2198">\r
+                     DepartureDate="2018-12-20T12:50:00+01:00" 
+                     FlightNumber="2198" Name="LH2198">\r
                <!--Optional:-->\r
                <ems:Airline AirlineCode="LH" />\r
                <!--Zero or more repetitions:-->\r
                <ems:EMSFlightRuleEvents AllEvents="true" 
-               					Cancelled="true"
-               					Departed="true"
-               					Diverted="true"
-               					FlightArrivedLateThreshold="15" FlightArrivedLate="false"
-               					FlightDepartedLateThreshold="15" FlightDepartedLate="false"
-               					StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
+                        Cancelled="true"
+                        Departed="true"
+                        Diverted="true"
+                        FlightArrivedLateThreshold="15" FlightArrivedLate="false"
+                        FlightDepartedLateThreshold="15" FlightDepartedLate="false"
+                        StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
                                         Arrived="true" >\r
                   <ems:EMSFlightDelayAndGateEvents ArrivalGateChange="true"
                                                    BaggageChange="true"
@@ -10555,18 +10641,18 @@
                </ems:EMSFlightRuleEvents>\r
             </ems:EMSFlightRule>\r
             <ems:EMSFlightRule Active="true" 
-            				 DepartureDate="2018-12-28T15:00:00+01:00" 
-            				 FlightNumber="2199" Name="LH2199">
+                     DepartureDate="2018-12-28T15:00:00+01:00" 
+                     FlightNumber="2199" Name="LH2199">
                <!--Optional:-->
                <ems:Airline AirlineCode="LH" />
                <!--Zero or more repetitions:-->
                <ems:EMSFlightRuleEvents AllEvents="true" 
-               					Cancelled="true"
-               					Departed="true"
-               					Diverted="true"
-               					FlightArrivedLateThreshold="15" FlightArrivedLate="false"
-               					FlightDepartedLateThreshold="15" FlightDepartedLate="false"
-               					StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
+                        Cancelled="true"
+                        Departed="true"
+                        Diverted="true"
+                        FlightArrivedLateThreshold="15" FlightArrivedLate="false"
+                        FlightDepartedLateThreshold="15" FlightDepartedLate="false"
+                        StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
                                         Arrived="true" >
                   <ems:EMSFlightDelayAndGateEvents ArrivalGateChange="true"
                                                    BaggageChange="true"
@@ -10578,18 +10664,18 @@
                </ems:EMSFlightRuleEvents>
             </ems:EMSFlightRule>
             <ems:EMSFlightRule Active="true" 
-            				 DepartureDate="2018-12-28T18:55:00+01:00" 
-            				 FlightNumber="4746" Name="SK4746">
+                     DepartureDate="2018-12-28T18:55:00+01:00" 
+                     FlightNumber="4746" Name="SK4746">
                <!--Optional:-->
                <ems:Airline AirlineCode="SK" />
                <!--Zero or more repetitions:-->
                <ems:EMSFlightRuleEvents AllEvents="true" 
-               					Cancelled="true"
-               					Departed="true"
-               					Diverted="true"
-               					FlightArrivedLateThreshold="15" FlightArrivedLate="false"
-               					FlightDepartedLateThreshold="15" FlightDepartedLate="false"
-               					StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
+                        Cancelled="true"
+                        Departed="true"
+                        Diverted="true"
+                        FlightArrivedLateThreshold="15" FlightArrivedLate="false"
+                        FlightDepartedLateThreshold="15" FlightDepartedLate="false"
+                        StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
                                         Arrived="true" >
                   <ems:EMSFlightDelayAndGateEvents ArrivalGateChange="true"
                                                    BaggageChange="true"
@@ -10601,18 +10687,18 @@
                </ems:EMSFlightRuleEvents>
             </ems:EMSFlightRule>
             <ems:EMSFlightRule Active="true" 
-            				 DepartureDate="2018-12-28T21:55:00+01:00" 
-            				 FlightNumber="382" Name="SK0382">
+                     DepartureDate="2018-12-28T21:55:00+01:00" 
+                     FlightNumber="382" Name="SK0382">
                <!--Optional:-->
                <ems:Airline AirlineCode="SK" />
                <!--Zero or more repetitions:-->
                <ems:EMSFlightRuleEvents AllEvents="true" 
-               					Cancelled="true"
-               					Departed="true"
-               					Diverted="true"
-               					FlightArrivedLateThreshold="15" FlightArrivedLate="false"
-               					FlightDepartedLateThreshold="15" FlightDepartedLate="false"
-               					StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
+                        Cancelled="true"
+                        Departed="true"
+                        Diverted="true"
+                        FlightArrivedLateThreshold="15" FlightArrivedLate="false"
+                        FlightDepartedLateThreshold="15" FlightDepartedLate="false"
+                        StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
                                         Arrived="true" >
                   <ems:EMSFlightDelayAndGateEvents ArrivalGateChange="true"
                                                    BaggageChange="true"
@@ -10624,18 +10710,18 @@
                </ems:EMSFlightRuleEvents>
             </ems:EMSFlightRule>
             <ems:EMSFlightRule Active="true" 
-            				 DepartureDate="2019-01-04T17:05:00+01:00" 
-            				 FlightNumber="4572" Name="SK4572">
+                     DepartureDate="2019-01-04T17:05:00+01:00" 
+                     FlightNumber="4572" Name="SK4572">
                <!--Optional:-->
                <ems:Airline AirlineCode="SK" />
                <!--Zero or more repetitions:-->
                <ems:EMSFlightRuleEvents AllEvents="true" 
-               					Cancelled="true"
-               					Departed="true"
-               					Diverted="true"
-               					FlightArrivedLateThreshold="15" FlightArrivedLate="false"
-               					FlightDepartedLateThreshold="15" FlightDepartedLate="false"
-               					StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
+                        Cancelled="true"
+                        Departed="true"
+                        Diverted="true"
+                        FlightArrivedLateThreshold="15" FlightArrivedLate="false"
+                        FlightDepartedLateThreshold="15" FlightDepartedLate="false"
+                        StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
                                         Arrived="true" >
                   <ems:EMSFlightDelayAndGateEvents ArrivalGateChange="true"
                                                    BaggageChange="true"
@@ -10649,7 +10735,8 @@
          </ems:EMSFlightMonitorAddRulesInfo>\r
       </ems:EMSFlightMonitorAddRulesRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request>
+</soapenv:Envelope>
+        ]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -10658,7 +10745,12 @@
         <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorAddRulesPort/EMSFlightMonitorAddRulesOperationRequest"/>
         <con:wsrmConfig version="1.2"/>
       </con:call>
-    <con:call id="3ee7d448-56fa-4897-bd33-fc5aabb094a0" name="Request Mock"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorAddRules</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
+      <con:call id="3ee7d448-56fa-4897-bd33-fc5aabb094a0" name="Request Mock">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorAddRules</con:endpoint>
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ems:EMSFlightMonitorAddRulesRequest>\r
@@ -10685,7 +10777,17 @@
          </ems:EMSFlightMonitorAddRulesInfo>\r
       </ems:EMSFlightMonitorAddRulesRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorAddRulesPort/EMSFlightMonitorAddRulesOperationRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>
+</soapenv:Envelope>
+        ]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl/EMSFlightMonitorAddRulesPort/EMSFlightMonitorAddRulesOperationRequest"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="EMSFlightMonitorUpdateRuleSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl}EMSFlightMonitorUpdateRuleSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl" id="561cb304-10a0-451d-86bd-d0be9fbd4716" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -10703,6 +10805,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns:ns="http://pathfinder-xml/EMSFlightMonitorService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/EMSFlightMonitorService.xsd">
@@ -11067,6 +11170,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -11080,7 +11184,8 @@
         <con:settings/>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorGetRules</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ems:EMSFlightMonitorGetRulesRequest>\r
@@ -11105,7 +11210,8 @@
          </ems:EMSFlightRule>\r
       </ems:EMSFlightMonitorGetRulesRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request>
+</soapenv:Envelope>
+        ]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -11122,6 +11228,7 @@
       <con:part>
         <con:url>https://www.flightstats.com/developers/bin/download/Web+Services/WSDL/AirportHistoryService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/AirportHistoryService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportHistoryService.wsdl" xmlns:ns="http://pathfinder-xml/AirportHistoryService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportHistoryService.xsd">
@@ -11356,6 +11463,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -11373,6 +11481,7 @@
       <con:part>
         <con:url>https://www.flightstats.com/developers/bin/download/Web+Services/WSDL/DelayIndexService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/DelayIndexService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/DelayIndexService.wsdl" xmlns:ns="http://pathfinder-xml/DelayIndexService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/DelayIndexService.xsd">
@@ -11490,6 +11599,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -11507,6 +11617,7 @@
       <con:part>
         <con:url>https://www.flightstats.com/developers/bin/download/Web+Services/WSDL/SchedulesConnectionsService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/SchedulesConnectionsService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/SchedulesConnectionsService.wsdl" xmlns:ns="http://pathfinder-xml/SchedulesConnectionsService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/SchedulesConnectionsService.xsd">
@@ -11698,6 +11809,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -11713,7 +11825,8 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/SchedulesConnections</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://pathfinder-xml/SchedulesConnectionsService.xsd">\r
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://pathfinder-xml/SchedulesConnectionsService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <sch:SchedulesConnectionsRequest From="2015-08-01T09:00:00+02:00" To="2015-08-01T13:00:00+02:00">\r
@@ -11726,7 +11839,8 @@
          <sch:Destination AirportCode="TOS" />\r
       </sch:SchedulesConnectionsRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request>
+</soapenv:Envelope>
+        ]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -11743,6 +11857,7 @@
       <con:part>
         <con:url>https://www.flightstats.com/developers/bin/download/Web+Services/WSDL/FlightAvailabilityService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/FlightAvailabilityService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightAvailabilityService.wsdl" xmlns:ns="http://pathfinder-xml/FlightAvailabilityService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightAvailabilityService.xsd">
@@ -11883,6 +11998,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -11920,6 +12036,7 @@
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/TimetableService.wsdl</con:url>
         <con:content><![CDATA[
+          
           <definitions targetNamespace="http://www.pathfinder-xml.com/TimetableService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/TimetableService.wsdl" xmlns:ns="http://pathfinder-xml/TimetableService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/TimetableService.xsd">
@@ -12288,6 +12405,7 @@
     </port>
   </service>
 </definitions>
+        
         ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
@@ -12304,7 +12422,8 @@
     <con:definitionCache type="TEXT" rootPart="http://www.pathfinder-xml.com/soap/services/Version?wsdl">
       <con:part>
         <con:url>http://www.pathfinder-xml.com/soap/services/Version?wsdl</con:url>
-        <con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.pathfinder-xml.com/soap/services/Version" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://www.pathfinder-xml.com/soap/services/Version" xmlns:intf="http://www.pathfinder-xml.com/soap/services/Version" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <con:content><![CDATA[
+          <wsdl:definitions targetNamespace="http://www.pathfinder-xml.com/soap/services/Version" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://www.pathfinder-xml.com/soap/services/Version" xmlns:intf="http://www.pathfinder-xml.com/soap/services/Version" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <wsdl:message name="getVersionResponse">
     <wsdl:part name="getVersionResponse" type="xsd:string"/>
   </wsdl:message>
@@ -12332,7 +12451,8 @@
       <wsdlsoap:address location="http://www.pathfinder-xml.com/soap/services/Version"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content>
+</wsdl:definitions>
+        ]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -12347,12 +12467,14 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>https://www.pathfinder-xml.com/soap/services/Version</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:axis="http://axis.jboss.org">\r
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:axis="http://axis.jboss.org">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <axis:getVersion soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request>
+</soapenv:Envelope>
+        ]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
