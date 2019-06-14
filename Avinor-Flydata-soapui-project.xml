@@ -30,7 +30,7 @@
             <con:option/>
             <con:option>A</con:option>
             <con:option>D</con:option>
-            <con:description>Ikke-obligatorisk. Angir "retning" for en flight: A = "Ankomster" (eng:"Arrivals"), D = "Avganger" (eng: "Departures"). Ingen verdi viser bÃƒÂ¥de A og D.</con:description>
+            <con:description>Ikke-obligatorisk. Angir "retning" for en flight: A = "Ankomster" (eng:"Arrivals"), D = "Avganger" (eng: "Departures"). Ingen verdi viser både A og D.</con:description>
           </con:parameter>
           <con:parameter>
             <con:name>TimeFrom</con:name>
@@ -38,7 +38,7 @@
             <con:style>QUERY</con:style>
             <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type>
             <con:default/>
-            <con:description>Ikke-obligatorisk, standardverdi er ÃƒÂ©n time. Styrer hvor langt tid tilbake det hentes flights for, rundet ned til hele timer.</con:description>
+            <con:description>Ikke-obligatorisk, standardverdi er én time. Styrer hvor langt tid tilbake det hentes flights for, rundet ned til hele timer.</con:description>
           </con:parameter>
           <con:parameter>
             <con:name>TimeTo</con:name>
@@ -54,7 +54,7 @@
             <con:style>QUERY</con:style>
             <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:dateTime</con:type>
             <con:default/>
-            <con:description> Ikke-obligatorisk. Henter kun flydata som har blitt oppdatert etter et gitt tidspunkt. Eksempel, Ã¢â‚¬Â2009-02-03T09:30:00ZÃ¢â‚¬Â.</con:description>
+            <con:description> Ikke-obligatorisk. Henter kun flydata som har blitt oppdatert etter et gitt tidspunkt. Eksempel, "2009-02-03T09:30:00Z".</con:description>
           </con:parameter>
         </con:parameters>
         <con:representation type="RESPONSE">
@@ -117,7 +117,7 @@
             <con:option>D</con:option>
             <con:option>E</con:option>
             <con:option>N</con:option>
-            <con:description>Parameteren "code" angir hvilken statuskode det ønskes ÃƒÂ¥ hente statustekst for. Alternativt hentes alle statustekster for samtlige statuskoder.</con:description>
+            <con:description>Parameteren "code" angir hvilken statuskode det ønskes å hente statustekst for. Alternativt hentes alle statustekster for samtlige statuskoder.</con:description>
           </con:parameter>
         </con:parameters>
         <con:representation type="RESPONSE">
