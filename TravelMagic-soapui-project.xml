@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="TravelMagic" resourceRoot="${projectDir}" defaultScriptLanguage="Groovy" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" id="03b0a4c4-40a6-4e5d-97eb-ebb0302da4b2" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default" name="TravelMagic" resourceRoot="${projectDir}" defaultScriptLanguage="Groovy" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" id="03b0a4c4-40a6-4e5d-97eb-ebb0302da4b2"
+  xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
-  <con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="TravelMagicService" type="rest" id="bef5d3f1-23c7-46e6-9bd2-ef5db4a7a20d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="TravelMagicService" type="rest" id="bef5d3f1-23c7-46e6-9bd2-ef5db4a7a20d"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
+
     <con:definitionCache type="TEXT" rootPart=""/>
     <con:endpoints>
-      <con:endpoint>http://reiseplanlegger.177mr.no</con:endpoint>
-      <con:endpoint>http://reiseplanlegger.kolumbus.no</con:endpoint>
-      <con:endpoint>http://reiseplanlegger.skyss.no</con:endpoint>
-      <con:endpoint>http://reiseplanlegger.vkt.no</con:endpoint>
-      <con:endpoint>http://rp.177.ffk.no</con:endpoint>
-      <con:endpoint>http://rp.177nordland.no</con:endpoint>
-      <con:endpoint>http://rp.akt.no</con:endpoint>
-      <con:endpoint>http://rp.atb.no</con:endpoint>
-      <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+      <con:endpoint>https://reiseplanlegger.frammr.no</con:endpoint>
+      <con:endpoint>https://reiseplanlegger.kolumbus.no</con:endpoint>
+      <con:endpoint>https://reiseplanlegger.skyss.no</con:endpoint>
+      <con:endpoint>https://reiseplanlegger.vkt.no</con:endpoint>
+      <con:endpoint>https://rp.177.ffk.no</con:endpoint>
+      <con:endpoint>https://rp.177nordland.no</con:endpoint>
+      <con:endpoint>https://rp.akt.no</con:endpoint>
+      <con:endpoint>https://rp.atb.no</con:endpoint>
+      <con:endpoint>https://rp.tromskortet.no</con:endpoint>
     </con:endpoints>
     <con:resource name="TravelMagicWE.dll" path="/scripts/TravelMagic/TravelMagicWE.dll" id="38ef920f-91d2-454b-b37c-c856a74a9794">
       <con:settings/>
@@ -49,10 +52,13 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://reiseplanlegger.177mr.no/scripts/TravelMagic/TravelMagicWE.dll/v1PointStageXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -85,48 +91,139 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1PointStageXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:jmsPropertyConfig/>
             <con:parameters>
-              <entry key="name" value="Bruvegen 9 (Tromsø) [adresse]" xmlns="http://eviware.com/soapui/config"/>
+              <entry key="name" value="Bruvegen 9 (Tromsø) [adresse]"
+                xmlns="http://eviware.com/soapui/config"/>
             </con:parameters>
           </con:request>
           <con:request name="Tromsø sentrum [hpl.gruppe]" id="38cbcbab-19a5-4c41-9c92-6277f76d20be" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://reiseplanlegger.177mr.no/scripts/TravelMagic/TravelMagicWE.dll/v1PointStageXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:jmsPropertyConfig/>
             <con:parameters>
-              <entry key="name" value="Tromsø sentrum [hpl.gruppe]" xmlns="http://eviware.com/soapui/config"/>
+              <entry key="name" value="Tromsø sentrum [hpl.gruppe]"
+                xmlns="http://eviware.com/soapui/config"/>
             </con:parameters>
           </con:request>
           <con:request name="Gjennomgangsbygget (Tromsø)" id="38cbcbab-19a5-4c41-9c92-6277f76d20be" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://reiseplanlegger.177mr.no/scripts/TravelMagic/TravelMagicWE.dll/v1PointStageXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:jmsPropertyConfig/>
             <con:parameters>
-              <entry key="name" value="Gjennomgangsbygget (Tromsø)" xmlns="http://eviware.com/soapui/config"/>
+              <entry key="name" value="Gjennomgangsbygget (Tromsø)"
+                xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+          </con:request>
+          <con:request name="Wito (Tromsø)" id="38cbcbab-19a5-4c41-9c92-6277f76d20be" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://reiseplanlegger.177mr.no/scripts/TravelMagic/TravelMagicWE.dll/v1PointStageXML</con:originalUri>
+            <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <entry key="name" value="Tromsø Prostneset (Tromsø)"
+                xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+          </con:request>
+          <con:request name="Sortland bussterminal (Tromsø) [adresse]" id="9d0767a5-e64c-4d06-8593-efd102cedace" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1PointStageXML</con:originalUri>
+            <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <entry key="name" value="Sortland bussterminal (Sortland)"
+                xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+          </con:request>
+        </con:method>
+        <con:method name="PointStageById" id="fe033f0f-b59b-4a15-87f4-a9b086a01e92" method="GET">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>id</con:name>
+              <con:value/>
+              <con:style>QUERY</con:style>
+              <con:default/>
+              <con:path xsi:nil="true"/>
+              <con:description xsi:nil="true"/>
+            </con:parameter>
+          </con:parameters>
+          <con:representation type="RESPONSE">
+            <con:mediaType>application/xml; charset=utf-8</con:mediaType>
+            <con:status>200</con:status>
+            <con:params/>
+            <con:element>stages</con:element>
+          </con:representation>
+          <con:request name="Fr. Langes gate F4 (Tromsø)" id="fedc7518-a852-4f97-a672-943db1ede2d1" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://reiseplanlegger.177mr.no/scripts/TravelMagic/TravelMagicWE.dll/v1PointStageXML</con:originalUri>
+            <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <entry key="id" value="19021022"
+                xmlns="http://eviware.com/soapui/config"/>
             </con:parameters>
           </con:request>
         </con:method>
@@ -160,16 +257,20 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/StageJSON</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:jmsPropertyConfig/>
             <con:parameters>
-              <entry key="query" value="Bruvegen 9" xmlns="http://eviware.com/soapui/config"/>
+              <entry key="query" value="Bruvegen 9"
+                xmlns="http://eviware.com/soapui/config"/>
             </con:parameters>
           </con:request>
         </con:method>
@@ -199,32 +300,40 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1LocationXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:jmsPropertyConfig/>
             <con:parameters>
-              <entry key="filter" value="Bruvegen 9" xmlns="http://eviware.com/soapui/config"/>
+              <entry key="filter" value="Bruvegen 9"
+                xmlns="http://eviware.com/soapui/config"/>
             </con:parameters>
           </con:request>
           <con:request name="Sentrum" id="8d58adaf-8337-4bdc-831e-f1e81e4f9b18" mediaType="application/json">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1LocationXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:jmsPropertyConfig/>
             <con:parameters>
-              <entry key="filter" value="Sentrum" xmlns="http://eviware.com/soapui/config"/>
+              <entry key="filter" value="Sentrum"
+                xmlns="http://eviware.com/soapui/config"/>
             </con:parameters>
           </con:request>
         </con:method>
@@ -264,10 +373,13 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1NearestStopsXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -316,16 +428,20 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1DepartureXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:jmsPropertyConfig/>
             <con:parameters>
-              <entry key="hpl" value="19021601" xmlns="http://eviware.com/soapui/config"/>
+              <entry key="hpl" value="19021601"
+                xmlns="http://eviware.com/soapui/config"/>
             </con:parameters>
             <con:parameterOrder>
               <con:entry>hpl</con:entry>
@@ -374,16 +490,19 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1TripXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:jmsPropertyConfig/>
             <con:parameters>
-              <con:entry key="trip" value="42605.457"/>
+              <con:entry key="trip" value="43699.19:3:20:1050.0"/>
               <con:entry key="max" value=""/>
               <con:entry key="cnt" value=""/>
             </con:parameters>
@@ -407,10 +526,13 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1TripXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -472,10 +594,13 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1SearchXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -493,10 +618,13 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1SearchXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -549,10 +677,13 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1DepartureSearchXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -570,10 +701,13 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1DepartureSearchXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -591,10 +725,13 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1DepartureSearchXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -602,6 +739,30 @@
             <con:parameters>
               <con:entry key="realtime" value="1"/>
               <con:entry key="from" value="Gjennomgangsbygget (Tromsø)"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>from</con:entry>
+              <con:entry>realtime</con:entry>
+            </con:parameterOrder>
+          </con:request>
+          <con:request name="UiT (Tromsø)" id="544aae85-ab1f-45bf-a623-df15f2d34981" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1DepartureSearchXML</con:originalUri>
+            <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <con:entry key="realtime" value="1"/>
+              <con:entry key="from" value="UiT (Tromsø)"/>
             </con:parameters>
             <con:parameterOrder>
               <con:entry>from</con:entry>
@@ -626,10 +787,13 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1NotesXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -661,19 +825,170 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://rp.tromskortet.no</con:endpoint>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
             <con:request/>
             <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1RealtimeUpdateXML</con:originalUri>
             <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:jmsPropertyConfig/>
             <con:parameters>
-              <entry key="updateid" value="2,19021317:1,,24,2,2,19021738,19021442,43629.1096,43629.1143,43629.1126,43629.1126,19:4:24:1090,2019-06-13" xmlns="http://eviware.com/soapui/config"/>
+              <entry key="updateid" value="2,19021317:1,,24,2,2,19021738,19021442,43629.1096,43629.1143,43629.1126,43629.1126,19:4:24:1090,2019-06-13"
+                xmlns="http://eviware.com/soapui/config"/>
             </con:parameters>
             <con:parameterOrder>
               <con:entry>updateid</con:entry>
+            </con:parameterOrder>
+          </con:request>
+        </con:method>
+      </con:resource>
+      <con:resource name="v1LineXML" path="v1LineXML" id="58a6f166-5d52-4ae1-b077-00f8fe023dd4">
+        <con:settings/>
+        <con:parameters/>
+        <con:method name="GetLines" id="7d92310a-e4a4-42fe-9c85-2ef883f8cad2" method="GET">
+          <con:settings/>
+          <con:parameters/>
+          <con:representation type="RESPONSE">
+            <con:mediaType>application/xml; charset=utf-8</con:mediaType>
+            <con:status>200</con:status>
+            <con:params/>
+            <con:element>result</con:element>
+          </con:representation>
+          <con:request name="GetLines" id="4b1d486c-3c2d-4fc1-9b5e-231b08c97ea9" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://reiseplanlegger.177mr.no/scripts/TravelMagic/TravelMagicWE.dll/v1LineXML</con:originalUri>
+            <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:request>
+        </con:method>
+      </con:resource>
+      <con:resource name="v1DefaultValuesXML" path="v1DefaultValuesXML" id="2aebec11-b716-4715-93f7-afb918f38f65">
+        <con:settings/>
+        <con:parameters/>
+        <con:method name="GetDefaultValues" id="d442dd74-14ed-4a72-8c99-9241594c9dc8" method="GET">
+          <con:settings/>
+          <con:parameters/>
+          <con:representation type="RESPONSE">
+            <con:mediaType>application/xml; charset=utf-8</con:mediaType>
+            <con:status>200</con:status>
+            <con:params/>
+            <con:element>result</con:element>
+          </con:representation>
+          <con:representation type="RESPONSE">
+            <con:mediaType>text/html; charset=utf-8</con:mediaType>
+            <con:status>200</con:status>
+            <con:params/>
+            <con:element>html</con:element>
+          </con:representation>
+          <con:request name="GetDefaultValues" id="6d377fe1-e7a8-4aa9-9e6b-47b48ac8a205" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v1DefaultValuesXML</con:originalUri>
+            <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters/>
+          </con:request>
+        </con:method>
+      </con:resource>
+      <con:resource name="v1GeometryXML" path="v1GeometryXML" id="5421c087-21d6-4703-8f8b-aed15a2a17f7">
+        <con:settings/>
+        <con:parameters/>
+        <con:method name="GetTripGeometry" id="5b4e84f2-a08b-4190-96ae-65539821f944" method="GET">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>geometryId</con:name>
+              <con:value/>
+              <con:style>QUERY</con:style>
+              <con:default/>
+            </con:parameter>
+          </con:parameters>
+        </con:method>
+      </con:resource>
+      <con:resource name="v2LocationXML" path="v2LocationXML" id="03b71e26-a0e5-41f4-811f-7b4d6d3985b9">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>cnt</con:name>
+            <con:value>30</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>30</con:default>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:method name="GetStopsByQuery" id="fafce2e2-5f5a-46c8-a67e-d261d085997a" method="GET">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter>
+              <con:name>filter</con:name>
+              <con:value/>
+              <con:style>QUERY</con:style>
+              <con:default/>
+            </con:parameter>
+            <con:parameter>
+              <con:name>type</con:name>
+              <con:value>0</con:value>
+              <con:style>QUERY</con:style>
+              <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type>
+              <con:default>0</con:default>
+              <con:option>0</con:option>
+              <con:option>1</con:option>
+              <con:option>2</con:option>
+            </con:parameter>
+          </con:parameters>
+          <con:representation type="RESPONSE">
+            <con:mediaType>application/xml; charset=utf-8</con:mediaType>
+            <con:status>200</con:status>
+            <con:params/>
+            <con:element>stages</con:element>
+          </con:representation>
+          <con:request name="Bruvegen" id="47f3330e-dc35-4a4d-9b46-f22dfbe7a1cb" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://rp.tromskortet.no</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://rp.tromskortet.no/scripts/TravelMagic/TravelMagicWE.dll/v2LocationXML</con:originalUri>
+            <con:credentials>
+              <con:username xsi:nil="true"/>
+              <con:password xsi:nil="true"/>
+              <con:domain xsi:nil="true"/>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <con:entry key="filter" value="Bruvegen"/>
+              <con:entry key="type" value=""/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>cnt</con:entry>
+              <con:entry>filter</con:entry>
+              <con:entry>type</con:entry>
             </con:parameterOrder>
           </con:request>
         </con:method>
@@ -691,7 +1006,8 @@
       <con:settings/>
       <con:testStep type="restrequest" name="Tromskortet" id="c6992cfd-c262-4a01-bf3d-56df1a3cc864">
         <con:settings/>
-        <con:config service="TravelMagicService" methodName="StageQuery" resourcePath="/scripts/TravelMagic/TravelMagicWE.dll/StageJSON" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <con:config service="TravelMagicService" methodName="StageQuery" resourcePath="/scripts/TravelMagic/TravelMagicWE.dll/StageJSON" xsi:type="con:RestRequestStep"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="Tromskortet" mediaType="application/json" id="f6673531-a045-4ad8-91f6-ec202e816954">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -737,7 +1053,8 @@
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:jmsPropertyConfig/>
             <con:parameters>
-              <entry key="query" value="Bruvegen" xmlns="http://eviware.com/soapui/config"/>
+              <entry key="query" value="Bruvegen"
+                xmlns="http://eviware.com/soapui/config"/>
             </con:parameters>
             <con:parameterOrder>
               <con:entry>query</con:entry>
@@ -747,7 +1064,8 @@
       </con:testStep>
       <con:testStep type="restrequest" name="AtB" id="964eeb6d-5446-4a3f-9865-65d2e13e15f8">
         <con:settings/>
-        <con:config service="TravelMagicService" methodName="StageQuery" resourcePath="/scripts/TravelMagic/TravelMagicWE.dll/StageJSON" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <con:config service="TravelMagicService" methodName="StageQuery" resourcePath="/scripts/TravelMagic/TravelMagicWE.dll/StageJSON" xsi:type="con:RestRequestStep"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="AtB" mediaType="application/json" id="6878e346-b53f-4507-bf2b-a929c1b23d8c">
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -793,7 +1111,8 @@
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:jmsPropertyConfig/>
             <con:parameters>
-              <entry key="query" value="Lundåsen" xmlns="http://eviware.com/soapui/config"/>
+              <entry key="query" value="Lundåsen"
+                xmlns="http://eviware.com/soapui/config"/>
             </con:parameters>
             <con:parameterOrder>
               <con:entry>query</con:entry>
