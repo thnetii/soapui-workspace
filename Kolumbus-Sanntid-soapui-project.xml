@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="Kolumbus Sanntid" resourceRoot="${projectDir}" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" id="bdbd03a5-1b25-4a33-b9da-750df16df0a2" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default" name="Kolumbus Sanntid" resourceRoot="${projectDir}" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" id="bdbd03a5-1b25-4a33-b9da-750df16df0a2" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://sis.kolumbus.no" type="rest" id="72cc0345-9817-428e-ab01-f687d5185420" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="Avinor Flydata" resourceRoot="${projectDir}" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" id="00a0cbde-3639-4ffd-85f2-b265056be05e" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default" name="Avinor Flydata" resourceRoot="${projectDir}" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" id="00a0cbde-3639-4ffd-85f2-b265056be05e" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://flydata.avinor.no" type="rest" id="47d6667e-7337-43e1-a97d-a8df95dedaa1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -605,8 +605,7 @@
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
             <con:endpoint>https://tjenester.avinor.no</con:endpoint>
-            <con:request>
-              {
+            <con:request>{
               "flightId":"WF913",
               "iata":"TOS",
               "direction":"A",
@@ -616,8 +615,7 @@
               "applicationIdentifier":"${#Project#applicationIdentifier}",
               "applicationName":"avinorflights",
               "language":"en"
-              }
-            </con:request>
+              }</con:request>
             <con:originalUri>https://tjenester.avinor.no/flightpns-2.0/subscriptions</con:originalUri>
             <con:credentials>
               <con:username>avinorflights</con:username>

@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="Pathfinder-Xml" resourceRoot="${projectDir}" soapui-version="5.5.0" abortOnError="false" runType="PARALLELL" id="98806e88-07c6-4beb-a214-661a6bc6f24a" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default" name="Pathfinder-Xml" resourceRoot="${projectDir}" soapui-version="5.6.0" abortOnError="false" runType="PARALLELL" id="98806e88-07c6-4beb-a214-661a6bc6f24a" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="AirlineGetAirlinesSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/AirlineService.wsdl}AirlineGetAirlinesSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/AirlineService.wsdl" id="4cdb9771-f972-4abc-a7f2-c9a1c773ce65" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/AirlineService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirlineService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns:ns="http://pathfinder-xml/AirlineService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns:ns="http://pathfinder-xml/AirlineService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirlineService.xsd">
       <xsd:complexType name="Airline">
@@ -266,9 +264,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirlineGetAllAirlines"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -284,9 +280,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/AirlineService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirlineService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns:ns="http://pathfinder-xml/AirlineService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns:ns="http://pathfinder-xml/AirlineService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirlineService.xsd">
       <xsd:complexType name="Airline">
@@ -544,9 +538,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirlineGetAllAirlines"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -561,8 +553,7 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirlineGetAirlineDetail</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirlineService.xsd">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirlineService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <air:AirlineGetAirlineDetailRequest>\r
@@ -570,8 +561,7 @@
          <air:Airline ICAOCode="DLH"/>\r
       </air:AirlineGetAirlineDetailRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -587,9 +577,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/AirlineService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirlineService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns:ns="http://pathfinder-xml/AirlineService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns:ns="http://pathfinder-xml/AirlineService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirlineService.xsd">
       <xsd:complexType name="Airline">
@@ -847,9 +835,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirlineGetAllAirlines"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -865,9 +851,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/AirlineService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirlineService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns:ns="http://pathfinder-xml/AirlineService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirlineService.wsdl" xmlns:ns="http://pathfinder-xml/AirlineService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirlineService.xsd">
       <xsd:complexType name="Airline">
@@ -1125,9 +1109,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirlineGetAllAirlines"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -1142,8 +1124,7 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirlineGetAirline</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirlineService.xsd">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirlineService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <air:AirlineGetAirlineRequest>\r
@@ -1151,8 +1132,7 @@
          <air:Airline ICAOCode="AMC"/>\r
       </air:AirlineGetAirlineRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -1168,9 +1148,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/AirportService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirportService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns:ns="http://pathfinder-xml/AirportService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns:ns="http://pathfinder-xml/AirportService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportService.xsd">
       <xsd:complexType name="AggregatedAirport">
@@ -1747,9 +1725,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetNearestAirports"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -1764,8 +1740,7 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirportGetNearestAirports</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirportService.xsd">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirportService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <air:AirportGetNearestAirportsRequest>\r
@@ -1773,8 +1748,7 @@
          <air:City CountryCode="US" Name="Houston" Radius="100K" StateCode="TX"/>\r
       </air:AirportGetNearestAirportsRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -1790,8 +1764,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/AirportService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirportService.wsdl</con:url>
-        <con:content><![CDATA[
-          <definitions targetNamespace="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns:ns="http://pathfinder-xml/AirportService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns:ns="http://pathfinder-xml/AirportService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportService.xsd">
       <xsd:complexType name="AggregatedAirport">
@@ -2368,8 +2341,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetNearestAirports"/>
     </port>
   </service>
-</definitions>
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -2384,15 +2356,13 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/AirportGetAirportDetail</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirportService.xsd">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:air="http://pathfinder-xml/AirportService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <air:AirportGetAirportDetailRequest>\r
    </air:AirportGetAirportDetailRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -2408,9 +2378,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/AirportService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirportService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns:ns="http://pathfinder-xml/AirportService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns:ns="http://pathfinder-xml/AirportService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportService.xsd">
       <xsd:complexType name="AggregatedAirport">
@@ -2987,9 +2955,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetNearestAirports"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -3035,9 +3001,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/AirportService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirportService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns:ns="http://pathfinder-xml/AirportService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportService.wsdl" xmlns:ns="http://pathfinder-xml/AirportService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportService.xsd">
       <xsd:complexType name="AggregatedAirport">
@@ -3614,9 +3578,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportGetNearestAirports"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -3632,9 +3594,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/AirportAggregatorService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirportAggregatorService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/AirportAggregatorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportAggregatorService.wsdl" xmlns:ns="http://pathfinder-xml/AirportAggregatorService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/AirportAggregatorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportAggregatorService.wsdl" xmlns:ns="http://pathfinder-xml/AirportAggregatorService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportAggregatorService.xsd">
       <xsd:complexType name="AggregatedAirport">
@@ -3837,9 +3797,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportAggregatorGetDetailOnAirport"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -3855,9 +3813,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/AirportDelayService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirportDelayService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/AirportDelayService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportDelayService.wsdl" xmlns:ns="http://pathfinder-xml/AirportDelayService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/AirportDelayService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportDelayService.wsdl" xmlns:ns="http://pathfinder-xml/AirportDelayService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportDelayService.xsd">
       <xsd:complexType name="Airport">
@@ -4067,9 +4023,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportDelayGetDetailOnAirport"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -4095,9 +4049,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/AirportDelayService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/AirportDelayService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/AirportDelayService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportDelayService.wsdl" xmlns:ns="http://pathfinder-xml/AirportDelayService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/AirportDelayService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportDelayService.wsdl" xmlns:ns="http://pathfinder-xml/AirportDelayService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportDelayService.xsd">
       <xsd:complexType name="Airport">
@@ -4307,9 +4259,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportDelayGetDetailOnAirport"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -4325,9 +4275,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/MetarService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/MetarService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/MetarService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/MetarService.wsdl" xmlns:ns="http://pathfinder-xml/MetarService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/MetarService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/MetarService.wsdl" xmlns:ns="http://pathfinder-xml/MetarService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/MetarService.xsd">
       <xsd:complexType name="Error">
@@ -4427,9 +4375,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/MetarGetCurrentConditionsForWeatherStation"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -4444,8 +4390,7 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/MetarGetCurrentConditionsForWeatherStation</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:met="http://pathfinder-xml/MetarService.xsd">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:met="http://pathfinder-xml/MetarService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <met:MetarGetCurrentConditionsForWeatherStationRequest>\r
@@ -4453,8 +4398,7 @@
          <met:WeatherStation ICAOCode="ENTC"/>\r
       </met:MetarGetCurrentConditionsForWeatherStationRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -4470,9 +4414,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/WeatherForecastService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/WeatherForecastService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/WeatherForecastService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/WeatherForecastService.wsdl" xmlns:ns="http://pathfinder-xml/WeatherForecastService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/WeatherForecastService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/WeatherForecastService.wsdl" xmlns:ns="http://pathfinder-xml/WeatherForecastService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/WeatherForecastService.xsd">
       <xsd:complexType name="Error">
@@ -4614,9 +4556,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/WeatherForecastGetForecast"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -4632,9 +4572,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/WeatherForecastService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/WeatherForecastService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/WeatherForecastService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/WeatherForecastService.wsdl" xmlns:ns="http://pathfinder-xml/WeatherForecastService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/WeatherForecastService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/WeatherForecastService.wsdl" xmlns:ns="http://pathfinder-xml/WeatherForecastService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/WeatherForecastService.xsd">
       <xsd:complexType name="Error">
@@ -4776,9 +4714,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/WeatherForecastGetForecast"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -4794,9 +4730,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/WeatherStationService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/WeatherStationService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/WeatherStationService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/WeatherStationService.wsdl" xmlns:ns="http://pathfinder-xml/WeatherStationService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/WeatherStationService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/WeatherStationService.wsdl" xmlns:ns="http://pathfinder-xml/WeatherStationService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/WeatherStationService.xsd">
       <xsd:complexType name="Error">
@@ -4864,9 +4798,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/WMOGetAllWeatherStations"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -4882,9 +4814,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/FlightRouteService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/FlightRouteService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/FlightRouteService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightRouteService.wsdl" xmlns:ns="http://pathfinder-xml/FlightRouteService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/FlightRouteService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightRouteService.wsdl" xmlns:ns="http://pathfinder-xml/FlightRouteService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightRouteService.xsd">
       <xsd:complexType name="AggregatedAirport">
@@ -5348,9 +5278,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/FlightRouteGetFlights"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -5366,9 +5294,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/FlightRouteService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/FlightRouteService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/FlightRouteService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightRouteService.wsdl" xmlns:ns="http://pathfinder-xml/FlightRouteService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/FlightRouteService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightRouteService.wsdl" xmlns:ns="http://pathfinder-xml/FlightRouteService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightRouteService.xsd">
       <xsd:complexType name="AggregatedAirport">
@@ -5832,9 +5758,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/FlightRouteGetFlights"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -5850,9 +5774,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/FlightRouteAggregatorService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/FlightRouteAggregatorService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/FlightRouteAggregatorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightRouteAggregatorService.wsdl" xmlns:ns="http://pathfinder-xml/FlightRouteAggregatorService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/FlightRouteAggregatorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightRouteAggregatorService.wsdl" xmlns:ns="http://pathfinder-xml/FlightRouteAggregatorService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightRouteAggregatorService.xsd">
       <xsd:complexType name="AggregatedAirport">
@@ -6242,9 +6164,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/FlightRouteAggregatorGetFlights"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -6260,9 +6180,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/FlightScheduleService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/FlightScheduleService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/FlightScheduleService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightScheduleService.wsdl" xmlns:ns="http://pathfinder-xml/FlightScheduleService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/FlightScheduleService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightScheduleService.wsdl" xmlns:ns="http://pathfinder-xml/FlightScheduleService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightScheduleService.xsd">
       <xsd:complexType name="AggregatedAirport">
@@ -6696,9 +6614,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/FlightScheduleGetFlights"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -6713,8 +6629,7 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightScheduleGetFlights</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleService.xsd">
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleService.xsd">
    <soapenv:Header/>
    <soapenv:Body>
       <flig:FlightScheduleGetFlightsRequest>
@@ -6733,8 +6648,7 @@
          </flig:FlightScheduleGetFlightsInfo>
       </flig:FlightScheduleGetFlightsRequest>
    </soapenv:Body>
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -6750,9 +6664,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/FlightScheduleService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/FlightScheduleService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/FlightScheduleService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightScheduleService.wsdl" xmlns:ns="http://pathfinder-xml/FlightScheduleService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/FlightScheduleService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightScheduleService.wsdl" xmlns:ns="http://pathfinder-xml/FlightScheduleService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightScheduleService.xsd">
       <xsd:complexType name="AggregatedAirport">
@@ -7186,9 +7098,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/FlightScheduleGetFlights"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -7203,8 +7113,7 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightScheduleGetFlightsDecoded</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleService.xsd">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <flig:FlightScheduleGetFlightsDecodedRequest>\r
@@ -7222,8 +7131,7 @@
          </flig:FlightScheduleGetFlightsInfo>\r
       </flig:FlightScheduleGetFlightsDecodedRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -7239,9 +7147,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/FlightScheduleAggregatorService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/FlightScheduleAggregatorService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/FlightScheduleAggregatorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightScheduleAggregatorService.wsdl" xmlns:ns="http://pathfinder-xml/FlightScheduleAggregatorService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/FlightScheduleAggregatorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightScheduleAggregatorService.wsdl" xmlns:ns="http://pathfinder-xml/FlightScheduleAggregatorService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightScheduleAggregatorService.xsd">
       <xsd:complexType name="AggregatedAirport">
@@ -7579,9 +7485,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/FlightScheduleAggregatorGetFlights"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -7596,8 +7500,7 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightScheduleAggregatorGetFlights</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleAggregatorService.xsd">
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightScheduleAggregatorService.xsd">
    <soapenv:Header/>
    <soapenv:Body>
       <flig:FlightScheduleAggregatorGetFlightsRequest>
@@ -7661,8 +7564,7 @@
          </flig:FlightScheduleGetFlightsInfo>
       </flig:FlightScheduleAggregatorGetFlightsRequest>
    </soapenv:Body>
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -7678,9 +7580,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/RatingService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/RatingService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/RatingService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/RatingService.wsdl" xmlns:ns="http://pathfinder-xml/RatingService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/RatingService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/RatingService.wsdl" xmlns:ns="http://pathfinder-xml/RatingService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/RatingService.xsd">
       <xsd:complexType name="Airline">
@@ -7895,9 +7795,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/RatingGetRouteRating"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -7913,9 +7811,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/RatingService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/RatingService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/RatingService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/RatingService.wsdl" xmlns:ns="http://pathfinder-xml/RatingService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/RatingService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/RatingService.wsdl" xmlns:ns="http://pathfinder-xml/RatingService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/RatingService.xsd">
       <xsd:complexType name="Airline">
@@ -8130,9 +8026,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/RatingGetRouteRating"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -8148,9 +8042,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/FlightHistoryService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/FlightHistoryService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/FlightHistoryService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightHistoryService.wsdl" xmlns:ns="http://pathfinder-xml/FlightHistoryService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/FlightHistoryService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightHistoryService.wsdl" xmlns:ns="http://pathfinder-xml/FlightHistoryService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightHistoryService.xsd">
       <xsd:complexType name="AggregatedAirport">
@@ -8905,9 +8797,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/FlightHistoryGetRecords"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -8922,8 +8812,7 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightHistoryGetRecords</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightHistoryService.xsd">
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightHistoryService.xsd">
    <soapenv:Header/>
    <soapenv:Body>
       <flig:FlightHistoryGetRecordsRequest>
@@ -8940,8 +8829,7 @@
          </flig:FlightHistoryGetRecordsInfo>
       </flig:FlightHistoryGetRecordsRequest>
    </soapenv:Body>
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -8957,9 +8845,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/FlightHistoryService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/FlightHistoryService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/FlightHistoryService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightHistoryService.wsdl" xmlns:ns="http://pathfinder-xml/FlightHistoryService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/FlightHistoryService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightHistoryService.wsdl" xmlns:ns="http://pathfinder-xml/FlightHistoryService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightHistoryService.xsd">
       <xsd:complexType name="AggregatedAirport">
@@ -9714,9 +9600,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/FlightHistoryGetRecords"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -9731,8 +9615,7 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/FlightHistoryGetHistory</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightHistoryService.xsd">
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:flig="http://pathfinder-xml/FlightHistoryService.xsd">
    <soapenv:Header/>
    <soapenv:Body>
       <flig:FlightHistoryGetHistoryRequest>
@@ -9765,8 +9648,7 @@
          </flig:FlightHistoryGetHistoryInfo>
       </flig:FlightHistoryGetHistoryRequest>
    </soapenv:Body>
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -9782,9 +9664,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns:ns="http://pathfinder-xml/EMSFlightMonitorService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns:ns="http://pathfinder-xml/EMSFlightMonitorService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/EMSFlightMonitorService.xsd">
       <xsd:complexType name="Airline">
@@ -10147,9 +10027,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorVerify"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -10164,8 +10042,7 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorVerify</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ems:EMSFlightMonitorVerifyRequest>\r
@@ -10176,8 +10053,7 @@
          </ems:VerifyInfo>\r
       </ems:EMSFlightMonitorVerifyRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -10202,8 +10078,7 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorDeleteRules</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ems:EMSFlightMonitorDeleteRulesRequest>\r
@@ -10211,8 +10086,7 @@
          <ems:EMSFlightRule Id="696338594" />
       </ems:EMSFlightMonitorDeleteRulesRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -10225,12 +10099,10 @@
   </con:interface>
   <con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="EMSFlightMonitorAddRulesSOAPBinding" type="wsdl" bindingName="{http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl}EMSFlightMonitorAddRulesSOAPBinding" soapVersion="1_1" anonymous="optional" definition="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl" id="4c147043-795d-4a4f-b8f1-4fba26930988" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl</con:url>
-        <con:content><![CDATA[
-          <definitions targetNamespace="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns:ns="http://pathfinder-xml/EMSFlightMonitorService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns:ns="http://pathfinder-xml/EMSFlightMonitorService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/EMSFlightMonitorService.xsd">
       <xsd:complexType name="Airline">
@@ -10593,8 +10465,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorVerify"/>
     </port>
   </service>
-</definitions>
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -10609,8 +10480,7 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorAddRules</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ems:EMSFlightMonitorAddRulesRequest>\r
@@ -10735,8 +10605,7 @@
          </ems:EMSFlightMonitorAddRulesInfo>\r
       </ems:EMSFlightMonitorAddRulesRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -10749,8 +10618,7 @@
         <con:settings/>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorAddRules</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ems:EMSFlightMonitorAddRulesRequest>\r
@@ -10777,8 +10645,7 @@
          </ems:EMSFlightMonitorAddRulesInfo>\r
       </ems:EMSFlightMonitorAddRulesRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -10804,9 +10671,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/EMSFlightMonitorService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns:ns="http://pathfinder-xml/EMSFlightMonitorService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/EMSFlightMonitorService.wsdl" xmlns:ns="http://pathfinder-xml/EMSFlightMonitorService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/EMSFlightMonitorService.xsd">
       <xsd:complexType name="Airline">
@@ -11169,9 +11034,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorVerify"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -11184,8 +11047,7 @@
         <con:settings/>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/EMSFlightMonitorGetRules</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ems="http://pathfinder-xml/EMSFlightMonitorService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ems:EMSFlightMonitorGetRulesRequest>\r
@@ -11210,8 +11072,7 @@
          </ems:EMSFlightRule>\r
       </ems:EMSFlightMonitorGetRulesRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -11227,9 +11088,7 @@
     <con:definitionCache type="TEXT" rootPart="https://www.flightstats.com/developers/bin/download/Web+Services/WSDL/AirportHistoryService.wsdl">
       <con:part>
         <con:url>https://www.flightstats.com/developers/bin/download/Web+Services/WSDL/AirportHistoryService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/AirportHistoryService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportHistoryService.wsdl" xmlns:ns="http://pathfinder-xml/AirportHistoryService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/AirportHistoryService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/AirportHistoryService.wsdl" xmlns:ns="http://pathfinder-xml/AirportHistoryService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/AirportHistoryService.xsd">
       <xsd:complexType name="Airport">
@@ -11462,9 +11321,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/AirportHistoryGetAirportHistories"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -11480,9 +11337,7 @@
     <con:definitionCache type="TEXT" rootPart="https://www.flightstats.com/developers/bin/download/Web+Services/WSDL/DelayIndexService.wsdl">
       <con:part>
         <con:url>https://www.flightstats.com/developers/bin/download/Web+Services/WSDL/DelayIndexService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/DelayIndexService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/DelayIndexService.wsdl" xmlns:ns="http://pathfinder-xml/DelayIndexService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/DelayIndexService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/DelayIndexService.wsdl" xmlns:ns="http://pathfinder-xml/DelayIndexService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/DelayIndexService.xsd">
       <xsd:complexType name="Airport">
@@ -11598,9 +11453,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/DelayIndex"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -11616,9 +11469,7 @@
     <con:definitionCache type="TEXT" rootPart="https://www.flightstats.com/developers/bin/download/Web+Services/WSDL/SchedulesConnectionsService.wsdl">
       <con:part>
         <con:url>https://www.flightstats.com/developers/bin/download/Web+Services/WSDL/SchedulesConnectionsService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/SchedulesConnectionsService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/SchedulesConnectionsService.wsdl" xmlns:ns="http://pathfinder-xml/SchedulesConnectionsService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/SchedulesConnectionsService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/SchedulesConnectionsService.wsdl" xmlns:ns="http://pathfinder-xml/SchedulesConnectionsService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/SchedulesConnectionsService.xsd">
       <xsd:complexType name="Airline">
@@ -11808,9 +11659,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/SchedulesConnections"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -11825,8 +11674,7 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://www.pathfinder-xml.com/soap/*/services/SchedulesConnections</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://pathfinder-xml/SchedulesConnectionsService.xsd">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://pathfinder-xml/SchedulesConnectionsService.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <sch:SchedulesConnectionsRequest From="2015-08-01T09:00:00+02:00" To="2015-08-01T13:00:00+02:00">\r
@@ -11839,8 +11687,7 @@
          <sch:Destination AirportCode="TOS" />\r
       </sch:SchedulesConnectionsRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -11856,9 +11703,7 @@
     <con:definitionCache type="TEXT" rootPart="https://www.flightstats.com/developers/bin/download/Web+Services/WSDL/FlightAvailabilityService.wsdl">
       <con:part>
         <con:url>https://www.flightstats.com/developers/bin/download/Web+Services/WSDL/FlightAvailabilityService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/FlightAvailabilityService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightAvailabilityService.wsdl" xmlns:ns="http://pathfinder-xml/FlightAvailabilityService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/FlightAvailabilityService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/FlightAvailabilityService.wsdl" xmlns:ns="http://pathfinder-xml/FlightAvailabilityService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/FlightAvailabilityService.xsd">
       <xsd:complexType name="Airline">
@@ -11997,9 +11842,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/FlightAvailabilityGetFlightAvailability"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -12035,9 +11878,7 @@
     <con:definitionCache type="TEXT" rootPart="http://pathfinder-xml.com/development/WSDL/TimetableService.wsdl">
       <con:part>
         <con:url>http://pathfinder-xml.com/development/WSDL/TimetableService.wsdl</con:url>
-        <con:content><![CDATA[
-          
-          <definitions targetNamespace="http://www.pathfinder-xml.com/TimetableService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/TimetableService.wsdl" xmlns:ns="http://pathfinder-xml/TimetableService.xsd">
+        <con:content><![CDATA[<definitions targetNamespace="http://www.pathfinder-xml.com/TimetableService.wsdl" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.pathfinder-xml.com/TimetableService.wsdl" xmlns:ns="http://pathfinder-xml/TimetableService.xsd">
   <types>
     <xsd:schema elementFormDefault="qualified" targetNamespace="http://pathfinder-xml/TimetableService.xsd">
       <xsd:complexType name="Airline">
@@ -12404,9 +12245,7 @@
       <soap:address location="http://www.pathfinder-xml.com/soap/*/services/TimetableGetTimetableEntries"/>
     </port>
   </service>
-</definitions>
-        
-        ]]></con:content>
+</definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -12422,8 +12261,7 @@
     <con:definitionCache type="TEXT" rootPart="http://www.pathfinder-xml.com/soap/services/Version?wsdl">
       <con:part>
         <con:url>http://www.pathfinder-xml.com/soap/services/Version?wsdl</con:url>
-        <con:content><![CDATA[
-          <wsdl:definitions targetNamespace="http://www.pathfinder-xml.com/soap/services/Version" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://www.pathfinder-xml.com/soap/services/Version" xmlns:intf="http://www.pathfinder-xml.com/soap/services/Version" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.pathfinder-xml.com/soap/services/Version" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://www.pathfinder-xml.com/soap/services/Version" xmlns:intf="http://www.pathfinder-xml.com/soap/services/Version" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <wsdl:message name="getVersionResponse">
     <wsdl:part name="getVersionResponse" type="xsd:string"/>
   </wsdl:message>
@@ -12451,8 +12289,7 @@
       <wsdlsoap:address location="http://www.pathfinder-xml.com/soap/services/Version"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>
-        ]]></con:content>
+</wsdl:definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -12467,14 +12304,12 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>https://www.pathfinder-xml.com/soap/services/Version</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:axis="http://axis.jboss.org">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:axis="http://axis.jboss.org">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <axis:getVersion soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>

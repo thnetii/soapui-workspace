@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="070b5064-49f0-4336-88e4-55fdf304f901" activeEnvironment="Default" name="FlightStats Flex" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="070b5064-49f0-4336-88e4-55fdf304f901" activeEnvironment="Default" name="FlightStats Flex" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:interface xsi:type="con:RestService" id="386b1dc0-3826-4522-986b-c579cfade324" wadlVersion="http://wadl.dev.java.net/2009/02" name="FlightStats Flex" type="rest" basePath="/" definitionUrl="https://api.flightstats.com/flex/airlines/rest/v1/schema/wadl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -678,8 +678,7 @@
     <con:definitionCache type="TEXT" rootPart="https://api.flightstats.com/flex/airlines/soap/v1/airlinesService?wsdl">
       <con:part>
         <con:url>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService?wsdl</con:url>
-        <con:content><![CDATA[
-          <wsdl:definitions name="AirlinesV1SoapService" targetNamespace="http://v1.airlines.cache.conducivetech.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://v1.airlines.cache.conducivetech.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http">
+        <con:content><![CDATA[<wsdl:definitions name="AirlinesV1SoapService" targetNamespace="http://v1.airlines.cache.conducivetech.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://v1.airlines.cache.conducivetech.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http">
   <wsdl:types>
     <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://v1.airlines.cache.conducivetech.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
       <xs:element name="airlineByFsCode" type="tns:airlineByFsCode"/>
@@ -1029,8 +1028,7 @@
       <soap:address location="https://api.flightstats.com/flex/airlines/soap/v1/airlinesService"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>
-        ]]></con:content>
+</wsdl:definitions>]]></con:content>
         <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
       </con:part>
     </con:definitionCache>
@@ -1043,8 +1041,7 @@
         <con:settings/>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <v1:airlineByFsCode>\r
@@ -1055,8 +1052,7 @@
          <extendedOptions>?</extendedOptions>\r
       </v1:airlineByFsCode>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlineByFsCodeRequest"/>
       </con:call>
@@ -1067,8 +1063,7 @@
         <con:settings/>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <v1:airlineByIcao>\r
@@ -1082,8 +1077,7 @@
          <extendedOptions>?</extendedOptions>\r
       </v1:airlineByIcao>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlineByIcaoRequest"/>
       </con:call>
@@ -1094,8 +1088,7 @@
         <con:settings/>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <v1:airlines>\r
@@ -1108,8 +1101,7 @@
          <extendedOptions>?</extendedOptions>\r
       </v1:airlines>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesRequest"/>
       </con:call>
@@ -1122,8 +1114,7 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <v1:airlinesByIata>\r
@@ -1134,8 +1125,7 @@
          <extendedOptions>?</extendedOptions>\r
       </v1:airlinesByIata>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -1151,8 +1141,7 @@
         <con:settings/>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <v1:airlinesByIataForDate>\r
@@ -1166,8 +1155,7 @@
          <extendedOptions>?</extendedOptions>\r
       </v1:airlinesByIataForDate>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesByIataForDateRequest"/>
       </con:call>
@@ -1178,8 +1166,7 @@
         <con:settings/>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <v1:airlinesByIcao>\r
@@ -1190,8 +1177,7 @@
          <extendedOptions>?</extendedOptions>\r
       </v1:airlinesByIcao>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://v1.airlines.cache.conducivetech.com/airlinesService/airlinesByIcaoRequest"/>
       </con:call>
@@ -1204,8 +1190,7 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <v1:allAirlines>\r
@@ -1215,8 +1200,7 @@
          <extendedOptions>${#Project#extendedOptions}</extendedOptions>\r
       </v1:allAirlines>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
@@ -1234,8 +1218,7 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>https://api.flightstats.com/flex/airlines/soap/v1/airlinesService</con:endpoint>
-        <con:request><![CDATA[
-          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://v1.airlines.cache.conducivetech.com/">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <v1:currentAirlines>\r
@@ -1245,8 +1228,7 @@
          <extendedOptions>${#Project#extendedOptions}</extendedOptions>\r
       </v1:currentAirlines>\r
    </soapenv:Body>\r
-</soapenv:Envelope>
-        ]]></con:request>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:authType>No Authorization</con:authType>
         </con:credentials>

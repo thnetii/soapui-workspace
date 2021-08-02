@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="TheTVDB" resourceRoot="${projectDir}" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" id="a9008caa-f927-48a3-9f66-b4e81d45b1fe" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default" name="TheTVDB" resourceRoot="${projectDir}" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" id="a9008caa-f927-48a3-9f66-b4e81d45b1fe" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://thetvdb.com" type="rest" id="f438da66-192d-4e3b-b585-e58562d4c9cb" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
