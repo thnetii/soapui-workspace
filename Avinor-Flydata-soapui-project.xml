@@ -54,7 +54,7 @@
             <con:style>QUERY</con:style>
             <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:dateTime</con:type>
             <con:default/>
-            <con:description> Ikke-obligatorisk. Henter kun flydata som har blitt oppdatert etter et gitt tidspunkt. Eksempel, "2009-02-03T09:30:00Z".</con:description>
+            <con:description>Ikke-obligatorisk. Henter kun flydata som har blitt oppdatert etter et gitt tidspunkt. Eksempel, "2009-02-03T09:30:00Z".</con:description>
           </con:parameter>
         </con:parameters>
         <con:representation type="RESPONSE">
@@ -807,6 +807,12 @@
             <con:representation type="FAULT">
               <con:mediaType>text/plain; charset=UTF-8</con:mediaType>
               <con:status>422</con:status>
+              <con:params/>
+              <con:element>data</con:element>
+            </con:representation>
+            <con:representation type="FAULT">
+              <con:mediaType>text/plain; charset=utf-8</con:mediaType>
+              <con:status>404</con:status>
               <con:params/>
               <con:element>data</con:element>
             </con:representation>
