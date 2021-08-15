@@ -10488,10 +10488,10 @@
          <ems:EMSFlightMonitorAddRulesInfo>\r
             <!--1 or more repetitions:-->\r
             <ems:EMSFlightRule Active="true" 
-                     DepartureDate="2018-12-20T12:50:00+01:00" 
-                     FlightNumber="2198" Name="LH2198">\r
+                     ArrivalDate="2019-12-28T21:50:00Z" 
+                     FlightNumber="1177" Name="KL1177">\r
                <!--Optional:-->\r
-               <ems:Airline AirlineCode="LH" />\r
+               <ems:Airline AirlineCode="KL" />\r
                <!--Zero or more repetitions:-->\r
                <ems:EMSFlightRuleEvents AllEvents="true" 
                         Cancelled="true"
@@ -10510,98 +10510,6 @@
                   <ems:EMSDeliveryDestination Name="Email" Type="Email" Value="fredrik.rasch@gmail.com" />\r
                </ems:EMSFlightRuleEvents>\r
             </ems:EMSFlightRule>\r
-            <ems:EMSFlightRule Active="true" 
-                     DepartureDate="2018-12-28T15:00:00+01:00" 
-                     FlightNumber="2199" Name="LH2199">
-               <!--Optional:-->
-               <ems:Airline AirlineCode="LH" />
-               <!--Zero or more repetitions:-->
-               <ems:EMSFlightRuleEvents AllEvents="true" 
-                        Cancelled="true"
-                        Departed="true"
-                        Diverted="true"
-                        FlightArrivedLateThreshold="15" FlightArrivedLate="false"
-                        FlightDepartedLateThreshold="15" FlightDepartedLate="false"
-                        StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
-                                        Arrived="true" >
-                  <ems:EMSFlightDelayAndGateEvents ArrivalGateChange="true"
-                                                   BaggageChange="true"
-                                                   DepartureDelayEvent="true"
-                                                   DepartureGateChange="true"
-                                                   ArrivalDelayEvent="true" />
-                  <!--1 or more repetitions:-->
-                  <ems:EMSDeliveryDestination Name="Email" Type="Email" Value="fredrik.rasch@gmail.com" />
-               </ems:EMSFlightRuleEvents>
-            </ems:EMSFlightRule>
-            <ems:EMSFlightRule Active="true" 
-                     DepartureDate="2018-12-28T18:55:00+01:00" 
-                     FlightNumber="4746" Name="SK4746">
-               <!--Optional:-->
-               <ems:Airline AirlineCode="SK" />
-               <!--Zero or more repetitions:-->
-               <ems:EMSFlightRuleEvents AllEvents="true" 
-                        Cancelled="true"
-                        Departed="true"
-                        Diverted="true"
-                        FlightArrivedLateThreshold="15" FlightArrivedLate="false"
-                        FlightDepartedLateThreshold="15" FlightDepartedLate="false"
-                        StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
-                                        Arrived="true" >
-                  <ems:EMSFlightDelayAndGateEvents ArrivalGateChange="true"
-                                                   BaggageChange="true"
-                                                   DepartureDelayEvent="true"
-                                                   DepartureGateChange="true"
-                                                   ArrivalDelayEvent="true" />
-                  <!--1 or more repetitions:-->
-                  <ems:EMSDeliveryDestination Name="Email" Type="Email" Value="fredrik.rasch@gmail.com" />
-               </ems:EMSFlightRuleEvents>
-            </ems:EMSFlightRule>
-            <ems:EMSFlightRule Active="true" 
-                     DepartureDate="2018-12-28T21:55:00+01:00" 
-                     FlightNumber="382" Name="SK0382">
-               <!--Optional:-->
-               <ems:Airline AirlineCode="SK" />
-               <!--Zero or more repetitions:-->
-               <ems:EMSFlightRuleEvents AllEvents="true" 
-                        Cancelled="true"
-                        Departed="true"
-                        Diverted="true"
-                        FlightArrivedLateThreshold="15" FlightArrivedLate="false"
-                        FlightDepartedLateThreshold="15" FlightDepartedLate="false"
-                        StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
-                                        Arrived="true" >
-                  <ems:EMSFlightDelayAndGateEvents ArrivalGateChange="true"
-                                                   BaggageChange="true"
-                                                   DepartureDelayEvent="true"
-                                                   DepartureGateChange="true"
-                                                   ArrivalDelayEvent="true" />
-                  <!--1 or more repetitions:-->
-                  <ems:EMSDeliveryDestination Name="Email" Type="Email" Value="fredrik.rasch@gmail.com" />
-               </ems:EMSFlightRuleEvents>
-            </ems:EMSFlightRule>
-            <ems:EMSFlightRule Active="true" 
-                     DepartureDate="2019-01-04T17:05:00+01:00" 
-                     FlightNumber="4572" Name="SK4572">
-               <!--Optional:-->
-               <ems:Airline AirlineCode="SK" />
-               <!--Zero or more repetitions:-->
-               <ems:EMSFlightRuleEvents AllEvents="true" 
-                        Cancelled="true"
-                        Departed="true"
-                        Diverted="true"
-                        FlightArrivedLateThreshold="15" FlightArrivedLate="false"
-                        FlightDepartedLateThreshold="15" FlightDepartedLate="false"
-                        StatusBeforeArrivalMinutes="15" StatusBeforeArrival="false"
-                                        Arrived="true" >
-                  <ems:EMSFlightDelayAndGateEvents ArrivalGateChange="true"
-                                                   BaggageChange="true"
-                                                   DepartureDelayEvent="true"
-                                                   DepartureGateChange="true"
-                                                   ArrivalDelayEvent="true" />
-                  <!--1 or more repetitions:-->
-                  <ems:EMSDeliveryDestination Name="Email" Type="Email" Value="fredrik.rasch@gmail.com" />
-               </ems:EMSFlightRuleEvents>
-            </ems:EMSFlightRule>
          </ems:EMSFlightMonitorAddRulesInfo>\r
       </ems:EMSFlightMonitorAddRulesRequest>\r
    </soapenv:Body>\r
