@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="cdeab045-d922-4e90-913c-f7c45f06646f" activeEnvironment="Default" name="Avinor Unfold" resourceRoot="${projectDir}" soapui-version="5.6.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>Avinor API / reverse engineered from Avinor Android App</con:description>
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="2c95e8e0-83dc-45ed-81b5-305714a74031" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://flights-tjenester.avinor.no" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints>
+      <con:endpoint>https://flights-tjenester.avinor.no</con:endpoint>
+    </con:endpoints>
+    <con:resource name="flights" path="/flights" id="dfe764a3-7c1f-4023-bcd5-c5c7c2095c02">
+      <con:settings/>
+      <con:parameters/>
+      <con:resource name="{direction}" path="{direction}" id="a118146a-32c2-4fa8-844a-bfadda5582e7">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>direction</con:name>
+            <con:value>Departure</con:value>
+            <con:style>TEMPLATE</con:style>
+            <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type>
+            <con:default>Departure</con:default>
+            <con:option>Departure</con:option>
+            <con:option>Arrival</con:option>
+            <con:description/>
+          </con:parameter>
+        </con:parameters>
+        <con:resource name="{iata}" path="{iata}" id="def23eaf-4ed2-4ba6-a976-8ed29eab35cb">
+          <con:settings/>
+          <con:parameters>
+            <con:parameter required="true">
+              <con:name>iata</con:name>
+              <con:value>OSL</con:value>
+              <con:style>TEMPLATE</con:style>
+              <con:default>OSL</con:default>
+            </con:parameter>
+          </con:parameters>
+          <con:method name="Flights" id="1ba6601f-ea5a-42ff-b922-423f301daf11" method="GET">
+            <con:settings/>
+            <con:parameters>
+              <con:parameter>
+                <con:name>fromDate</con:name>
+                <con:value/>
+                <con:style>QUERY</con:style>
+                <con:default/>
+                <con:path xsi:nil="true"/>
+                <con:description xsi:nil="true"/>
+              </con:parameter>
+              <con:parameter>
+                <con:name>toDate</con:name>
+                <con:value/>
+                <con:style>QUERY</con:style>
+                <con:default/>
+                <con:path xsi:nil="true"/>
+                <con:description xsi:nil="true"/>
+              </con:parameter>
+              <con:parameter>
+                <con:name>language</con:name>
+                <con:value>no</con:value>
+                <con:style>QUERY</con:style>
+                <con:default>no</con:default>
+                <con:path xsi:nil="true"/>
+                <con:description xsi:nil="true"/>
+              </con:parameter>
+            </con:parameters>
+            <con:representation type="FAULT">
+              <con:mediaType xsi:nil="true"/>
+              <con:status>404</con:status>
+              <con:params/>
+              <con:element>data</con:element>
+            </con:representation>
+            <con:representation type="RESPONSE">
+              <con:mediaType>application/json; charset=utf-8</con:mediaType>
+              <con:status>200</con:status>
+              <con:params/>
+              <con:element xmlns:osl="https://flights-tjenester.avinor.no/flights/78/OSL">osl:Response</con:element>
+            </con:representation>
+            <con:representation type="FAULT">
+              <con:mediaType xsi:nil="true"/>
+              <con:status>404</con:status>
+              <con:params/>
+              <con:element>data</con:element>
+            </con:representation>
+            <con:representation type="FAULT">
+              <con:mediaType xsi:nil="true"/>
+              <con:status>404</con:status>
+              <con:params/>
+              <con:element>data</con:element>
+            </con:representation>
+            <con:request name="OSL" id="6bd3d3af-42d2-4dd8-8e7d-9e3c00bb0b7e" mediaType="application/json">
+              <con:settings>
+                <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              </con:settings>
+              <con:endpoint>https://flights-tjenester.avinor.no</con:endpoint>
+              <con:request/>
+              <con:originalUri>https://flights-tjenester.avinor.no/flights/78/OSL</con:originalUri>
+              <con:credentials>
+                <con:authType>No Authorization</con:authType>
+              </con:credentials>
+              <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+              <con:jmsPropertyConfig/>
+              <con:parameters>
+                <con:entry key="fromDate" value="${=java.time.ZonedDateTime.now(java.time.ZoneId.of( &quot;Europe/Oslo&quot; )).truncatedTo(java.time.temporal.ChronoUnit.DAYS).format(java.time.format.DateTimeFormatter.ISO_OFFSET_DATE_TIME)}"/>
+                <con:entry key="toDate" value="${=java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Europe/Oslo&quot;)).plusDays(1).format(java.time.format.DateTimeFormatter.ISO_OFFSET_DATE_TIME)}"/>
+              </con:parameters>
+            </con:request>
+          </con:method>
+        </con:resource>
+      </con:resource>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="d50c8c4d-28df-4ff8-b6e3-bccff1acd954" name="Groovy Playground">
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="4d0fffde-89ec-4831-9fd3-1f47c8440a97" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Timezone" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="groovy" name="Get Current Time for Europe/Oslo" id="f46c4f48-ab44-4c3f-b984-25aa06d390cb">
+        <con:settings/>
+        <con:config>
+          <script>java.time.ZonedDateTime.now(
+    java.time.ZoneId.of( "Europe/Oslo" ) 
+).truncatedTo(
+	java.time.temporal.ChronoUnit.DAYS
+).format(
+	java.time.format.DateTimeFormatter.ISO_OFFSET_DATE_TIME
+)</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Get Current Time for Europe/Oslo oneline" id="f1e3c5fc-5e41-4e3e-b046-3bbd293fc900">
+        <con:settings/>
+        <con:config>
+          <script>java.time.ZonedDateTime.now(java.time.ZoneId.of( "Europe/Oslo" )).truncatedTo(java.time.temporal.ChronoUnit.DAYS).format(java.time.format.DateTimeFormatter.ISO_OFFSET_DATE_TIME)</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Get Tomorrow for Europe/Oslo oneline" id="97ba86f2-350f-4a4f-aaf7-a4e97222bc04">
+        <con:settings/>
+        <con:config>
+          <script>java.time.ZonedDateTime.now(java.time.ZoneId.of("Europe/Oslo")).plusDays(1).format(java.time.format.DateTimeFormatter.ISO_OFFSET_DATE_TIME)</script>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:properties/>
+  </con:testSuite>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:sensitiveInformation/>
+</con:soapui-project>

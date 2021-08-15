@@ -15,5 +15,6 @@
   <con:project name="Ruter REIS API">Ruter-REIS-API-soapui-project.xml</con:project>
   <con:project name="Microsoft MTPS Services">Microsoft-MTPS-Services-soapui-project.xml</con:project>
   <con:project name="FlightStats Flex">FlightStats-Flex-soapui-project.xml</con:project>
+  <con:project name="Avinor Unfold">Avinor-Unfold-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>
