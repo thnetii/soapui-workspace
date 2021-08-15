@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="cdeab045-d922-4e90-913c-f7c45f06646f" activeEnvironment="Default" name="Avinor Unfold" resourceRoot="${projectDir}" soapui-version="5.6.0" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="cdeab045-d922-4e90-913c-f7c45f06646f" activeEnvironment="Default" name="Avinor Unfold" resourceRoot="${projectDir}" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
   <con:description>Avinor API / reverse engineered from Avinor Android App</con:description>
   <con:settings/>
   <con:interface xsi:type="con:RestService" id="2c95e8e0-83dc-45ed-81b5-305714a74031" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://flights-tjenester.avinor.no" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    <con:definitionCache/>
+    <con:definitionCache type="TEXT" rootPart=""/>
     <con:endpoints>
       <con:endpoint>https://flights-tjenester.avinor.no</con:endpoint>
     </con:endpoints>
@@ -87,7 +87,7 @@
               <con:params/>
               <con:element>data</con:element>
             </con:representation>
-            <con:request name="OSL" id="6bd3d3af-42d2-4dd8-8e7d-9e3c00bb0b7e" mediaType="application/json">
+            <con:request name="OSL (Departures)" id="6bd3d3af-42d2-4dd8-8e7d-9e3c00bb0b7e" mediaType="application/json">
               <con:settings>
                 <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
               </con:settings>
@@ -102,6 +102,25 @@
               <con:parameters>
                 <con:entry key="fromDate" value="${=java.time.ZonedDateTime.now(java.time.ZoneId.of( &quot;Europe/Oslo&quot; )).truncatedTo(java.time.temporal.ChronoUnit.DAYS).format(java.time.format.DateTimeFormatter.ISO_OFFSET_DATE_TIME)}"/>
                 <con:entry key="toDate" value="${=java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Europe/Oslo&quot;)).plusDays(1).format(java.time.format.DateTimeFormatter.ISO_OFFSET_DATE_TIME)}"/>
+              </con:parameters>
+            </con:request>
+            <con:request name="TOS (Departures)" id="6bd3d3af-42d2-4dd8-8e7d-9e3c00bb0b7e" mediaType="application/json">
+              <con:settings>
+                <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+              </con:settings>
+              <con:endpoint>https://flights-tjenester.avinor.no</con:endpoint>
+              <con:request/>
+              <con:originalUri>https://flights-tjenester.avinor.no/flights/78/OSL</con:originalUri>
+              <con:credentials>
+                <con:authType>No Authorization</con:authType>
+              </con:credentials>
+              <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+              <con:jmsPropertyConfig/>
+              <con:parameters>
+                <con:entry key="fromDate" value="${=java.time.ZonedDateTime.now(java.time.ZoneId.of( &quot;Europe/Oslo&quot; )).truncatedTo(java.time.temporal.ChronoUnit.DAYS).format(java.time.format.DateTimeFormatter.ISO_OFFSET_DATE_TIME)}"/>
+                <con:entry key="iata" value="TOS"/>
+                <con:entry key="toDate" value="${=java.time.ZonedDateTime.now(java.time.ZoneId.of(&quot;Europe/Oslo&quot;)).plusDays(1).format(java.time.format.DateTimeFormatter.ISO_OFFSET_DATE_TIME)}"/>
+                <con:entry key="language" value=""/>
               </con:parameters>
             </con:request>
           </con:method>
