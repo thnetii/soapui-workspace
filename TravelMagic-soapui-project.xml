@@ -980,7 +980,7 @@
       </con:resource>
       <con:resource name="v2LocationXML" path="v2LocationXML" id="03b71e26-a0e5-41f4-811f-7b4d6d3985b9">
         <con:settings/>
-        <con:parameters></con:parameters>
+        <con:parameters/>
         <con:method name="GetStopsByQuery" id="fafce2e2-5f5a-46c8-a67e-d261d085997a" method="GET">
           <con:settings/>
           <con:parameters>

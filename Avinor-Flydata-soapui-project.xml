@@ -866,7 +866,7 @@
                 <con:entry key="timeFrom" value=""/>
               </con:parameters>
             </con:request>
-          <con:request name="Oslo Arrivals" id="ef72f384-1e22-44c1-a975-00d1281ee97f" mediaType="application/json">
+            <con:request name="Oslo Arrivals" id="ef72f384-1e22-44c1-a975-00d1281ee97f" mediaType="application/json">
               <con:settings>
                 <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
               </con:settings>
@@ -879,12 +879,13 @@
               <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
               <con:jmsPropertyConfig/>
               <con:parameters>
-  <con:entry key="timeFrom" value="0"/>
-  <con:entry key="iata" value="OSL"/>
-  <con:entry key="timeTo" value="1"/>
-  <con:entry key="direction" value="A"/>
-</con:parameters>
-            </con:request></con:method>
+                <con:entry key="timeFrom" value="0"/>
+                <con:entry key="iata" value="OSL"/>
+                <con:entry key="timeTo" value="1"/>
+                <con:entry key="direction" value="A"/>
+              </con:parameters>
+            </con:request>
+          </con:method>
         </con:resource>
       </con:resource>
       <con:resource name="flightstatuses" path="flightstatuses" id="98ec3cff-1f75-44c2-8b1e-b85526eacc4f">
